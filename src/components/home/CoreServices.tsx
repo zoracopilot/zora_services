@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const CoreServices: React.FC = () => {
   const [activeId, setActiveId] = useState<number | null>(null);
   const [isInView, setIsInView] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   const sectionRef = useRef<HTMLElement | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -126,6 +127,22 @@ const CoreServices: React.FC = () => {
     return () => clearTimeout(t);
   }, [isInView, activeId, focusCard]);
 
+  useEffect(() => {
+    if (!isInView || isPaused || services.length <= 1) return;
+
+    const interval = window.setInterval(() => {
+      setActiveId((current) => {
+        const currentIndex =
+          current == null ? 0 : services.findIndex((service) => service.id === current);
+        const safeIndex = currentIndex >= 0 ? currentIndex : 0;
+        const nextId = services[(safeIndex + 1) % services.length].id;
+        return nextId;
+      });
+    }, 1900);
+
+    return () => window.clearInterval(interval);
+  }, [isInView, isPaused, services]);
+
   return (
     <section
       ref={(el) => {
@@ -160,6 +177,12 @@ const CoreServices: React.FC = () => {
           <div className="relative overflow-hidden">
             <div
               ref={scrollRef}
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+              onFocus={() => setIsPaused(true)}
+              onBlur={() => setIsPaused(false)}
+              onTouchStart={() => setIsPaused(true)}
+              onTouchEnd={() => setIsPaused(false)}
               className="flex gap-4 overflow-x-auto pl-2 pr-2 scroll-px-4 no-scrollbar sm:gap-6 sm:pl-8 sm:pr-8 sm:scroll-px-8 md:pl-10 md:pr-10"
             >
               {services.map((service) => {
