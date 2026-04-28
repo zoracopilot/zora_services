@@ -64,45 +64,15 @@ const colors = {
 };
 
 const ProcessIcon = ({ Icon }: { Icon: LucideIcon }) => (
-  <div className="relative h-[72px] w-[72px] shrink-0">
-    <svg
-      className="absolute inset-0 h-full w-full"
-      viewBox="0 0 72 72"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-    >
-      <circle cx="36" cy="36" r="31" stroke="#ebe3fa" strokeWidth="3" />
-      <circle
-        cx="36"
-        cy="36"
-        r="31"
-        stroke={colors.purple}
-        strokeWidth="4"
-        strokeLinecap="round"
-        strokeDasharray="136 68"
-        transform="rotate(-132 36 36)"
-      />
-    </svg>
-    <div
-      className="absolute inset-[6px] rounded-full"
-      style={{
-        background: "#ffffff",
-        boxShadow: "0 10px 22px rgba(143,122,230,0.16)",
-      }}
-    />
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div
-        className="flex h-[42px] w-[42px] items-center justify-center rounded-full"
-        style={{
-          background: "#ffffff",
-          border: "1px solid #ede3fb",
-          color: colors.purple,
-        }}
-      >
-        <Icon size={20} strokeWidth={2.1} />
-      </div>
-    </div>
+  <div className="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-full"
+    style={{
+      background: "#ffffff",
+      border: "1px solid #ede3fb",
+      boxShadow: "0 10px 22px rgba(143,122,230,0.16)",
+      color: colors.purple,
+    }}
+  >
+    <Icon size={20} strokeWidth={2.1} />
   </div>
 );
 
@@ -120,24 +90,19 @@ const DeliveryProcess: React.FC = () => {
         }}
       />
       <div className="relative mx-auto max-w-[1420px]">
-        <div className="max-w-[980px]">
-          <h2
-            className="max-w-[16ch] font-serif text-[2rem] font-bold leading-[1.02] tracking-[-0.04em] sm:max-w-[15ch] sm:text-[2.6rem] md:text-[3rem] lg:max-w-[15ch] lg:text-[4rem]"
+        <div className="mx-auto max-w-[980px] text-center">
+          <h3
+            className="mx-auto max-w-[20ch] font-serif text-[1.25rem] font-bold leading-[1.08] tracking-[-0.03em] sm:max-w-[20ch] sm:text-[1.5rem] md:text-[1.75rem] lg:max-w-[20ch] lg:text-[2rem]"
             style={{ color: colors.navy }}
           >
             From idea to impact,
             <br />
             we follow a{" "}
             <span style={{ color: colors.purple }}>proven process</span>
-          </h2>
-
-          <div
-            className="mt-4 h-[5px] w-[58px] rounded-full sm:mt-5"
-            style={{ background: colors.purple }}
-          />
+          </h3>
 
           <p
-            className="mt-4 max-w-[48rem] text-[14px] leading-[1.8] sm:mt-5 sm:text-[15px] md:text-[16px] md:leading-[1.85] lg:max-w-[52rem]"
+            className="mx-auto mt-3 max-w-[48rem] text-[14px] leading-[1.8] sm:mt-4 sm:text-[15px] md:text-[16px] md:leading-[1.85] lg:max-w-[52rem]"
             style={{ color: colors.body }}
           >
             A structured delivery model across strategy, design, engineering,
@@ -150,7 +115,7 @@ const DeliveryProcess: React.FC = () => {
           {steps.map(({ number, title, description, bullets, Icon }, index) => (
             <div key={title} className="relative">
               <article
-                className="group relative flex h-full min-h-[344px] flex-col rounded-[24px] px-6 pb-9 pt-6 transition-all duration-300 ease-out hover:-translate-y-2"
+                className="group relative flex h-full min-h-[302px] flex-col rounded-[24px] px-6 pb-6 pt-5 transition-all duration-300 ease-out hover:-translate-y-2"
                 style={{
                   background: "#ffffff",
                   border: `1px solid ${colors.border}`,
@@ -168,7 +133,7 @@ const DeliveryProcess: React.FC = () => {
                   e.currentTarget.style.borderColor = colors.border;
                 }}
               >
-                <div className="mb-6 flex min-h-[72px] items-start justify-between gap-4">
+                <div className="mb-5 flex min-h-[56px] items-start justify-between gap-4">
                   <div className="pt-0.5 transition-transform duration-300 group-hover:scale-[1.04]">
                     <ProcessIcon Icon={Icon} />
                   </div>
@@ -188,19 +153,14 @@ const DeliveryProcess: React.FC = () => {
                     {title}
                   </h3>
 
-                  <div
-                    className="mt-3 h-[4px] w-[42px] rounded-full transition-all duration-300 group-hover:w-[58px]"
-                    style={{ background: colors.purple }}
-                  />
-
                   <p
-                    className="mt-4 min-h-[102px] max-w-[31ch] text-[14px] leading-[1.8]"
+                    className="mt-3 min-h-[92px] max-w-[31ch] text-[14px] leading-[1.7]"
                     style={{ color: colors.body }}
                   >
                     {description}
                   </p>
 
-                  <div className="mt-auto space-y-3 pt-6 pb-5">
+                  <div className="mt-auto space-y-2.5 pt-4 pb-2">
                     {bullets.map((bullet) => (
                       <div
                         key={bullet}
@@ -255,7 +215,7 @@ const DeliveryProcess: React.FC = () => {
 
                   <div
                     className="pointer-events-none absolute left-full z-20 hidden -translate-y-1/2 lg:flex lg:w-[82px] lg:-translate-x-[41px] xl:w-[88px] xl:-translate-x-[44px]"
-                    style={{ top: "146px" }}
+                    style={{ top: "118px" }}
                   >
                     <div className="flex w-full items-center">
                       <span

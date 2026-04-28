@@ -5,25 +5,25 @@ const EnterpriseDifferentiators: React.FC = () => {
     {
       title: "Board-Level AI Strategy",
       desc: "We align artificial intelligence initiatives with executive business outcomes",
-      image: "/it-hero/aiot.webp",
+      image: "/home-enterprise/strategy.webp",
       tag: "Strategy",
     },
     {
       title: "Security-First Architecture",
       desc: "Built with enterprise-grade compliance, data encryption and infrastructure resilience",
-      image: "/it-hero/data-protection.webp",
+      image: "/home-enterprise/security.webp",
       tag: "Security",
     },
     {
       title: "Scalable AI Infrastructure",
       desc: "Cloud-native, modular systems designed for long-term digital growth",
-      image: "/it-hero/cloud-architecture.webp",
+      image: "/home-enterprise/scalability.webp",
       tag: "Scalability",
     },
     {
       title: "Data-Driven Decision Intelligence",
       desc: "Real-time insights and predictive analytics that improve strategic and operational outcomes",
-      image: "/it-hero/ml.webp",
+      image: "/home-enterprise/insights.webp",
       tag: "Insights",
     },
   ];
@@ -44,7 +44,7 @@ const EnterpriseDifferentiators: React.FC = () => {
   };
 
   return (
-    <section className="relative isolate overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="relative isolate overflow-hidden bg-white px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_30%,rgba(99,102,241,0.10),transparent_52%),radial-gradient(circle_at_78%_75%,rgba(56,189,248,0.08),transparent_52%)]" />
         <div className="absolute -left-20 -top-28 h-[440px] w-[440px] rounded-full bg-indigo-500/10 blur-[130px]" />
@@ -60,19 +60,19 @@ const EnterpriseDifferentiators: React.FC = () => {
       >
         <motion.h2
           variants={itemVariants}
-          className="bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text font-serif text-3xl font-bold text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)] sm:text-5xl lg:text-6xl"
+          className="inline-block bg-gradient-to-r from-[#8b5cf6] via-[#6366f1] to-[#38bdf8] bg-clip-text pb-1 font-serif text-2xl font-bold leading-[1.12] text-transparent drop-shadow-[0_0_18px_rgba(56,189,248,0.32)] sm:text-4xl lg:text-5xl"
         >
           Why Enterprises Choose Us
         </motion.h2>
         <motion.p
           variants={itemVariants}
-          className="mx-auto mb-10 mt-4 max-w-3xl px-1 text-sm leading-7 text-slate-600 sm:mb-14 sm:mt-5 sm:text-lg sm:leading-8"
+          className="mx-auto mb-8 mt-3 max-w-3xl px-1 text-sm leading-7 text-slate-600 sm:mb-10 sm:mt-4 sm:text-lg sm:leading-8"
         >
           Built for high-stakes environments where reliability, security and
           long-term scalability are non-negotiable
         </motion.p>
 
-        <div className="relative mx-auto mt-2 max-w-5xl sm:mt-4">
+        <div className="relative mx-auto mt-1 max-w-5xl sm:mt-2">
           <div className="pointer-events-none absolute bottom-0 left-5 top-0 w-px bg-gradient-to-b from-indigo-200/0 via-indigo-300 to-indigo-200/0 sm:left-8" />
           <div className="space-y-1.5 sm:space-y-2">
             {differentiators.map((item, idx) => (
