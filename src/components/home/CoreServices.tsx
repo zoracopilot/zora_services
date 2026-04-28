@@ -131,7 +131,7 @@ const CoreServices: React.FC = () => {
       ref={(el) => {
         sectionRef.current = el;
       }}
-      className="relative w-full overflow-hidden bg-transparent py-16 text-slate-900 sm:py-20 lg:py-24"
+      className="relative w-full overflow-hidden bg-transparent pb-8 pt-16 text-slate-900 sm:pb-10 sm:pt-20 lg:pb-12 lg:pt-24"
     >
       <div className="mx-auto max-w-[92rem] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-12">

@@ -1,4 +1,5 @@
-import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
   {
@@ -36,23 +37,57 @@ const products = [
 ];
 
 const ProductsShowcase: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % products.length);
+    }, 2000);
+
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  const getOffset = (index: number) => {
+    let offset = index - activeIndex;
+    const midpoint = Math.floor(products.length / 2);
+
+    if (offset > midpoint) {
+      offset -= products.length;
+    }
+
+    if (offset < -midpoint) {
+      offset += products.length;
+    }
+
+    return offset;
+  };
+
   return (
-    <section className="relative overflow-hidden bg-[#faf8ff] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <section className="relative overflow-hidden bg-[#faf8ff] px-4 pb-12 pt-5 sm:px-6 sm:pb-16 sm:pt-8 lg:px-8 lg:pb-20 lg:pt-10">
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_left,rgba(99,102,241,0.10),transparent_30%),radial-gradient(circle_at_85%_30%,rgba(168,85,247,0.10),transparent_26%)]" />
 
-      <div className="relative mx-auto max-w-7xl rounded-[32px] border border-violet-100 bg-white/95 p-5 shadow-[0_24px_70px_rgba(76,29,149,0.08)] sm:p-8 lg:p-10">
-        <div className="grid gap-8 xl:grid-cols-[320px_minmax(0,1fr)] xl:gap-10">
-          <div className="flex flex-col justify-between xl:sticky xl:top-24 xl:self-start">
+      <div className="relative mx-auto max-w-7xl rounded-[32px] border border-violet-100 bg-white/95 p-4 shadow-[0_24px_70px_rgba(76,29,149,0.08)] sm:p-6 lg:p-8">
+        <div className="grid gap-6 xl:grid-cols-[330px_minmax(0,1fr)] xl:gap-8">
+          <div className="flex w-full max-w-[330px] flex-col items-start gap-6 pt-1 xl:sticky xl:top-24 xl:self-start">
             <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-violet-500">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-violet-500">
                 Our Products
               </p>
-              <h2 className="mt-4 max-w-[12ch] text-3xl font-semibold leading-tight text-slate-950 sm:text-4xl lg:text-5xl">
-                Innovative Products Built for Tomorrow
+              <h2 className="mt-4 max-w-none text-[2.45rem] font-semibold leading-[0.98] text-slate-950 sm:text-[2.7rem] lg:text-[2.85rem]">
+                <span className="block whitespace-nowrap">Innovative</span>
+                <span className="block whitespace-nowrap">Products Built</span>
+                <span className="block whitespace-nowrap">for Tomorrow</span>
               </h2>
-              <p className="mt-5 max-w-sm text-sm leading-7 text-slate-600 sm:text-[15px]">
-                Our in-house products are designed to simplify operations,
-                enhance engagement and accelerate business growth.
+              <p className="mt-5 max-w-none text-[15px] leading-8 text-slate-600">
+                <span className="block whitespace-nowrap">
+                  Our in-house products are designed
+                </span>
+                <span className="block whitespace-nowrap">
+                  to simplify operations, enhance
+                </span>
+                <span className="block whitespace-nowrap">
+                  engagement and accelerate business growth.
+                </span>
               </p>
             </div>
 
@@ -60,49 +95,176 @@ const ProductsShowcase: React.FC = () => {
               href="https://www.zoraai.us/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex w-fit items-center gap-2 rounded-xl bg-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-[0_18px_40px_rgba(124,58,237,0.28)] transition-colors hover:bg-violet-700"
+              className="inline-flex w-fit items-center gap-2 rounded-xl bg-violet-600 px-5 py-3 text-[13px] font-semibold text-white shadow-[0_18px_40px_rgba(124,58,237,0.28)] transition-colors hover:bg-violet-700"
             >
               Explore Products
               <ArrowRight size={16} />
             </a>
           </div>
 
-          <div className="grid gap-5 lg:grid-cols-2">
-            {products.map((product) => (
-              <a
-                key={product.title}
-                href={product.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex h-full flex-col rounded-[26px] border border-slate-200 bg-white p-4 shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:bg-[#f8f4ff] hover:shadow-[0_20px_48px_rgba(91,33,182,0.14)] active:border-violet-300 active:bg-[#f3edff] sm:p-5"
-              >
-                <div className="overflow-hidden rounded-[20px] border border-violet-100 bg-white p-0.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="aspect-[16/8.4] w-full rounded-[18px] object-contain bg-white transition-transform duration-300 group-hover:scale-[1.01]"
-                    loading="lazy"
-                    draggable={false}
-                  />
+          <div className="w-full max-w-[760px] xl:ml-auto">
+            <div className="relative overflow-hidden rounded-[28px] border border-violet-100/80 bg-[linear-gradient(180deg,rgba(248,245,255,0.92),rgba(255,255,255,0.98))] px-4 py-5 shadow-[0_24px_60px_rgba(76,29,149,0.08)] sm:px-5 sm:py-6">
+              <div className="pointer-events-none absolute inset-x-[18%] top-8 h-32 rounded-full bg-violet-200/30 blur-3xl" />
+
+              <div className="relative hidden h-[430px] [perspective:1800px] md:block">
+                {products.map((product, index) => {
+                  const offset = getOffset(index);
+                  const isActive = offset === 0;
+                  const isPreview = Math.abs(offset) === 1;
+                  const isHidden = Math.abs(offset) > 1;
+
+                  const transform =
+                    offset === 0
+                      ? "translateX(-50%) translateY(0px) scale(1) rotateY(0deg)"
+                      : offset === -1
+                        ? "translateX(calc(-50% - 210px)) translateY(10px) scale(0.82) rotateY(16deg)"
+                        : offset === 1
+                          ? "translateX(calc(-50% + 210px)) translateY(10px) scale(0.82) rotateY(-16deg)"
+                          : "translateX(-50%) translateY(18px) scale(0.72) rotateY(0deg)";
+
+                  return (
+                    <a
+                      key={product.title}
+                      href={product.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(event) => {
+                        if (!isActive) {
+                          event.preventDefault();
+                          setActiveIndex(index);
+                        }
+                      }}
+                      className="group absolute left-1/2 top-2 flex h-[370px] w-[78%] max-w-[420px] origin-center flex-col rounded-[24px] border border-slate-200 bg-white p-4 shadow-[0_18px_46px_rgba(15,23,42,0.10)] transition-all duration-500 ease-out"
+                      style={{
+                        transform,
+                        transformStyle: "preserve-3d",
+                        opacity: isHidden ? 0 : isActive ? 1 : 0.54,
+                        zIndex: isActive ? 30 : isPreview ? 20 : 10,
+                        pointerEvents: isHidden ? "none" : "auto",
+                      }}
+                    >
+                      <div className="relative overflow-hidden rounded-[18px] border border-violet-100 bg-white p-0.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="aspect-[16/7.6] w-full rounded-[16px] object-contain bg-white transition-transform duration-300 group-hover:scale-[1.01]"
+                          loading="lazy"
+                          draggable={false}
+                        />
+                      </div>
+
+                      {isActive ? (
+                        <div className="flex flex-1 flex-col px-1 pt-4">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-500">
+                            {product.accent}
+                          </p>
+                          <h3 className="mt-2.5 text-[1.85rem] font-semibold leading-tight text-slate-900">
+                            {product.title}
+                          </h3>
+                          <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">
+                            {product.description}
+                          </p>
+                          <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-violet-700">
+                            Learn More
+                            <ArrowRight size={16} />
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="mt-auto rounded-[18px] border border-white/70 bg-white/88 px-4 py-3 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur-sm">
+                          <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-violet-500">
+                            {product.accent}
+                          </p>
+                          <h3 className="mt-1.5 text-lg font-semibold leading-tight text-slate-900">
+                            {product.title}
+                          </h3>
+                        </div>
+                      )}
+                    </a>
+                  );
+                })}
+              </div>
+
+              <div className="relative md:hidden">
+                {products.map((product, index) =>
+                  index === activeIndex ? (
+                    <a
+                      key={product.title}
+                      href={product.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex flex-col rounded-[22px] border border-slate-200 bg-white p-4 shadow-[0_12px_34px_rgba(15,23,42,0.08)]"
+                    >
+                      <div className="overflow-hidden rounded-[18px] border border-violet-100 bg-white p-0.5">
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="aspect-[16/8] w-full rounded-[16px] object-contain bg-white"
+                          loading="lazy"
+                          draggable={false}
+                        />
+                      </div>
+                      <div className="flex flex-1 flex-col px-1 pt-4">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-500">
+                          {product.accent}
+                        </p>
+                        <h3 className="mt-2.5 text-[1.65rem] font-semibold leading-tight text-slate-900">
+                          {product.title}
+                        </h3>
+                        <p className="mt-3 text-sm leading-6 text-slate-600">
+                          {product.description}
+                        </p>
+                        <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-violet-700">
+                          Learn More
+                          <ArrowRight size={16} />
+                        </span>
+                      </div>
+                    </a>
+                  ) : null,
+                )}
+              </div>
+
+              <div className="relative mt-4 flex items-center justify-center gap-3">
+                <button
+                  type="button"
+                  onClick={() =>
+                    setActiveIndex(
+                      (current) => (current - 1 + products.length) % products.length,
+                    )
+                  }
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-violet-200 bg-white text-violet-700 shadow-[0_10px_24px_rgba(124,58,237,0.12)] transition-colors hover:bg-violet-50"
+                  aria-label="Previous product"
+                >
+                  <ChevronLeft size={18} />
+                </button>
+
+                <div className="flex items-center gap-2">
+                  {products.map((product, index) => (
+                    <button
+                      key={product.title}
+                      type="button"
+                      onClick={() => setActiveIndex(index)}
+                      className={`h-2.5 rounded-full transition-all duration-300 ${
+                        index === activeIndex
+                          ? "w-8 bg-violet-600"
+                          : "w-2.5 bg-violet-200 hover:bg-violet-300"
+                      }`}
+                      aria-label={`Show ${product.title}`}
+                    />
+                  ))}
                 </div>
 
-                <div className="flex flex-1 flex-col px-1 pt-5">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-500">
-                    {product.accent}
-                  </p>
-                  <h3 className="mt-3 text-2xl font-semibold text-slate-900">
-                    {product.title}
-                  </h3>
-                  <p className="mt-4 flex-1 text-sm leading-7 text-slate-600 sm:text-base">
-                    {product.description}
-                  </p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-violet-700">
-                    Learn More
-                    <ArrowRight size={16} />
-                  </span>
-                </div>
-              </a>
-            ))}
+                <button
+                  type="button"
+                  onClick={() =>
+                    setActiveIndex((current) => (current + 1) % products.length)
+                  }
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-violet-200 bg-white text-violet-700 shadow-[0_10px_24px_rgba(124,58,237,0.12)] transition-colors hover:bg-violet-50"
+                  aria-label="Next product"
+                >
+                  <ChevronRight size={18} />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
