@@ -1,5 +1,4 @@
 import {
-  Blocks,
   Briefcase,
   Building2,
   ClipboardList,
@@ -111,21 +110,6 @@ export const products: ProductItem[] = [
     ],
     accent: "amber",
     icon: Building2,
-  },
-  {
-    id: "more-products",
-    title: "More Products",
-    subtitle: "Innovation is Ongoing",
-    description:
-      "We're continuously building innovative solutions to solve real-world challenges.",
-    bullets: [
-      "AI-Powered Solutions",
-      "Industry-Specific Platforms",
-      "Automation Tools",
-      "And Much More...",
-    ],
-    accent: "indigo",
-    icon: Blocks,
   },
 ];
 
