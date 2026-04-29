@@ -72,20 +72,20 @@ const Navbar: React.FC = () => {
   }, []);
 
   const desktopBtn =
-    "group relative px-7 py-2.5 font-bold rounded-full block text-sm transition-all duration-300 transform-gpu hover:-translate-y-0.5 active:scale-[0.99] backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 focus-visible:ring-offset-2 focus-visible:ring-offset-black after:absolute after:left-1/2 after:top-[1px] after:h-[2px] after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-violet-200/90 after:opacity-0 after:transition-all after:duration-300 group-hover:after:w-[72%] group-hover:after:opacity-100";
+    "group relative px-7 py-2.5 font-bold rounded-full block text-sm transition-all duration-300 transform-gpu hover:-translate-y-0.5 active:scale-[0.99] backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 focus-visible:ring-offset-2 focus-visible:ring-offset-[#fcfbff]";
   const desktopBtnInactive =
-    "text-[#fffcf0] bg-[#fffcf0]/14 hover:bg-[#fffcf0]/22 border border-white/30 [box-shadow:inset_0_2px_0_rgba(255,255,255,0.52),0_12px_28px_rgba(0,0,0,0.32)] hover:shadow-[inset_0_2px_0_rgba(255,255,255,0.58),0_16px_34px_rgba(0,0,0,0.34),0_0_22px_rgba(168,85,247,0.38)]";
+    "text-slate-700 bg-white/72 hover:bg-violet-100 hover:text-violet-800 active:bg-violet-200 active:text-violet-900 border border-violet-100 [box-shadow:inset_0_1px_0_rgba(255,255,255,0.92),0_10px_24px_rgba(148,163,184,0.14)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.98),0_14px_30px_rgba(148,163,184,0.18)]";
   const desktopBtnActive =
-    "-translate-y-[2px] bg-[#fffcf0] text-black border border-white/75 [box-shadow:inset_0_2px_0_rgba(255,255,255,0.72),0_12px_24px_rgba(0,0,0,0.28),0_0_24px_rgba(167,139,250,0.45)] after:w-[72%] after:opacity-100";
+    "-translate-y-[2px] bg-white text-violet-700 border border-violet-200 [box-shadow:inset_0_1px_0_rgba(255,255,255,0.98),0_14px_28px_rgba(167,139,250,0.18)]";
   const mobileBtn =
     "flex items-center justify-center gap-3 px-5 py-3.5 rounded-full text-lg font-bold tracking-[0.01em] whitespace-nowrap transition-all transform-gpu active:scale-[0.99] backdrop-blur-md min-h-[56px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90";
   const mobileBtnInactive =
-    "text-[#fffcf0] bg-[#fffcf0]/14 border border-white/35 shadow-[0_10px_24px_rgba(0,0,0,0.3)]";
+    "text-slate-700 bg-white/78 hover:bg-violet-100 hover:text-violet-800 active:bg-violet-200 active:text-violet-900 border border-violet-100 shadow-[0_10px_24px_rgba(148,163,184,0.14)]";
 
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 w-full z-50 text-white transition-all duration-300 bg-gradient-to-r from-black via-purple-550 to-purple-950 backdrop-blur-lg border-b border-purple-500/30"
+      className="fixed top-0 w-full z-50 text-slate-900 transition-all duration-300 border-b border-violet-100/80 bg-[rgba(252,251,255,0.9)] backdrop-blur-xl shadow-[0_10px_30px_rgba(148,163,184,0.08)]"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-3 flex justify-between items-center">
         <Link
@@ -166,14 +166,14 @@ const Navbar: React.FC = () => {
 
           <Link
             to="/book-appointment"
-            className="bg-violet-500 text-white font-bold text-[11px] lg:text-xs xl:text-sm px-2.5 lg:px-3 xl:px-4 py-2 rounded-lg whitespace-nowrap transition-all duration-300"
+            className="bg-violet-600 text-white font-bold text-[11px] lg:text-xs xl:text-sm px-2.5 lg:px-3 xl:px-4 py-2 rounded-lg whitespace-nowrap transition-all duration-300 shadow-[0_10px_22px_rgba(124,58,237,0.22)] hover:bg-violet-700"
           >
             Book Appointment
           </Link>
         </div>
 
         <button
-          className="lg:hidden relative h-11 w-11 rounded-full text-white"
+          className="lg:hidden relative h-11 w-11 rounded-full text-slate-700"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle navigation menu"
         >
@@ -182,7 +182,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden bg-[#1a1a40]/88 backdrop-blur-xl px-6 py-6 space-y-3 border-t border-white/10 md:px-8 md:py-7">
+        <div className="lg:hidden bg-[rgba(252,251,255,0.96)] backdrop-blur-xl px-6 py-6 space-y-3 border-t border-violet-100 md:px-8 md:py-7">
           <Link
             to="/"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
@@ -228,7 +228,7 @@ const Navbar: React.FC = () => {
           </Link>
           <Link
             to="/book-appointment"
-            className="block bg-violet-500 text-white px-5 py-3.5 rounded-lg text-center text-lg font-extrabold tracking-[0.01em] whitespace-nowrap md:w-fit md:min-w-[220px]"
+            className="block bg-violet-600 text-white px-5 py-3.5 rounded-lg text-center text-lg font-extrabold tracking-[0.01em] whitespace-nowrap md:w-fit md:min-w-[220px]"
             onClick={scrollTop}
           >
             <span className="font-bold">Book Appointment</span>
