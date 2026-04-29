@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AboutCTA: React.FC = () => {
   return (
@@ -16,13 +17,13 @@ const AboutCTA: React.FC = () => {
             </p>
           </div>
 
-          <button
-            type="button"
+          <Link
+            to="/contact"
             className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-violet-700 shadow-[0_14px_28px_rgba(49,46,129,0.18)] transition-colors hover:bg-violet-50"
           >
             Get in Touch
             <ArrowRight size={16} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
