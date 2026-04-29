@@ -1,5 +1,4 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
 
 const OurStory: React.FC = () => {
   return (
@@ -25,7 +24,6 @@ const OurStory: React.FC = () => {
           <h2 className="font-serif text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
             Our Story
           </h2>
-          <div className="mt-5 h-[2px] w-16 rounded-full bg-violet-300" />
 
           <div className="mt-6 space-y-5 text-base leading-8 text-slate-600 sm:text-lg">
             <p>
@@ -44,14 +42,6 @@ const OurStory: React.FC = () => {
               that solve real business problems.
             </p>
           </div>
-
-          <button
-            type="button"
-            className="mt-8 inline-flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-5 py-3 text-sm font-semibold text-violet-700 shadow-[0_10px_24px_rgba(148,163,184,0.1)] transition-colors hover:bg-violet-50"
-          >
-            Our Journey
-            <ArrowRight size={16} />
-          </button>
         </div>
       </div>
     </section>
