@@ -1,6 +1,7 @@
 import React from "react";
 import { Linkedin, Mail } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
+import TextReveal from "./TextReveal";
 
 const contactEmail = "info@zoraglobalai.com";
 
@@ -16,14 +17,18 @@ const LeadershipTeam: React.FC = () => {
   return (
     <section className="mt-14 max-w-6xl mx-auto">
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-serif font-black tracking-tight text-slate-950 sm:text-4xl">
-          Leadership Team
-        </h2>
+        <TextReveal>
+          <h2 className="text-3xl font-serif font-black tracking-tight text-slate-950 sm:text-4xl">
+            Our Leadership Team
+          </h2>
+        </TextReveal>
 
-        <p className="text-slate-600 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
-          Vision-driven leaders shaping the future of AI innovation, enterprise
-          transformation and global digital growth.
-        </p>
+        <TextReveal delay={0.08}>
+          <p className="text-slate-600 mt-3 max-w-2xl mx-auto text-sm sm:text-base">
+            Vision-driven leaders shaping the future of AI innovation, enterprise
+            transformation and global digital growth.
+          </p>
+        </TextReveal>
       </div>
 
       <div className="grid max-w-5xl mx-auto md:grid-cols-2 gap-6 items-stretch">
@@ -40,19 +45,23 @@ const LeadershipTeam: React.FC = () => {
               />
             </div>
 
-            <h3 className="text-xl font-serif font-bold text-slate-950">
-              Dr. Adv. S. Ansar Ali
-            </h3>
-            <p className="text-violet-600 mb-3 text-sm">
-              Corporate & Legal Advisor
-            </p>
+            <TextReveal delay={0.08}>
+              <h3 className="text-xl font-serif font-bold text-slate-950">
+                Dr. Adv. S. Ansar Ali
+              </h3>
+              <p className="text-violet-600 mb-3 text-sm">
+                Corporate & Legal Advisor
+              </p>
+            </TextReveal>
 
-            <p className="text-slate-600 text-sm leading-relaxed">
-              Leads operational excellence and execution strategy, ensuring
-              delivery precision, innovation continuity and long-term enterprise
-              partnerships while driving sustainable organizational growth and
-              performance excellence across global initiatives.
-            </p>
+            <TextReveal delay={0.16}>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Leads operational excellence and execution strategy, ensuring
+                delivery precision, innovation continuity and long-term enterprise
+                partnerships while driving sustainable organizational growth and
+                performance excellence across global initiatives.
+              </p>
+            </TextReveal>
 
             <div className="mt-auto pt-5 flex justify-center gap-5">
               <a
@@ -100,18 +109,22 @@ const LeadershipTeam: React.FC = () => {
               />
             </div>
 
-            <h3 className="text-xl font-serif font-bold text-slate-950">
-              S Ashik Ali
-            </h3>
-            <p className="text-violet-600 mb-3 text-sm">
-              Chief Executive Officer
-            </p>
+            <TextReveal delay={0.08}>
+              <h3 className="text-xl font-serif font-bold text-slate-950">
+                S Ashik Ali
+              </h3>
+              <p className="text-violet-600 mb-3 text-sm">
+                Chief Executive Officer
+              </p>
+            </TextReveal>
 
-            <p className="text-slate-600 text-sm leading-relaxed">
-              Driving strategic vision and innovation while leading enterprise
-              AI transformation through scalable intelligent systems and
-              future-focused technology leadership.
-            </p>
+            <TextReveal delay={0.16}>
+              <p className="text-slate-600 text-sm leading-relaxed">
+                Driving strategic vision and innovation while leading enterprise
+                AI transformation through scalable intelligent systems and
+                future-focused technology leadership.
+              </p>
+            </TextReveal>
 
             <div className="mt-auto pt-5 flex justify-center gap-5">
               <a
