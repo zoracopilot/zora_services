@@ -4,9 +4,9 @@ import TextReveal from "./TextReveal";
 const AboutHero: React.FC = () => {
   return (
     <section className="relative overflow-hidden bg-white pt-[var(--nav-h,0px)]">
-      <div className="w-full pb-10">
+      <div className="w-full">
         <div className="relative min-h-[500px] overflow-hidden bg-white lg:min-h-[500px]">
-          <div className="absolute inset-x-0 top-0 h-72 overflow-hidden lg:inset-y-0 lg:left-auto lg:right-0 lg:h-full lg:w-[58%]">
+          <div className="absolute inset-x-0 top-0 h-72 overflow-hidden lg:inset-y-0 lg:left-auto lg:right-0 lg:h-full lg:w-[66%]">
             <img
               src="/about/company.jpeg"
               alt="Zora Global AI company building"
@@ -23,24 +23,18 @@ const AboutHero: React.FC = () => {
           >
             <defs>
               <clipPath id="aboutHeroCurve" clipPathUnits="userSpaceOnUse">
-                <path d="M0 0H760C668 74 636 172 604 288C572 398 544 462 500 500H0V0Z" />
+                <path d="M0 0H760C672 76 636 168 606 286C576 400 548 464 500 500H0V0Z" />
               </clipPath>
             </defs>
             <g clipPath="url(#aboutHeroCurve)">
-              <path d="M0 0H760C668 74 636 172 604 288C572 398 544 462 500 500H0V0Z" fill="white" />
+              <path d="M0 0H760C672 76 636 168 606 286C576 400 548 464 500 500H0V0Z" fill="white" />
             </g>
           </svg>
 
           <div className="relative z-20 flex min-h-[500px] items-end px-6 pb-10 pt-80 sm:px-10 lg:min-h-[500px] lg:w-[59%] lg:items-center lg:px-16 lg:py-12">
             <div className="max-w-[36rem]">
-              <TextReveal>
-                <p className="text-sm font-bold uppercase tracking-[0.16em] text-violet-700">
-                  About Us
-                </p>
-              </TextReveal>
-
               <TextReveal delay={0.1}>
-                <h1 className="mt-6 font-sans text-4xl font-bold leading-[1.2] tracking-[0.01em] text-slate-950 sm:text-5xl lg:text-[2.65rem]">
+                <h1 className="font-sans text-4xl font-bold leading-[1.2] tracking-[0.01em] text-slate-950 sm:text-5xl lg:text-[2.65rem]">
                   Pioneering AI Solutions.
                   <span className="block text-violet-700">
                     Built on Trust. Driven by Impact.

@@ -111,7 +111,7 @@ const LeadershipTeam: React.FC = () => {
 
             <TextReveal delay={0.08}>
               <h3 className="text-xl font-serif font-bold text-slate-950">
-                S Ashik Ali
+                S. Ashik Ali
               </h3>
               <p className="text-violet-600 mb-3 text-sm">
                 Chief Executive Officer
