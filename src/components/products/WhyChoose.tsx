@@ -16,7 +16,7 @@ const WhyChoose: React.FC = () => {
         {reasons.map(({ title, description, icon: Icon }) => (
           <div
             key={title}
-            className="rounded-[24px] bg-white/72 p-5 shadow-[0_14px_30px_rgba(148,163,184,0.08)]"
+            className="rounded-[24px] border border-slate-100 bg-white/88 p-5 shadow-[0_20px_45px_rgba(148,163,184,0.16)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_26px_55px_rgba(148,163,184,0.22)]"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-violet-50 text-violet-600">
               <Icon size={21} />
