@@ -125,7 +125,7 @@ const Industries: React.FC = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl font-semibold leading-tight text-slate-950 sm:text-5xl lg:text-6xl xl:text-[4.75rem]"
+            className="font-serif text-2xl font-bold leading-tight tracking-tight text-slate-950 sm:text-4xl lg:text-5xl xl:text-[4rem]"
           >
             Industries{" "}
             <span className="bg-gradient-to-r from-violet-700 to-[#7c5cff] bg-clip-text text-transparent">
