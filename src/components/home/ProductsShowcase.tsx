@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
 
 const products = [
   {
+    id: "careloop",
     title: "CARELOOP",
     description:
       "Smart healthcare management for clinics and care teams with patient records, scheduling, and follow-up visibility.",
@@ -10,6 +12,7 @@ const products = [
     accent: "Healthcare Platform",
   },
   {
+    id: "zora-crm",
     title: "ZORA CRM",
     description:
       "Powerful CRM to manage leads, customers, and sales pipelines with clearer reporting and team coordination.",
@@ -17,6 +20,7 @@ const products = [
     accent: "Sales Operations",
   },
   {
+    id: "zora-hrms",
     title: "ZORA HRMS",
     description:
       "Centralize attendance, payroll, employee records, and workforce workflows in one operational dashboard.",
@@ -24,6 +28,7 @@ const products = [
     accent: "People Operations",
   },
   {
+    id: "erp",
     title: "ERP",
     description:
       "A smart billing software designed for efficient order management, product handling, and seamless payment processing.",
@@ -31,6 +36,7 @@ const products = [
     accent: "Business Operations",
   },
   {
+    id: "groomvy",
     title: "GROOMVY",
     description:
       "Manage appointments, walk-ins, staff schedules, and customer histories for modern salon and spa teams.",
@@ -41,6 +47,7 @@ const products = [
 
 const ProductsShowcase: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
@@ -94,13 +101,13 @@ const ProductsShowcase: React.FC = () => {
               </p>
             </div>
 
-            <button
-              type="button"
+            <Link
+              to="/products"
               className="inline-flex w-fit items-center gap-2 rounded-xl bg-violet-600 px-5 py-3 text-[13px] font-semibold text-white shadow-[0_18px_40px_rgba(124,58,237,0.28)] transition-colors hover:bg-violet-700"
             >
               Explore Products
               <ArrowRight size={16} />
-            </button>
+            </Link>
           </div>
 
           <div className="relative w-full max-w-[760px] xl:ml-auto">
@@ -130,7 +137,9 @@ const ProductsShowcase: React.FC = () => {
                       if (!isActive) {
                         event.preventDefault();
                         setActiveIndex(index);
+                        return;
                       }
+                      navigate(`/products#${product.id}`);
                     }}
                     className="group absolute left-1/2 top-2 flex h-[370px] w-[78%] max-w-[420px] origin-center flex-col rounded-[24px] border border-slate-200 bg-white p-4 shadow-[0_18px_46px_rgba(15,23,42,0.10)] transition-all duration-500 ease-out"
                     style={{
@@ -192,6 +201,7 @@ const ProductsShowcase: React.FC = () => {
                     <button
                       type="button"
                       key={product.title}
+                      onClick={() => navigate(`/products#${product.id}`)}
                       className="group flex flex-col rounded-[22px] border border-slate-200 bg-white p-4 text-left shadow-[0_12px_34px_rgba(15,23,42,0.08)]"
                     >
                     <div className="overflow-hidden rounded-[18px] border border-violet-100 bg-white p-0.5">

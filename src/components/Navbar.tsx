@@ -148,12 +148,12 @@ const Navbar: React.FC = () => {
 
           
 
-          <button
-            type="button"
-            className={`${desktopBtn} ${desktopBtnInactive}`}
+          <Link
+            to="/products"
+            className={`${desktopBtn} ${location.pathname === "/products" ? desktopBtnActive : desktopBtnInactive}`}
           >
             Products
-          </button>
+          </Link>
 
           <Link
             to="/contact"
@@ -209,12 +209,13 @@ const Navbar: React.FC = () => {
           >
             Services
           </Link>
-          <button
-            type="button"
+          <Link
+            to="/products"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
+            onClick={scrollTop}
           >
             Products
-          </button>
+          </Link>
           <Link
             to="/contact"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}

@@ -178,9 +178,9 @@ const Footer: React.FC = () => {
 
                 {/* ✅ Products should open external site (same as navbar behavior) */}
                 <li>
-                  <span className="transition hover:text-violet-600">
+                  <Link to="/products" className="transition hover:text-violet-600">
                     Products
-                  </span>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -191,19 +191,19 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 {/* Keep your existing internal product routes as-is */}
                 <li>
-                  <span className="transition hover:text-violet-600">HRMS</span>
+                  <Link to="/products#zora-hrms" className="transition hover:text-violet-600">HRMS</Link>
                 </li>
                 <li>
-                  <span className="transition hover:text-violet-600">CRMS</span>
+                  <Link to="/products#zora-crm" className="transition hover:text-violet-600">CRMS</Link>
                 </li>
                 <li>
-                  <span className="transition hover:text-violet-600">Chat Bot</span>
+                  <Link to="/products" className="transition hover:text-violet-600">Chat Bot</Link>
                 </li>
                 <li>
-                  <span className="transition hover:text-violet-600">Email Automation</span>
+                  <Link to="/products" className="transition hover:text-violet-600">Email Automation</Link>
                 </li>
                 <li>
-                  <span className="transition hover:text-violet-600">Security shield</span>
+                  <Link to="/products" className="transition hover:text-violet-600">Security shield</Link>
                 </li>
               </ul>
             </div>
