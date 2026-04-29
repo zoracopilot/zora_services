@@ -113,6 +113,9 @@ export const products: ProductItem[] = [
   },
 ];
 
+export const getProductById = (id?: string) =>
+  products.find((product) => product.id === id);
+
 export const reasons: ProductReason[] = [
   {
     title: "Enterprise Security",

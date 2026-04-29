@@ -12,7 +12,8 @@ const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/services"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const BookAppointment = lazy(() => import("./pages/BookAppointment"));
-const Products = lazy(() => import("./pages/Products"));
+const Products = lazy(() => import("./pages/products"));
+const ProductDetail = lazy(() => import("./pages/products/ItemPage"));
 
 /* ================= BLOG ================= */
 const Blog = lazy(() => import("./pages/Blog"));
@@ -53,6 +54,7 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:productSlug" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
 
             {/* ---------- BLOG ---------- */}

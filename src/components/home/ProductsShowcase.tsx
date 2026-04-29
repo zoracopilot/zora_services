@@ -139,7 +139,7 @@ const ProductsShowcase: React.FC = () => {
                         setActiveIndex(index);
                         return;
                       }
-                      navigate(`/products#${product.id}`);
+                      navigate(`/products/${product.id}`);
                     }}
                     className="group absolute left-1/2 top-2 flex h-[370px] w-[78%] max-w-[420px] origin-center flex-col rounded-[24px] border border-slate-200 bg-white p-4 shadow-[0_18px_46px_rgba(15,23,42,0.10)] transition-all duration-500 ease-out"
                     style={{
@@ -201,7 +201,7 @@ const ProductsShowcase: React.FC = () => {
                     <button
                       type="button"
                       key={product.title}
-                      onClick={() => navigate(`/products#${product.id}`)}
+                      onClick={() => navigate(`/products/${product.id}`)}
                       className="group flex flex-col rounded-[22px] border border-slate-200 bg-white p-4 text-left shadow-[0_12px_34px_rgba(15,23,42,0.08)]"
                     >
                     <div className="overflow-hidden rounded-[18px] border border-violet-100 bg-white p-0.5">
