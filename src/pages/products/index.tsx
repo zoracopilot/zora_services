@@ -1,5 +1,5 @@
-import PageSEO from "../components/PageSEO";
-import { Cta, Hero, ProductGrid, WhyChoose } from "../components/products";
+import PageSEO from "../../components/PageSEO";
+import { Cta, Hero, ProductGrid, WhyChoose } from "../../components/products";
 
 export default function Products() {
   return (
