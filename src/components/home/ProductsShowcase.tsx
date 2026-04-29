@@ -3,35 +3,38 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
   {
-    title: "Careloop",
+    title: "CARELOOP",
     description:
       "Smart healthcare management for clinics and care teams with patient records, scheduling, and follow-up visibility.",
     image: "/hero/careloop.webp",
-    href: "https://www.zoraai.us/",
     accent: "Healthcare Platform",
   },
   {
-    title: "CRM Platform",
+    title: "ZORA CRM",
     description:
       "Powerful CRM to manage leads, customers, and sales pipelines with clearer reporting and team coordination.",
     image: "/hero/crm.webp",
-    href: "https://www.zoraai.us/products/crms",
     accent: "Sales Operations",
   },
   {
-    title: "HRMS",
+    title: "ZORA HRMS",
     description:
       "Centralize attendance, payroll, employee records, and workforce workflows in one operational dashboard.",
     image: "/hero/hrms.webp",
-    href: "https://www.zoraai.us/products/hrms",
     accent: "People Operations",
   },
   {
-    title: "Saloon Desk",
+    title: "ERP",
+    description:
+      "A smart billing software designed for efficient order management, product handling, and seamless payment processing.",
+    image: "/hero/billing.webp",
+    accent: "Business Operations",
+  },
+  {
+    title: "GROOMVY",
     description:
       "Manage appointments, walk-ins, staff schedules, and customer histories for modern salon and spa teams.",
     image: "/hero/salondesk.webp",
-    href: "https://www.zoraai.us/",
     accent: "Service Management",
   },
 ];
@@ -91,15 +94,13 @@ const ProductsShowcase: React.FC = () => {
               </p>
             </div>
 
-            <a
-              href="https://www.zoraai.us/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
               className="inline-flex w-fit items-center gap-2 rounded-xl bg-violet-600 px-5 py-3 text-[13px] font-semibold text-white shadow-[0_18px_40px_rgba(124,58,237,0.28)] transition-colors hover:bg-violet-700"
             >
               Explore Products
               <ArrowRight size={16} />
-            </a>
+            </button>
           </div>
 
           <div className="relative w-full max-w-[760px] xl:ml-auto">
@@ -122,11 +123,9 @@ const ProductsShowcase: React.FC = () => {
                         : "translateX(-50%) translateY(18px) scale(0.72) rotateY(0deg)";
 
                 return (
-                  <a
+                  <button
+                    type="button"
                     key={product.title}
-                    href={product.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     onClick={(event) => {
                       if (!isActive) {
                         event.preventDefault();
@@ -178,7 +177,7 @@ const ProductsShowcase: React.FC = () => {
                         </h3>
                       </div>
                     )}
-                  </a>
+                  </button>
                 );
               })}
             </div>
@@ -189,14 +188,12 @@ const ProductsShowcase: React.FC = () => {
                   return null;
                 }
 
-                return (
-                  <a
-                    key={product.title}
-                    href={product.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex flex-col rounded-[22px] border border-slate-200 bg-white p-4 shadow-[0_12px_34px_rgba(15,23,42,0.08)]"
-                  >
+                  return (
+                    <button
+                      type="button"
+                      key={product.title}
+                      className="group flex flex-col rounded-[22px] border border-slate-200 bg-white p-4 text-left shadow-[0_12px_34px_rgba(15,23,42,0.08)]"
+                    >
                     <div className="overflow-hidden rounded-[18px] border border-violet-100 bg-white p-0.5">
                       <img
                         src={product.image}
@@ -221,8 +218,8 @@ const ProductsShowcase: React.FC = () => {
                         <ArrowRight size={16} />
                       </span>
                     </div>
-                  </a>
-                );
+                    </button>
+                  );
               })}
             </div>
 

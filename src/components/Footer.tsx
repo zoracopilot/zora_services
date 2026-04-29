@@ -23,13 +23,6 @@ const Footer: React.FC = () => {
   const YOUTUBE_URL = "https://www.youtube.com/@zoraglobalaitechnologies";
   const TWITTER_URL = "https://x.com/zoraglobalai";
   const FACEBOOK_URL = "https://www.facebook.com/ZoraGlobalAiTechnologies/";
-  const PRODUCTS_URL = "https://www.zoraai.us/";
-  const hrms_URL ="https://www.zoraai.us/products/hrms";
-  const crms_URL ="https://www.zoraai.us/products/crms";
-  const chatbot_URL = "https://www.zoraai.us/products/chat-bot";
-  const securityshield_URL ="https://www.zoraai.us/products/security-shield";
-  const emailautomation_URL = "https://www.zoraai.us/products/email-automation";
-
   const EMAIL = "info@zoraglobalai.com";
   const PHONE = "9087000345";
   const TEl_PHONE="044-4625-4744";
@@ -185,14 +178,9 @@ const Footer: React.FC = () => {
 
                 {/* ✅ Products should open external site (same as navbar behavior) */}
                 <li>
-                  <a
-                    href={PRODUCTS_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-violet-600"
-                  >
+                  <span className="transition hover:text-violet-600">
                     Products
-                  </a>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -203,54 +191,19 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 {/* Keep your existing internal product routes as-is */}
                 <li>
-                  <a
-                    href={hrms_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-violet-600"
-                  >
-                    HRMS
-                  </a>
+                  <span className="transition hover:text-violet-600">HRMS</span>
                 </li>
                 <li>
-                  <a
-                    href={crms_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-violet-600"
-                  >
-                    CRMS
-                  </a>
+                  <span className="transition hover:text-violet-600">CRMS</span>
                 </li>
                 <li>
-                  <a
-                    href={chatbot_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-violet-600"
-                  >
-                    Chat Bot
-                  </a>
+                  <span className="transition hover:text-violet-600">Chat Bot</span>
                 </li>
                 <li>
-                  <a
-                    href={emailautomation_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-violet-600"
-                  >
-                    Email Automation
-                  </a>
+                  <span className="transition hover:text-violet-600">Email Automation</span>
                 </li>
                 <li>
-                  <a
-                    href={securityshield_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition hover:text-violet-600"
-                  >
-                    Security shield
-                  </a>
+                  <span className="transition hover:text-violet-600">Security shield</span>
                 </li>
               </ul>
             </div>

@@ -148,14 +148,12 @@ const Navbar: React.FC = () => {
 
           
 
-          <a
-            href="https://www.zoraai.us/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
             className={`${desktopBtn} ${desktopBtnInactive}`}
           >
             Products
-          </a>
+          </button>
 
           <Link
             to="/contact"
@@ -211,14 +209,12 @@ const Navbar: React.FC = () => {
           >
             Services
           </Link>
-          <a
-            href="https://www.zoraai.us/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
           >
             Products
-          </a>
+          </button>
           <Link
             to="/contact"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
