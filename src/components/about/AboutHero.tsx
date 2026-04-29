@@ -1,124 +1,81 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import FloatingLines from "../FloatingLines";
+import { BrainCircuit, BriefcaseBusiness } from "lucide-react";
+
+const stats = [
+  {
+    icon: BrainCircuit,
+    value: "200+",
+    label: "AI Experts & Innovators",
+  },
+  {
+    icon: BriefcaseBusiness,
+    value: "500+",
+    label: "Projects Delivered",
+  },
+];
 
 const AboutHero: React.FC = () => {
   return (
-    <section className="relative min-h-[100svh] flex items-center justify-center text-center overflow-hidden">
-      <style>{`
-        @keyframes heroRise {
-          0% {
-            opacity: 0;
-            transform: translateY(18px) scale(0.985);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-        }
+    <section className="relative overflow-hidden pt-[calc(var(--nav-h,0px)+2.5rem)]">
+      <div className="mx-auto max-w-7xl px-4 pb-14 sm:px-6 sm:pb-16 lg:px-8 lg:pb-20">
+        <div className="grid min-h-[520px] items-stretch gap-8 lg:grid-cols-[1.05fr_0.85fr] lg:gap-10">
+          <div className="relative flex flex-col justify-center py-8 sm:py-10 lg:py-12">
+            <div className="absolute inset-y-0 right-0 hidden w-32 bg-[radial-gradient(circle_at_left,rgba(196,181,253,0.26),transparent_72%)] lg:block" />
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-violet-600 sm:text-sm">
+              About Us
+            </p>
 
-        @keyframes heroGlow {
-          0%,
-          100% {
-            text-shadow:
-              0 0 18px rgba(125, 211, 252, 0.26),
-              0 0 34px rgba(199, 210, 254, 0.14);
-          }
-          50% {
-            text-shadow:
-              0 0 28px rgba(125, 211, 252, 0.42),
-              0 0 54px rgba(199, 210, 254, 0.22);
-          }
-        }
-      `}</style>
+            <h1 className="mt-5 max-w-[12ch] font-serif text-4xl font-black leading-[0.96] tracking-tight text-slate-950 sm:text-5xl lg:text-6xl xl:text-7xl">
+              Pioneering AI Solutions.
+              <span className="mt-3 block text-violet-600">
+                Built on Trust. Driven by Impact.
+              </span>
+            </h1>
 
-      {/* ✅ FULLSCREEN ANIMATION LAYER */}
-      <div className="absolute inset-0 z-0">
-        <div className="w-full h-full will-change-transform">
-          <FloatingLines
-            linesGradient={["#FFB3FB", "#BFD1FF", "#FFB3FB"]}
-            enabledWaves={["top", "bottom"]}
-            animationSpeed={1}
-            interactive
-            bendRadius={5}
-            bendStrength={-0.5}
-            mouseDamping={0.05}
-            parallax
-            parallaxStrength={0.2}
-          />
-        </div>
+            <p className="mt-6 max-w-[35rem] text-base leading-7 text-slate-600 sm:text-lg">
+              At Zora Global AI, we believe artificial intelligence has the
+              power to transform industries, empower people, and solve complex
+              challenges. Our mission is to deliver intelligent solutions that
+              create measurable impact for businesses and society.
+            </p>
 
-        {/* soft overlay */}
-        <div className="absolute inset-0 bg-[#140a28]/40 pointer-events-none" />
-      </div>
+            <div className="mt-7 h-1 w-16 rounded-full bg-violet-300" />
 
-      <div className="absolute inset-0 z-10 flex justify-center pointer-events-none">
-        <div
-          className="w-[980px] h-[540px] blur-[150px] rounded-full"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(42,237,243,0.14), transparent 65%)",
-          }}
-        />
-      </div>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {stats.map(({ icon: Icon, value, label }) => (
+                <div
+                  key={label}
+                  className="flex items-center gap-4 rounded-2xl border border-violet-100 bg-[#fcfbff] px-5 py-4 shadow-[0_14px_32px_rgba(148,163,184,0.1)]"
+                >
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-violet-50 text-violet-600">
+                    <Icon size={22} />
+                  </div>
+                  <div>
+                    <p className="text-3xl font-black leading-none text-violet-600">
+                      {value}
+                    </p>
+                    <p className="mt-1 text-sm font-medium leading-5 text-slate-500">
+                      {label}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
 
-      {/* ✅ CONTENT */}
-      <div className="relative z-20 px-6 max-w-6xl mx-auto">
-        {/* ✅ HEADING */}
-        <h1
-          className="
-            hero-heading mx-auto
-            max-w-[90vw] sm:max-w-[18ch]
-            text-[1.95rem] sm:text-5xl md:text-6xl lg:text-7xl
-            mt-20 sm:mt-10 md:mt-12
-            leading-[1.5] sm:leading-[1.08] md:leading-[1.04]
-            font-serif font-semibold text-center tracking-tight
-            text-slate-100
-            transition-all ease-in-out
-            sm:hover:scale-[1.02] sm:hover:brightness-110
-            will-change-transform
-          "
-          style={{
-            animation: "heroRise 700ms ease-out, heroGlow 2.8s ease-in-out infinite",
-            transitionDuration: "400ms",
-          }}
-        >
-          Redefining Intelligence
-        </h1>
-
-        <p className="mt-8 text-white/80 text-xl max-w-4xl mx-auto leading-relaxed">
-          Zora Global AI engineers intelligent digital ecosystems that merge
-          artificial intelligence, cloud infrastructure and enterprise strategy
-          into one seamless transformation platform.
-        </p>
-
-        {/* ✅ BUTTON WITH WHITE OUTER SURROUND */}
-        <div className="mt-12 flex justify-center gap-8 flex-wrap">
-          <Link
-            to="/services"
-            className="relative px-7 py-3 rounded-2xl font-semibold group overflow-hidden"
-          >
-            {/* glow */}
-            <span
-              className="absolute inset-0 blur-lg opacity-60 group-hover:opacity-95 transition"
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, rgba(59,130,246,0.9), rgba(99,102,241,0.9), rgba(147,51,234,0.9))",
-              }}
-            />
-
-            {/* gradient button */}
-            <span
-              className="absolute inset-0 rounded-2xl"
-              style={{
-                backgroundImage:
-                  "linear-gradient(90deg, #3b82f6 0%, #6366f1 55%, #9333ea 100%)",
-              }}
-            />
-
-            {/* text */}
-            <span className="relative z-10 text-white">Explore Services</span>
-          </Link>
+          <div className="relative min-h-[360px] overflow-hidden rounded-[28px] border border-violet-100 bg-[linear-gradient(135deg,#f5f3ff,#eef2ff)] p-4 sm:min-h-[420px] sm:p-5 lg:min-h-[520px]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(196,181,253,0.32),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(191,219,254,0.28),transparent_34%)]" />
+            <div className="relative flex h-full min-h-[328px] items-center justify-center rounded-[24px] border-2 border-dashed border-violet-200/90 bg-white/70 sm:min-h-[380px] lg:min-h-[480px]">
+              <div className="text-center">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-violet-400 sm:text-sm">
+                  Image Placeholder
+                </p>
+                <p className="mt-2 text-sm text-slate-400 sm:text-base">
+                  Hero image can be added here later
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
