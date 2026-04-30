@@ -181,7 +181,7 @@ const ContactPage: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.55 }}
           >
-            <h1 className="max-w-[620px] text-3xl font-black leading-[1.12] tracking-normal text-[#17124a] sm:text-4xl lg:whitespace-nowrap lg:text-[2.85rem]">
+            <h1 className="max-w-[620px] font-serif text-3xl font-black leading-[1.08] tracking-tight text-[#17124a] sm:text-4xl lg:whitespace-nowrap lg:text-[2.85rem]">
               Have Some{" "}
               <span className="bg-gradient-to-r from-violet-700 to-sky-600 bg-clip-text text-transparent">
                 Questions?
@@ -225,7 +225,7 @@ const ContactPage: React.FC = () => {
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 text-violet-700">
                     <Send className="h-6 w-6" />
                   </div>
-                  <h2 className="text-2xl font-black text-[#17124a]">
+                  <h2 className="font-serif text-2xl font-black tracking-tight text-[#17124a]">
                     Send Us a Message
                   </h2>
                 </div>
