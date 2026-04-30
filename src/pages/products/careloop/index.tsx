@@ -4,8 +4,6 @@ import CareloopBenefits from "./components/CareloopBenefits";
 import CareloopCta from "./components/CareloopCta";
 import CareloopFeatures from "./components/CareloopFeatures";
 import CareloopHero from "./components/CareloopHero";
-import CareloopRoles from "./components/CareloopRoles";
-import CareloopStats from "./components/CareloopStats";
 import CareloopWorkflow from "./components/CareloopWorkflow";
 import { careloopHero } from "./data";
 
@@ -43,9 +41,7 @@ const CareloopPage: React.FC = () => {
 
       <div className="relative z-10 flex flex-col">
         <CareloopHero />
-        <CareloopStats />
         <CareloopFeatures />
-        <CareloopRoles />
         <CareloopWorkflow />
         <CareloopBenefits />
         <CareloopCta />

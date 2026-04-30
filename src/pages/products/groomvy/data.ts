@@ -29,12 +29,6 @@ export type GroomvyStep = {
   icon: LucideIcon;
 };
 
-export type GroomvyScreen = {
-  title: string;
-  description: string;
-  image: string;
-};
-
 export type GroomvyAudience = {
   title: string;
   description: string;
@@ -155,33 +149,6 @@ export const groomvySteps: GroomvyStep[] = [
     description:
       "Review reports and trends to grow revenue and improve operations.",
     icon: TrendingUp,
-  },
-];
-
-export const groomvyScreens: GroomvyScreen[] = [
-  {
-    title: "Dashboard Overview",
-    description:
-      "Track sales, appointments, and overall salon performance at a glance.",
-    image: "/hero/salondesk.webp",
-  },
-  {
-    title: "Sales & Billing",
-    description:
-      "Complete billing quickly with service selection, products, and discounts.",
-    image: "/hero/billing.webp",
-  },
-  {
-    title: "Reports & Analytics",
-    description:
-      "Review business trends, staff performance, and service-level insights.",
-    image: "/hero/salondesk.webp",
-  },
-  {
-    title: "Inventory Management",
-    description:
-      "Monitor stock levels, low-stock alerts, and product movements efficiently.",
-    image: "/it-hero/inventory.webp",
   },
 ];
 

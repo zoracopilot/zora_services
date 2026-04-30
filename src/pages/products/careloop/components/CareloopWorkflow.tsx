@@ -1,28 +1,30 @@
 import { careloopSteps } from "../data";
-import SectionHeading from "./SectionHeading";
 
 const CareloopWorkflow: React.FC = () => {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
-        <SectionHeading
-          eyebrow="How It Works"
-          title="Simple Steps To Launch And Run Your Clinic Digitally"
-        description="Care Loop is designed to get your clinic up and running quickly without any technical hassle."
-      />
+    <section className="mx-auto max-w-7xl px-6 py-10 lg:py-14">
+      <div className="overflow-hidden rounded-[32px] bg-[linear-gradient(180deg,#0f766e,#115e59_54%,#134e4a)] px-6 py-10 text-white shadow-[0_28px_70px_rgba(15,118,110,0.24)] lg:px-10 lg:py-12">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-teal-100">
+            How It Works
+          </p>
+          <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-white sm:text-4xl">
+            Simple Steps To Launch And Run Your Clinic Digitally
+          </h2>
+        </div>
 
-      <div className="mt-12 grid gap-5 lg:grid-cols-5">
-        {careloopSteps.map(({ title, description, icon: Icon }) => (
-          <article
-            key={title}
-            className="rounded-[28px] border border-slate-200 bg-white p-6 text-center shadow-[0_18px_38px_rgba(148,163,184,0.09)]"
-          >
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-400/15 to-indigo-500/15 text-indigo-600">
-              <Icon size={24} />
-            </div>
-            <h3 className="mt-5 text-lg font-bold text-slate-950">{title}</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
-          </article>
-        ))}
+        <div className="relative mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-5">
+          <div className="absolute left-[10%] right-[10%] top-9 hidden border-t border-dashed border-white/30 xl:block" />
+          {careloopSteps.map(({ title, description }, index) => (
+            <article key={title} className="relative text-center">
+              <div className="mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-full border-8 border-white/10 bg-white text-xl font-black text-teal-700 shadow-[0_14px_32px_rgba(0,0,0,0.18)]">
+                {index + 1}
+              </div>
+              <p className="mt-6 text-sm font-semibold text-white">{title}</p>
+              <p className="mt-3 text-sm leading-7 text-teal-50/85">{description}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );
