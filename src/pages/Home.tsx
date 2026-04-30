@@ -48,9 +48,7 @@ const Home: React.FC = () => {
         <SectionReveal>
           <DeliveryProcess />
         </SectionReveal>
-        <SectionReveal>
-          <EnterpriseDifferentiators />
-        </SectionReveal>
+        <EnterpriseDifferentiators />
         <SectionReveal>
           <InsightsPreview />
         </SectionReveal>
