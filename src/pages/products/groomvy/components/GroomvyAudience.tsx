@@ -1,25 +1,37 @@
 import { groomvyAudiences } from "../data";
-import SectionHeading from "./SectionHeading";
 
 const GroomvyAudience: React.FC = () => {
   return (
     <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
-      <SectionHeading
-        eyebrow="Who Is It For?"
-        title="Built for salons and grooming businesses of all sizes"
-      />
+      <div className="mx-auto max-w-3xl text-center">
+        <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#5A341F]">
+          Who It's For
+        </p>
+        <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
+          Built for Salons and Grooming Businesses of All Sizes
+        </h2>
+      </div>
 
-      <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        {groomvyAudiences.map(({ title, description, icon: Icon }) => (
+      <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {groomvyAudiences.map(({ title, description, icon: Icon, image }) => (
           <article
             key={title}
-            className="rounded-[24px] border border-slate-200 bg-white p-6 shadow-[0_14px_30px_rgba(148,163,184,0.08)]"
+            className="overflow-hidden rounded-[28px] border border-white/80 bg-white shadow-[0_20px_44px_rgba(148,163,184,0.12)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_54px_rgba(90,52,31,0.14)]"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-600">
-              <Icon size={22} />
+            <div className="h-52 overflow-hidden">
+              <img
+                src={image}
+                alt={title}
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              />
             </div>
-            <h3 className="mt-5 text-lg font-semibold text-slate-900">{title}</h3>
-            <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
+            <div className="relative p-6">
+              <div className="-mt-12 mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#5A341F] text-white shadow-[0_16px_32px_rgba(90,52,31,0.26)]">
+                <Icon size={20} />
+              </div>
+              <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
+            </div>
           </article>
         ))}
       </div>

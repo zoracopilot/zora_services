@@ -11,7 +11,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <div className="mx-auto max-w-3xl text-center">
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-violet-500">
+      <p className="text-sm font-bold uppercase tracking-[0.22em] text-[#5A341F] sm:text-base">
         {eyebrow}
       </p>
       <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
