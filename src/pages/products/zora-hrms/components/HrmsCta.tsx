@@ -11,18 +11,17 @@ const HrmsCta: React.FC = () => {
           </div>
           <div>
             <h2 className="font-serif text-2xl font-black tracking-tight lg:text-3xl">
-              Build A More Organized, Efficient, People-Centric Workplace
+              Build A More Efficient And Organized Workplace
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
-              HRMS helps you streamline day-to-day HR operations while giving leadership
-              the visibility and control needed to support growth.
+              Streamline daily HR operations with better visibility, stronger control, and the right support for business growth.
             </p>
           </div>
         </div>
 
         <Link
           to="/book-appointment"
-          className="inline-flex items-center justify-center gap-2 self-start rounded-xl bg-white px-6 py-3 text-sm font-semibold text-[#6C5DD3] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#F5F6FA] hover:shadow-[0_16px_32px_rgba(255,255,255,0.18)] lg:self-center"
+          className="inline-flex items-center justify-center gap-2 self-start whitespace-nowrap rounded-xl bg-white px-6 py-3 text-sm font-semibold text-[#6C5DD3] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#F5F6FA] hover:shadow-[0_16px_32px_rgba(255,255,255,0.18)] lg:self-center"
         >
           Get Started Now
           <ArrowRight size={16} />

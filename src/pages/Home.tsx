@@ -11,6 +11,7 @@ import {
   DeliveryProcess,
   InsightsPreview,
   Cta,
+  SectionReveal,
 } from "../components/home";
 
 const Home: React.FC = () => {
@@ -28,18 +29,34 @@ const Home: React.FC = () => {
       {/* ================= PAGE CONTENT ================= */}
       <div className="relative z-10 flex flex-col">
         <Hero />
-        <GlobalImpact />
-        <Industries />
+        <SectionReveal>
+          <GlobalImpact />
+        </SectionReveal>
+        <SectionReveal>
+          <Industries />
+        </SectionReveal>
         {/* Core Services wrapper */}
-        <div className="relative z-20">
+        <SectionReveal className="relative z-20">
           <CoreServices />
-        </div>
-        <ProductsShowcase />
-        <Technologies />
-        <DeliveryProcess />
-        <EnterpriseDifferentiators />
-        <InsightsPreview />
-        <Cta />
+        </SectionReveal>
+        <SectionReveal>
+          <ProductsShowcase />
+        </SectionReveal>
+        <SectionReveal>
+          <Technologies />
+        </SectionReveal>
+        <SectionReveal>
+          <DeliveryProcess />
+        </SectionReveal>
+        <SectionReveal>
+          <EnterpriseDifferentiators />
+        </SectionReveal>
+        <SectionReveal>
+          <InsightsPreview />
+        </SectionReveal>
+        <SectionReveal>
+          <Cta />
+        </SectionReveal>
       </div>
     </main>
   );

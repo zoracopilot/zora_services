@@ -57,42 +57,42 @@ export const erpHighlights = [
 export const erpFeatures: ErpFeature[] = [
   {
     title: "Invoice Management",
-    description: "Create, send, and manage professional invoices with custom templates and status tracking.",
+    description: "Create, send, and manage invoices with templates and status tracking.",
     icon: ReceiptIndianRupee,
   },
   {
     title: "Payment Tracking",
-    description: "Track payments in real time and reconcile customer transactions with less manual follow-up.",
+    description: "Track payments and reconcile customer transactions with less manual follow-up.",
     icon: CreditCard,
   },
   {
     title: "Automated Reminders",
-    description: "Reduce overdue payments with smart reminder flows and scheduled billing notifications.",
+    description: "Reduce overdue payments with reminders and scheduled notifications.",
     icon: BellRing,
   },
   {
     title: "Expense Management",
-    description: "Record, categorize, and monitor expenses to keep books organized and decisions clearer.",
+    description: "Record and monitor expenses to keep books organized and clear.",
     icon: Wallet,
   },
   {
     title: "Tax & Compliance",
-    description: "Support tax-ready invoicing and better documentation for local compliance requirements.",
+    description: "Support tax-ready invoicing and documentation for compliance needs.",
     icon: FileSpreadsheet,
   },
   {
     title: "Reports & Analytics",
-    description: "Use dashboards and reports to understand cash flow, collections, and business performance.",
+    description: "Use reports to track cash flow, collections, and performance.",
     icon: BarChart3,
   },
   {
     title: "Multi-User Access",
-    description: "Allow teams to collaborate securely with role-based visibility across core business tasks.",
+    description: "Let teams collaborate securely with role-based visibility.",
     icon: UserCog,
   },
   {
     title: "Secure & Reliable",
-    description: "Protect sensitive business data with secure access, backup support, and dependable workflows.",
+    description: "Protect business data with secure access and dependable workflows.",
     icon: ShieldCheck,
   },
 ];
@@ -100,23 +100,23 @@ export const erpFeatures: ErpFeature[] = [
 export const erpSteps: ErpStep[] = [
   {
     title: "Add Details",
-    description: "Enter customer, service, inventory, or billing information in one organized workspace.",
+    description: "Enter customer, service, inventory, or billing details in one place.",
   },
   {
     title: "Create Invoice",
-    description: "Generate professional invoices automatically using structured business data and templates.",
+    description: "Generate invoices quickly using structured data and templates.",
   },
   {
     title: "Send & Track",
-    description: "Share invoices and monitor customer activity, approvals, and payment status in real time.",
+    description: "Share invoices and track approvals and payment status in real time.",
   },
   {
     title: "Receive Payments",
-    description: "Track collections, confirm receipts, and manage outstanding balances with less friction.",
+    description: "Track collections, confirm receipts, and manage balances easily.",
   },
   {
     title: "Analyze & Grow",
-    description: "Review reports, optimize billing operations, and improve financial decision-making confidently.",
+    description: "Review reports and improve billing and financial decisions.",
   },
 ];
 

@@ -1,16 +1,15 @@
 import { crmBenefits } from "../data";
-import SectionHeading from "./shared/SectionHeading";
 
 const CrmBenefits: React.FC = () => {
   return (
     <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
       <div className="mx-auto max-w-3xl text-center">
-        <SectionHeading
-          eyebrow="04 Benefits & Outcomes"
-          title="Grow Faster With Zora CRM"
-          description="Bring your customer data, team actions, and revenue insights into one place to improve execution across the funnel."
-          align="center"
-        />
+        <p className="text-sm font-bold uppercase tracking-[0.24em] text-violet-600">
+          Benefits & Outcomes
+        </p>
+        <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
+          Grow Faster With Zora CRM
+        </h2>
       </div>
 
       <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

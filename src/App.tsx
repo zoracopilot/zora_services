@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Navigate, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -12,7 +12,6 @@ const About = lazy(() => import("./pages/About"));
 const Services = lazy(() => import("./pages/services"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const BookAppointment = lazy(() => import("./pages/BookAppointment"));
-const Products = lazy(() => import("./pages/products"));
 const ProductDetail = lazy(() => import("./pages/products/ItemPage"));
 
 /* ================= BLOG ================= */
@@ -53,7 +52,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
 

@@ -5,7 +5,7 @@ const CrmWorkflow: React.FC = () => {
     <section className="mx-auto max-w-7xl px-6 py-10 lg:py-14">
       <div className="overflow-hidden rounded-[32px] bg-[linear-gradient(180deg,#4c1d95,#6d28d9_54%,#7c3aed)] px-6 py-10 text-white shadow-[0_28px_70px_rgba(76,29,149,0.24)] lg:px-10 lg:py-12">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.24em] text-violet-200">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#ede9fe]">
             How It Works
           </p>
           <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-white sm:text-4xl">
@@ -24,7 +24,7 @@ const CrmWorkflow: React.FC = () => {
                 {index + 1}
               </div>
               <p className="mt-6 text-sm font-semibold text-white">{title}</p>
-              <p className="mt-3 text-sm leading-7 text-violet-100/90">{description}</p>
+              <p className="mt-3 text-sm leading-7 text-[#f3efff]/85">{description}</p>
             </article>
           ))}
         </div>

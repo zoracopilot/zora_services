@@ -1,10 +1,13 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import zoraLogo from "../assets/zora-logo-redesign.webp";
+import { products } from "./products/data";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
 
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -14,6 +17,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     setMenuOpen(false);
+    setMobileProductsOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -72,11 +76,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const desktopBtn =
-    "group relative px-7 py-2.5 font-bold rounded-full block text-sm transition-all duration-300 transform-gpu hover:-translate-y-0.5 active:scale-[0.99] backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 focus-visible:ring-offset-2 focus-visible:ring-offset-[#fcfbff]";
+    "group relative px-3 py-2 font-bold block text-sm transition-all duration-300 transform-gpu hover:-translate-y-0.5 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90 focus-visible:ring-offset-2 focus-visible:ring-offset-[#fcfbff] after:absolute after:left-1/2 after:top-full after:h-0.5 after:w-0 after:-translate-x-1/2 after:rounded-full after:bg-violet-600 after:transition-all after:duration-300";
   const desktopBtnInactive =
-    "text-slate-700 bg-white/72 hover:bg-violet-100 hover:text-violet-800 active:bg-violet-200 active:text-violet-900 border border-violet-100 [box-shadow:inset_0_1px_0_rgba(255,255,255,0.92),0_10px_24px_rgba(148,163,184,0.14)] hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.98),0_14px_30px_rgba(148,163,184,0.18)]";
+    "text-slate-700 hover:text-violet-700";
   const desktopBtnActive =
-    "-translate-y-[2px] bg-white text-violet-700 border border-violet-200 [box-shadow:inset_0_1px_0_rgba(255,255,255,0.98),0_14px_28px_rgba(167,139,250,0.18)]";
+    "text-violet-700 after:w-8";
   const mobileBtn =
     "flex items-center justify-center gap-3 px-5 py-3.5 rounded-full text-lg font-bold tracking-[0.01em] whitespace-nowrap transition-all transform-gpu active:scale-[0.99] backdrop-blur-md min-h-[56px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-200/90";
   const mobileBtnInactive =
@@ -146,14 +150,34 @@ const Navbar: React.FC = () => {
             Services
           </Link>
 
-          
+          <div className="group relative">
+            <button
+              type="button"
+              className={`${desktopBtn} ${location.pathname.startsWith("/products") ? desktopBtnActive : desktopBtnInactive} inline-flex items-center gap-1.5`}
+            >
+              Products
+              <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180" />
+            </button>
 
-          <Link
-            to="/products"
-            className={`${desktopBtn} ${location.pathname === "/products" ? desktopBtnActive : desktopBtnInactive}`}
-          >
-            Products
-          </Link>
+            <div className="pointer-events-none absolute left-1/2 top-full z-50 w-80 -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+              <div className="rounded-[24px] border border-violet-100 bg-white/95 p-3 shadow-[0_20px_50px_rgba(124,58,237,0.14)] backdrop-blur-xl">
+                <div className="space-y-1">
+                  {products.map((product) => (
+                    <Link
+                      key={product.id}
+                      to={`/products/${product.id}`}
+                      className="block rounded-2xl px-3 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
+                      onClick={() => {
+                        scrollTop();
+                      }}
+                    >
+                      {product.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
 
           <Link
             to="/contact"
@@ -209,13 +233,31 @@ const Navbar: React.FC = () => {
           >
             Services
           </Link>
-          <Link
-            to="/products"
+          <button
+            type="button"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={scrollTop}
+            onClick={() => setMobileProductsOpen((value) => !value)}
           >
             Products
-          </Link>
+            <ChevronDown
+              size={18}
+              className={`transition-transform duration-200 ${mobileProductsOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+          {mobileProductsOpen ? (
+            <div className="space-y-2 md:w-fit md:min-w-[220px]">
+              {products.map((product) => (
+                <Link
+                  key={product.id}
+                  to={`/products/${product.id}`}
+                  className="block rounded-2xl border border-violet-100 bg-white px-5 py-3 text-center text-base font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
+                  onClick={scrollTop}
+                >
+                  {product.title}
+                </Link>
+              ))}
+            </div>
+          ) : null}
           <Link
             to="/contact"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}

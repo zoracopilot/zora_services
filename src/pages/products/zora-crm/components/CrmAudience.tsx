@@ -1,16 +1,15 @@
 import { crmAudiences } from "../data";
-import SectionHeading from "./shared/SectionHeading";
 
 const CrmAudience: React.FC = () => {
   return (
     <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
       <div className="mx-auto max-w-3xl text-center">
-        <SectionHeading
-          eyebrow="03 Who It's For"
-          title="Built for Teams of All Sizes"
-          description="Zora CRM adapts across departments so every team can manage customer interactions with more confidence and clarity."
-          align="center"
-        />
+        <p className="text-sm font-bold uppercase tracking-[0.24em] text-violet-600">
+          Who It's For
+        </p>
+        <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
+          Built for Teams of All Sizes
+        </h2>
       </div>
 
       <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
