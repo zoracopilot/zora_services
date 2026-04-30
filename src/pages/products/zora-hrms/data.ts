@@ -186,37 +186,37 @@ export const hrmsBenefits: HrmsBenefit[] = [
   {
     title: "Improved Efficiency",
     description:
-      "Automate repetitive HR tasks and reduce manual effort significantly.",
+      "Automate repetitive HR tasks such as attendance, payroll, and leave management to significantly reduce manual effort. Streamlined workflows enable HR teams to focus more on strategic activities rather than routine operations.",
     icon: Sparkles,
   },
   {
     title: "Enhanced Data Accuracy",
     description:
-      "Minimize errors and maintain accurate, up-to-date employee information.",
+      "Maintain consistent, error-free employee records with automated data capture and updates. A centralized system ensures all information is always accurate, up-to-date, and easily accessible.",
     icon: Database,
   },
   {
     title: "Time Savings",
     description:
-      "Save valuable time with automated workflows and self-service portals.",
+      "Reduce time spent on manual processes through automation and employee self-service portals. Faster approvals and streamlined workflows improve overall operational speed and efficiency.",
     icon: CheckCheck,
   },
   {
     title: "Better Decision-Making",
     description:
-      "Use real-time data and analytics to make informed HR and business decisions.",
+      "Leverage real-time analytics and detailed reports to gain actionable workforce insights. Make informed HR and business decisions backed by accurate and reliable data.",
     icon: LineChart,
   },
   {
     title: "Compliance & Security",
     description:
-      "Ensure data security and stay compliant with labor laws and company policies.",
+      "Ensure data protection and stay compliant with labor laws and organizational policies. Role-based access and secure systems safeguard sensitive employee information at all times.",
     icon: ShieldCheck,
   },
   {
     title: "Higher Productivity",
     description:
-      "Empower employees and HR teams to focus on strategic initiatives and growth.",
+      "Empower HR teams and employees with efficient tools and simplified workflows. Increased operational clarity and reduced workload lead to better performance and overall productivity.",
     icon: BarChart3,
   },
 ];
