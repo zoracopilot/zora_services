@@ -1,7 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { accentClasses, accentDotClasses, products } from "./data";
 
 const ProductGrid: React.FC = () => {
+  const navigate = useNavigate();
+
+  const scrollPageTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  };
+
+  const openProductPage = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    productId: string,
+  ) => {
+    event.preventDefault();
+    scrollPageTop();
+    navigate(`/products/${productId}`);
+  };
+
   return (
     <section id="our-products" className="mx-auto max-w-7xl px-6 py-10">
       <div className="text-center">
@@ -20,6 +37,7 @@ const ProductGrid: React.FC = () => {
               key={title}
               to={`/products/${id}`}
               className="group block"
+              onClick={(event) => openProductPage(event, id)}
             >
               <article
                 id={id}

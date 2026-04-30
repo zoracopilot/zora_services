@@ -35,6 +35,7 @@ export type HrmsAudience = {
   title: string;
   description: string;
   icon: LucideIcon;
+  image: string;
 };
 
 export type HrmsBenefit = {
@@ -63,49 +64,49 @@ export const hrmsFeatures: HrmsFeature[] = [
   {
     title: "Employee Management",
     description:
-      "Maintain complete employee profiles, documents, and organizational details in one place.",
+      "Manage employee profiles, documents, and organizational details in one place.",
     icon: UserRound,
   },
   {
     title: "Attendance Tracking",
     description:
-      "Real-time attendance monitoring with biometric, geo-location, and shift management.",
+      "Track attendance with biometric, geo-location, and shift management.",
     icon: ClipboardCheck,
   },
   {
     title: "Payroll Processing",
     description:
-      "Automated payroll calculations, salary slips, tax management, and statutory compliance.",
+      "Automate payroll, salary slips, tax handling, and compliance tasks.",
     icon: FileSpreadsheet,
   },
   {
     title: "Leave Management",
     description:
-      "Easy leave applications, approvals, balance tracking, and holiday calendar management.",
+      "Handle leave applications, approvals, balances, and holiday calendars.",
     icon: BriefcaseBusiness,
   },
   {
     title: "Recruitment Management",
     description:
-      "Manage job postings, applicant tracking, interview scheduling, and offer letter generation seamlessly.",
+      "Manage job posts, applicants, interviews, and offer letters with ease.",
     icon: Users,
   },
   {
     title: "Performance Evaluation",
     description:
-      "Set goals, track performance, conduct reviews, and manage appraisals effectively.",
+      "Set goals, track progress, conduct reviews, and manage appraisals.",
     icon: Target,
   },
   {
     title: "HR Analytics & Reports",
     description:
-      "Powerful reports and dashboards for data-driven decision-making and workforce insights.",
+      "Use reports and dashboards for better HR decisions and workforce insights.",
     icon: BarChart3,
   },
   {
     title: "Role-Based Access",
     description:
-      "Secure role-based access control to protect data and ensure the right access for the right people.",
+      "Control access securely so the right people see the right data.",
     icon: Lock,
   },
 ];
@@ -114,31 +115,31 @@ export const hrmsSteps: HrmsStep[] = [
   {
     title: "Centralized Data",
     description:
-      "All employee information is stored securely in a centralized database.",
+      "Store all employee information securely in one place.",
     icon: Database,
   },
   {
     title: "Automated Processes",
     description:
-      "Attendance, payroll, leave, recruitment, and other HR tasks are automated.",
+      "Automate attendance, payroll, leave, recruitment, and HR tasks.",
     icon: Sparkles,
   },
   {
     title: "Approvals & Workflows",
     description:
-      "Requests and approvals flow through customizable workflows.",
+      "Manage requests and approvals through simple workflows.",
     icon: CheckCheck,
   },
   {
     title: "Insights & Reports",
     description:
-      "Real-time dashboards and analytics provide actionable insights.",
+      "Use dashboards and analytics for clear, real-time insights.",
     icon: LineChart,
   },
   {
     title: "Better Decisions",
     description:
-      "Accurate data and insights help HR and management make better decisions.",
+      "Make better HR decisions with accurate data and insights.",
     icon: LayoutDashboard,
   },
 ];
@@ -149,36 +150,42 @@ export const hrmsUseCases: HrmsAudience[] = [
     description:
       "Streamline HR tasks and manage the entire employee lifecycle.",
     icon: Users,
+    image: "/hero/hrms.webp",
   },
   {
     title: "Managers",
     description:
       "Monitor team attendance, performance, and productivity.",
     icon: UserCog,
+    image: "/about/our_story.jpeg",
   },
   {
     title: "Administrators",
     description:
       "Manage system settings, users, roles, and organizational policies.",
     icon: ShieldCheck,
+    image: "/about/company.jpeg",
   },
   {
     title: "Small & Medium Businesses",
     description:
       "Affordable and scalable solution to manage growing teams.",
     icon: Building2,
+    image: "/hero/hrms.webp",
   },
   {
     title: "Large Enterprises",
     description:
       "Handle complex HR operations across multiple departments and locations.",
     icon: Globe,
+    image: "/about/company.jpeg",
   },
   {
     title: "Remote & Hybrid Teams",
     description:
       "Access HRMS anytime, anywhere and stay connected.",
     icon: BriefcaseBusiness,
+    image: "/about/our_story.jpeg",
   },
 ];
 
@@ -186,37 +193,37 @@ export const hrmsBenefits: HrmsBenefit[] = [
   {
     title: "Improved Efficiency",
     description:
-      "Automate repetitive HR tasks such as attendance, payroll, and leave management to significantly reduce manual effort. Streamlined workflows enable HR teams to focus more on strategic activities rather than routine operations.",
+      "Automate attendance, payroll, and leave tasks to reduce manual work and improve efficiency.",
     icon: Sparkles,
   },
   {
     title: "Enhanced Data Accuracy",
     description:
-      "Maintain consistent, error-free employee records with automated data capture and updates. A centralized system ensures all information is always accurate, up-to-date, and easily accessible.",
+      "Maintain accurate employee records with centralized data and automated updates.",
     icon: Database,
   },
   {
     title: "Time Savings",
     description:
-      "Reduce time spent on manual processes through automation and employee self-service portals. Faster approvals and streamlined workflows improve overall operational speed and efficiency.",
+      "Save time with automation, faster approvals, and streamlined workflows.",
     icon: CheckCheck,
   },
   {
     title: "Better Decision-Making",
     description:
-      "Leverage real-time analytics and detailed reports to gain actionable workforce insights. Make informed HR and business decisions backed by accurate and reliable data.",
+      "Use analytics and reports to make informed HR and business decisions.",
     icon: LineChart,
   },
   {
     title: "Compliance & Security",
     description:
-      "Ensure data protection and stay compliant with labor laws and organizational policies. Role-based access and secure systems safeguard sensitive employee information at all times.",
+      "Protect employee data and stay compliant with policies and regulations.",
     icon: ShieldCheck,
   },
   {
     title: "Higher Productivity",
     description:
-      "Empower HR teams and employees with efficient tools and simplified workflows. Increased operational clarity and reduced workload lead to better performance and overall productivity.",
+      "Boost productivity with efficient tools, clearer workflows, and reduced workload.",
     icon: BarChart3,
   },
 ];
