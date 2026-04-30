@@ -1,41 +1,26 @@
 import { hrmsSteps } from "../data";
-import SectionHeading from "./SectionHeading";
-
 const HrmsWorkflow: React.FC = () => {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-      <div className="grid gap-6 xl:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] xl:items-start xl:gap-8">
-        <div className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-[0_18px_38px_rgba(148,163,184,0.08)] sm:p-6 lg:rounded-[32px] lg:p-8">
-          <SectionHeading
-            eyebrow="02 How It Works"
-            title="Structured HR Operations From Input To Insight"
-            description="HRMS automates and streamlines HR operations through a structured and efficient workflow."
-            align="left"
-          />
-
-          <div className="mt-8 rounded-[24px] border border-slate-200 bg-slate-50 p-3 sm:p-4">
-            <img
-              src="/products/hrms/how-it-works-workflow.svg"
-              alt="HRMS workflow illustration showing centralized data, automation, approvals, insights, and better decisions"
-              className="w-full rounded-[18px]"
-            />
-          </div>
+    <section className="mx-auto max-w-7xl px-6 py-10 lg:py-14">
+      <div className="overflow-hidden rounded-[32px] bg-[linear-gradient(180deg,#1F3A5F,#40567a_54%,#6C5DD3)] px-6 py-10 text-white shadow-[0_28px_70px_rgba(31,58,95,0.24)] lg:px-10 lg:py-12">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.24em] text-[#E6E1F7]">
+            How It Works
+          </p>
+          <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-white sm:text-4xl">
+            Structured HR Operations From Input To Insight
+          </h2>
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 2xl:grid-cols-5">
-          {hrmsSteps.map(({ title, description, icon: Icon }, index) => (
-            <article
-              key={title}
-              className="rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_18px_38px_rgba(148,163,184,0.08)] lg:rounded-[28px]"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 text-blue-600">
-                  <Icon size={20} />
-                </div>
-                <span className="text-sm font-bold text-blue-600">0{index + 1}</span>
+        <div className="relative mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-5">
+          <div className="absolute left-[10%] right-[10%] top-9 hidden border-t border-dashed border-white/30 xl:block" />
+          {hrmsSteps.map(({ title, description }, index) => (
+            <article key={title} className="relative text-center">
+              <div className="mx-auto flex h-[72px] w-[72px] items-center justify-center rounded-full border-8 border-white/10 bg-white text-xl font-black text-[#6C5DD3] shadow-[0_14px_32px_rgba(0,0,0,0.18)]">
+                {index + 1}
               </div>
-              <h3 className="mt-4 text-base font-bold text-slate-950 sm:text-lg">{title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
+              <p className="mt-6 text-sm font-semibold text-white">{title}</p>
+              <p className="mt-3 text-sm leading-7 text-[#E6E1F7]">{description}</p>
             </article>
           ))}
         </div>
