@@ -4,21 +4,78 @@ import { Link, useLocation } from "react-router-dom";
 import zoraLogo from "../assets/zora-logo-redesign.webp";
 import { products } from "./products/data";
 
+const itServices = [
+  { label: "Website & Web Application Services", to: "/services/it/website-web-application-services" },
+  { label: "Mobile Application Development", to: "/services/it/mobile-application-development" },
+  { label: "AI & Automation Solutions", to: "/services/it/ai-automation-solutions" },
+  { label: "Custom Enterprise Software", to: "/services/it/custom-enterprise-software" },
+  { label: "Cloud & Infrastructure Services", to: "/services/it/cloud-infrastructure-services" },
+  { label: "Cybersecurity Solutions", to: "/services/it/cybersecurity-solutions" },
+];
+
+const nonItServices = [
+  { label: "Business & Strategy Consulting", to: "/services/non-it/business-strategy-consulting" },
+  { label: "Branding & Creative Services", to: "/services/non-it/branding-creative-services" },
+  { label: "Accounting & Financial Operations", to: "/services/non-it/accounting-financial-operations" },
+  { label: "Digital Marketing Services", to: "/services/non-it/digital-marketing-services" },
+  { label: "Staff Augmentation & Workforce Solutions", to: "/services/non-it/staff-augmentation-workforce-solutions" },
+];
+
+const serviceGroups = [
+  {
+    items: itServices,
+  },
+  {
+    items: nonItServices,
+  },
+];
+
 const Navbar: React.FC = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   const navRef = useRef<HTMLElement | null>(null);
+  const servicesCloseTimeoutRef = useRef<number | null>(null);
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
+  const openServicesMenu = () => {
+    if (servicesCloseTimeoutRef.current !== null) {
+      window.clearTimeout(servicesCloseTimeoutRef.current);
+      servicesCloseTimeoutRef.current = null;
+    }
+
+    setServicesOpen(true);
+  };
+
+  const closeServicesMenu = () => {
+    if (servicesCloseTimeoutRef.current !== null) {
+      window.clearTimeout(servicesCloseTimeoutRef.current);
+    }
+
+    servicesCloseTimeoutRef.current = window.setTimeout(() => {
+      setServicesOpen(false);
+      servicesCloseTimeoutRef.current = null;
+    }, 180);
+  };
+
   useEffect(() => {
     setMenuOpen(false);
     setMobileProductsOpen(false);
+    setServicesOpen(false);
   }, [location.pathname]);
+
+  useEffect(() => {
+    return () => {
+      if (servicesCloseTimeoutRef.current !== null) {
+        window.clearTimeout(servicesCloseTimeoutRef.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -140,15 +197,51 @@ const Navbar: React.FC = () => {
             Blog
           </Link>
 
-          <Link
-            to="/services"
-            className={`${desktopBtn} ${location.pathname.startsWith("/services") ? desktopBtnActive : desktopBtnInactive}`}
-            onClick={() => {
-              scrollTop();
-            }}
+          <div
+            className="relative"
+            onMouseEnter={openServicesMenu}
+            onMouseLeave={closeServicesMenu}
           >
-            Services
-          </Link>
+            <button
+              type="button"
+              className={`${desktopBtn} ${location.pathname.startsWith("/services") ? desktopBtnActive : desktopBtnInactive} inline-flex items-center gap-1.5`}
+            >
+              Services
+              <ChevronDown
+                size={16}
+                className={`transition-transform duration-200 ${servicesOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            <div
+              className={`fixed left-1/2 z-50 w-[1020px] -translate-x-1/2 pt-0 transition-all duration-200 ${servicesOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+              style={{ top: "calc(var(--nav-h) - 2px)" }}
+              onMouseEnter={openServicesMenu}
+              onMouseLeave={closeServicesMenu}
+            >
+                <div className="grid grid-cols-2 border border-slate-100 bg-white px-6 py-5 text-center shadow-[0_24px_60px_rgba(15,23,42,0.08)] ring-1 ring-white">
+                  {serviceGroups.map((group, index) => (
+                    <div
+                      key={index}
+                      className={`flex min-h-full flex-col items-center px-6 py-5 ${index === 0 ? "border-r border-violet-100/80" : ""}`}
+                    >
+                      <div className="w-full max-w-md space-y-1">
+                        {group.items.map((item) => (
+                          <Link
+                            key={item.to}
+                            to={item.to}
+                            className="block py-3 text-[15px] font-semibold leading-7 text-slate-800 transition-colors duration-200 hover:text-violet-700"
+                            onClick={scrollTop}
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+            </div>
+          </div>
 
           <div className="group relative">
             <button
@@ -160,13 +253,13 @@ const Navbar: React.FC = () => {
             </button>
 
             <div className="pointer-events-none absolute left-1/2 top-full z-50 w-80 -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
-              <div className="rounded-[24px] border border-violet-100 bg-white/95 p-3 shadow-[0_20px_50px_rgba(124,58,237,0.14)] backdrop-blur-xl">
+              <div className="border border-violet-100 bg-white/95 p-3 shadow-[0_20px_50px_rgba(124,58,237,0.14)] backdrop-blur-xl">
                 <div className="space-y-1">
                   {products.map((product) => (
                     <Link
                       key={product.id}
                       to={`/products/${product.id}`}
-                      className="block rounded-2xl px-3 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
+                      className="block px-3 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
                       onClick={() => {
                         scrollTop();
                       }}
@@ -233,6 +326,25 @@ const Navbar: React.FC = () => {
           >
             Services
           </Link>
+          {serviceGroups.map((group) => (
+            <div
+              key={group.items[0]?.to ?? "services-group"}
+              className="p-1"
+            >
+              <div className="space-y-1">
+                {group.items.map((item) => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className="block py-2 text-sm font-semibold text-slate-700 transition-colors hover:text-violet-700"
+                    onClick={scrollTop}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
           <button
             type="button"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
@@ -250,7 +362,7 @@ const Navbar: React.FC = () => {
                 <Link
                   key={product.id}
                   to={`/products/${product.id}`}
-                  className="block rounded-2xl border border-violet-100 bg-white px-5 py-3 text-center text-base font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
+                  className="block border border-violet-100 bg-white px-5 py-3 text-center text-base font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
                   onClick={scrollTop}
                 >
                   {product.title}
