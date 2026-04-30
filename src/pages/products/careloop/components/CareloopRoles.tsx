@@ -6,9 +6,9 @@ const CareloopRoles: React.FC = () => {
     <section className="bg-white/70 py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
-          eyebrow="Role-Based Experience"
+          eyebrow="Role-Based Dashboards"
           title="A Platform Built For Every Role In Your Clinic"
-          description="Each workspace is tailored so admins, doctors, clinic staff, and patients get the clarity they need without extra complexity."
+          description="Care Loop provides dedicated dashboards for every role to simplify workflows and improve productivity."
         />
 
         <div className="mt-12 grid gap-5 lg:grid-cols-2 xl:grid-cols-4">

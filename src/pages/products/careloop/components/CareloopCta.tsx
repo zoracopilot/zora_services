@@ -9,14 +9,14 @@ const CareloopCta: React.FC = () => {
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-white/80">
-              Ready For Launch
+              Ready To Launch
             </p>
             <h2 className="mt-3 font-serif text-3xl font-black tracking-tight sm:text-4xl">
               Ready To Transform Your Clinic?
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-8 text-white/88">
-              Join growing clinics using CareLoop to simplify operations, improve
-              communication, and deliver better patient experiences every day.
+              Join hundreds of clinics that trust Care Loop to simplify operations,
+              improve communication, and deliver exceptional care every day.
             </p>
           </div>
 

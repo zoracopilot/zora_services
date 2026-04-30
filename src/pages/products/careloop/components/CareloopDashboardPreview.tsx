@@ -21,7 +21,17 @@ const CareloopDashboardPreview: React.FC = () => {
       <div className="grid gap-4 p-4 lg:grid-cols-[190px_1fr]">
         <div className="rounded-[22px] border border-slate-100 bg-slate-50/90 p-3">
           <div className="space-y-2">
-            {["Dashboard", "Patients", "Appointments", "Doctors", "Reports", "Settings"].map(
+            {[
+              "Dashboard",
+              "Patients",
+              "Appointments",
+              "Doctors",
+              "Prescriptions",
+              "Reports",
+              "Subscriptions",
+              "Settings",
+              "Support",
+            ].map(
               (item, index) => (
                 <div
                   key={item}
@@ -44,7 +54,7 @@ const CareloopDashboardPreview: React.FC = () => {
               ["Total Patients", "25,430"],
               ["Appointments", "1,245"],
               ["Total Revenue", "$24,580"],
-              ["Subscriptions", "$6"],
+              ["Subscriptions", "56"],
             ].map(([label, value], index) => (
               <div
                 key={label}
@@ -61,7 +71,7 @@ const CareloopDashboardPreview: React.FC = () => {
                 <p className="mt-3 text-2xl font-black tracking-tight text-slate-950">
                   {value}
                 </p>
-                <p className="mt-1 text-xs text-emerald-500">+12% from last month</p>
+                <p className="mt-1 text-xs text-emerald-500">+5% from last month</p>
               </div>
             ))}
           </div>
@@ -74,7 +84,7 @@ const CareloopDashboardPreview: React.FC = () => {
                   <p className="text-xs text-slate-500">This Month</p>
                 </div>
                 <div className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
-                  Trend
+                  Monthly
                 </div>
               </div>
               <div className="mt-5 flex h-40 items-end gap-2">
@@ -120,10 +130,11 @@ const CareloopDashboardPreview: React.FC = () => {
               <p className="text-sm font-semibold text-slate-900">Recent Activities</p>
               <div className="mt-4 space-y-3">
                 {[
-                  "New clinic registered: HealthCare Plus",
-                  "Subscription activated: City Clinic",
-                  "Payment received from LifeCare Clinic",
-                  "Support ticket resolved for Medline Care",
+                  "New patient registered by Dr. Smith",
+                  "Appointment booked with Dr. John",
+                  "Prescription sent to John Doe",
+                  "Payment received from Clinic Care",
+                  "Subscription plan renewed",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3 text-sm text-slate-600">
                     <span className="mt-1 h-2.5 w-2.5 rounded-full bg-teal-400" />
@@ -137,10 +148,10 @@ const CareloopDashboardPreview: React.FC = () => {
               <p className="text-sm font-semibold text-slate-900">Today's Appointments</p>
               <div className="mt-4 space-y-3">
                 {[
-                  ["09:30 AM", "Rahul Sharma"],
-                  ["10:15 AM", "Priya Patel"],
-                  ["11:00 AM", "Amit Kumar"],
-                  ["12:00 PM", "Sneha Verma"],
+                  ["09:30 AM", "Acme Checkup"],
+                  ["10:15 AM", "Sarah White"],
+                  ["11:00 AM", "Cleveland Brown"],
+                  ["12:00 PM", "Dental Checkup"],
                 ].map(([time, patient]) => (
                   <div
                     key={time}

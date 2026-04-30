@@ -48,63 +48,65 @@ export const careloopHero = {
   title: "Digitize. Automate. Care Better.",
   subtitle: "All-in-One Clinic Management Platform",
   description:
-    "CareLoop helps clinics streamline appointments, patient records, prescriptions, subscriptions, communication, and operational reporting from one connected platform.",
+    "Care Loop helps clinics and doctors streamline operations, automate patient communication, manage appointments, and grow their practice with a powerful, easy-to-use platform.",
   primaryCta: "Get Started Now",
   secondaryCta: "Book a Demo",
 };
 
 export const careloopHighlights = [
-  "Patient Management",
+  "Patient & Doctor Management",
   "Appointment Scheduling",
   "WhatsApp Automation",
   "Prescription & Reports",
   "Subscription Management",
   "Analytics & Insights",
+  "Multi-Clinic Support",
+  "Secure & Compliant",
 ];
 
 export const careloopStats = [
-  { value: "200+", label: "Clinics" },
-  { value: "500+", label: "Doctors" },
-  { value: "50K+", label: "Patients" },
-  { value: "99.9%", label: "Uptime" },
-  { value: "24/7", label: "Support" },
+  { value: "200+", label: "Clinics Onboarded" },
+  { value: "500+", label: "Doctors Using" },
+  { value: "50K+", label: "Patients Managed" },
+  { value: "99.9%", label: "Uptime & Reliability" },
+  { value: "24/7", label: "Support Available" },
 ];
 
 export const careloopFeatures: CareloopFeature[] = [
   {
     title: "Patient Management",
     description:
-      "Store profiles, visit history, treatment notes, and communication records in one place.",
+      "Store and manage patient profiles, medical history, documents, and treatment records securely in one place.",
     icon: UserRound,
   },
   {
     title: "Appointment Scheduling",
     description:
-      "Coordinate doctors, slots, follow-ups, and daily flow with a clear clinic calendar.",
+      "Book, manage, and track appointments with real-time availability and automated reminders.",
     icon: CalendarCheck2,
   },
   {
     title: "WhatsApp Automation",
     description:
-      "Send reminders, updates, and routine messages automatically to reduce missed visits.",
+      "Automate patient communication including reminders, prescriptions, follow-ups, and updates via WhatsApp.",
     icon: MessageCircleMore,
   },
   {
     title: "Prescription & Reports",
     description:
-      "Generate digital prescriptions and share clean patient reports with minimal admin work.",
+      "Generate digital prescriptions and share reports instantly with patients while maintaining complete treatment records.",
     icon: FileText,
   },
   {
     title: "Subscription Management",
     description:
-      "Manage plan activation, billing cycles, renewals, and clinic access from one system.",
+      "Create flexible plans, manage renewals, track payments, and handle expirations with ease.",
     icon: RefreshCw,
   },
   {
     title: "Analytics & Insights",
     description:
-      "Track revenue, appointments, active subscriptions, and growth trends in real time.",
+      "Get real-time insights on revenue, patient trends, appointments, and performance to grow your clinic.",
     icon: BarChart3,
   },
 ];
@@ -113,30 +115,50 @@ export const careloopRoles: CareloopRole[] = [
   {
     title: "Admin Dashboard",
     description:
-      "A full operational view for subscriptions, revenue, clinic activity, and support visibility.",
+      "Complete control over all clinics, subscriptions, revenue, users, and system activities.",
     icon: LayoutDashboard,
-    bullets: ["Subscription control", "Revenue tracking", "System oversight"],
+    bullets: [
+      "Clinic & user management",
+      "Subscription & billing control",
+      "Revenue & analytics",
+      "Support & system logs",
+    ],
   },
   {
     title: "Doctor Dashboard",
     description:
-      "Focus on appointments, patient notes, prescriptions, and follow-ups without switching tools.",
+      "Manage your patients, appointments, prescriptions, and follow-ups efficiently.",
     icon: Stethoscope,
-    bullets: ["Patient timeline", "Digital prescriptions", "Visit workflow"],
+    bullets: [
+      "Patient list & history",
+      "Appointment management",
+      "Digital prescriptions",
+      "Visit summaries",
+    ],
   },
   {
     title: "Clinic Dashboard",
     description:
-      "Keep front-desk operations smooth with appointments, staff workflows, and communication tools.",
+      "Operate your clinic smoothly with staff management, appointments, and communication tools.",
     icon: ClipboardPlus,
-    bullets: ["Front-desk coordination", "Schedule handling", "Clinic updates"],
+    bullets: [
+      "Front desk management",
+      "Schedule handling",
+      "Patient communication",
+      "Clinic updates",
+    ],
   },
   {
     title: "Patient Experience",
     description:
-      "Patients get timely reminders, updates, and a more organized care journey from start to finish.",
+      "Patients receive appointment reminders, prescriptions, updates, and follow-ups directly on their phone.",
     icon: HeartHandshake,
-    bullets: ["WhatsApp reminders", "Prescription access", "Better communication"],
+    bullets: [
+      "WhatsApp notifications",
+      "Prescription access",
+      "Follow-up reminders",
+      "Better communication",
+    ],
   },
 ];
 
@@ -148,17 +170,17 @@ export const careloopSteps: CareloopStep[] = [
   },
   {
     title: "Admin Approval",
-    description: "The account is verified and approved for a secure launch.",
+    description: "Our team reviews and approves your clinic for secure access.",
     icon: CheckCircle2,
   },
   {
     title: "Choose Plan",
-    description: "Select the subscription that matches your clinic size and workflow.",
+    description: "Select the subscription plan that best matches your clinic's needs.",
     icon: CircleDollarSign,
   },
   {
     title: "Set Up Clinic",
-    description: "Add doctors, staff, timings, and key operating preferences.",
+    description: "Add doctors, staff, services, and clinic details. Start managing patients.",
     icon: Activity,
   },
   {
@@ -171,29 +193,33 @@ export const careloopSteps: CareloopStep[] = [
 export const careloopBenefits: CareloopBenefit[] = [
   {
     title: "Reduce Manual Work",
-    description: "Automate repetitive admin tasks so staff can focus on care.",
+    description:
+      "Automate repetitive tasks like appointments, prescriptions, and follow-ups to save valuable time and effort.",
     icon: BellRing,
   },
   {
     title: "Improve Communication",
-    description: "Keep patients informed with reminders, updates, and better follow-ups.",
+    description:
+      "Keep patients informed with automated reminders, updates, and instant WhatsApp notifications.",
     icon: MessageCircleMore,
   },
   {
     title: "Better Data Management",
-    description: "Maintain organized, secure, and accessible clinic records.",
+    description:
+      "Maintain organized, secure, and accessible patient records, prescriptions, and reports.",
     icon: ShieldCheck,
   },
   {
     title: "Enhance Patient Satisfaction",
-    description: "Deliver a faster and more consistent patient experience.",
+    description:
+      "Deliver a faster, more convenient, and professional experience that builds trust and loyalty.",
     icon: HeartHandshake,
   },
 ];
 
 export const careloopTrustPoints = [
-  "Secure & compliant workflows",
-  "Role-based access control",
-  "Cloud-based access anywhere",
-  "24/7 support coverage",
+  "Secure & Compliant Workflows",
+  "Role-Based Access Control",
+  "Cloud-Based Access Anywhere",
+  "24/7 Support Coverage",
 ];

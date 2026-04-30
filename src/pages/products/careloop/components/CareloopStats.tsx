@@ -5,7 +5,7 @@ const CareloopStats: React.FC = () => {
     <section className="border-y border-slate-200/80 bg-white/70">
       <div className="mx-auto max-w-7xl px-6 py-7">
         <p className="text-center text-lg font-semibold text-slate-800">
-          Trusted by clinics. Loved by doctors. Better for patients.
+          Trusted by clinics and doctors to deliver better care every day.
         </p>
 
         <div className="mt-6 grid gap-4 text-center sm:grid-cols-2 lg:grid-cols-5">

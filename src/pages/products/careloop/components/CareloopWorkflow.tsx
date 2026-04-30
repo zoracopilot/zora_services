@@ -4,10 +4,10 @@ import SectionHeading from "./SectionHeading";
 const CareloopWorkflow: React.FC = () => {
   return (
     <section className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
-      <SectionHeading
-        eyebrow="How It Works"
-        title="Simple Steps To Launch And Run Your Clinic Digitally"
-        description="CareLoop is designed to get clinics live quickly without making setup feel heavy or technical."
+        <SectionHeading
+          eyebrow="How It Works"
+          title="Simple Steps To Launch And Run Your Clinic Digitally"
+        description="Care Loop is designed to get your clinic up and running quickly without any technical hassle."
       />
 
       <div className="mt-12 grid gap-5 lg:grid-cols-5">

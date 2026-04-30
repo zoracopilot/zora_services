@@ -8,7 +8,7 @@ const CareloopBenefits: React.FC = () => {
         <SectionHeading
           eyebrow="Outcomes"
           title="Benefits For Your Clinic And Your Patients"
-          description="The platform is built to reduce friction across administration, communication, and care delivery."
+          description="Care Loop helps clinics and doctors focus on what matters most: better care and better outcomes."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
