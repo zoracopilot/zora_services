@@ -2,15 +2,18 @@ import {
   Activity,
   BarChart3,
   BellRing,
+  Building2,
   CalendarCheck2,
   CheckCircle2,
   CircleDollarSign,
   FileText,
   HeartHandshake,
+  LayoutDashboard,
   MessageCircleMore,
   RefreshCw,
   Rocket,
   ShieldCheck,
+  Stethoscope,
   UserRound,
   Users,
   type LucideIcon,
@@ -32,6 +35,13 @@ export type CareloopBenefit = {
   title: string;
   description: string;
   icon: LucideIcon;
+};
+
+export type CareloopAudience = {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+  image: string;
 };
 
 export const careloopHero = {
@@ -133,6 +143,37 @@ export const careloopBenefits: CareloopBenefit[] = [
     description:
       "Deliver a faster, more convenient, and professional experience that builds trust and loyalty.",
     icon: HeartHandshake,
+  },
+];
+
+export const careloopAudiences: CareloopAudience[] = [
+  {
+    title: "Clinics",
+    description:
+      "Use the platform to manage operations, patients, and communication efficiently.",
+    icon: Building2,
+    image: "/hero/careloop.webp",
+  },
+  {
+    title: "Doctors",
+    description:
+      "Access patient records, manage appointments, and provide prescriptions digitally.",
+    icon: Stethoscope,
+    image: "/about/our_story.jpeg",
+  },
+  {
+    title: "Patients",
+    description:
+      "Receive prescriptions, appointment updates, and communicate with clinics easily.",
+    icon: HeartHandshake,
+    image: "/about/company.jpeg",
+  },
+  {
+    title: "Admin",
+    description:
+      "Monitor all clinics, manage subscriptions, and control overall system activities.",
+    icon: LayoutDashboard,
+    image: "/hero/careloop.webp",
   },
 ];
 

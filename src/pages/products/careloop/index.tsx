@@ -1,5 +1,6 @@
 import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 import PageSEO from "../../../components/PageSEO";
+import CareloopAudience from "./components/CareloopAudience";
 import CareloopBenefits from "./components/CareloopBenefits";
 import CareloopCta from "./components/CareloopCta";
 import CareloopFeatures from "./components/CareloopFeatures";
@@ -43,6 +44,7 @@ const CareloopPage: React.FC = () => {
         <CareloopHero />
         <CareloopFeatures />
         <CareloopWorkflow />
+        <CareloopAudience />
         <CareloopBenefits />
         <CareloopCta />
       </div>

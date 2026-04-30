@@ -4,7 +4,7 @@ import InfoCard from "./shared/InfoCard";
 
 const HrmsFeatures: React.FC = () => {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
+    <section id="hrms-features" className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
       <div className="grid gap-10 xl:grid-cols-[320px_minmax(0,1fr)] xl:items-start xl:gap-12">
         <div className="xl:pt-6">
           <SectionHeading

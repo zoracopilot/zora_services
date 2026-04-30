@@ -47,7 +47,7 @@ export const hrmsHero = {
   title: "Empowering People. Driving Performance.",
   subtitle: "Smart HR, Stronger Workplace",
   description:
-    "HRMS is a comprehensive Human Resource Management System designed to simplify, automate, and digitalize HR operations. Manage your workforce efficiently and focus on what matters most: your people.",
+    "A smart HRMS that digitalizes and simplifies HR processes. Manage your workforce efficiently while saving time and boosting overall productivity.",
   primaryCta: "Get Started Now",
   secondaryCta: "Book a Demo",
 };
