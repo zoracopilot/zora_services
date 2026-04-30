@@ -1,5 +1,5 @@
-import React from "react";
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 
 type SectionRevealProps = {
   children: React.ReactNode;
@@ -7,36 +7,43 @@ type SectionRevealProps = {
 };
 
 const SectionReveal: React.FC<SectionRevealProps> = ({ children, className }) => {
+  const ref = useRef<HTMLDivElement | null>(null);
   const prefersReducedMotion = useReducedMotion();
+  const [isVisible, setIsVisible] = useState(prefersReducedMotion);
 
-  const variants: Variants = prefersReducedMotion
-    ? {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-      }
-    : {
-        hidden: { opacity: 0, y: 36, filter: "blur(12px)" },
-        visible: {
-          opacity: 1,
-          y: 0,
-          filter: "blur(0px)",
-          transition: {
-            duration: 0.9,
-            ease: [0.22, 1, 0.36, 1],
-          },
-        },
-      };
+  useEffect(() => {
+    if (prefersReducedMotion) {
+      setIsVisible(true);
+      return;
+    }
+
+    const node = ref.current;
+    if (!node) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.32 },
+    );
+
+    observer.observe(node);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [prefersReducedMotion]);
 
   return (
-    <motion.div
-      className={className}
-      variants={variants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.18 }}
+    <div
+      ref={ref}
+      className={`${className ?? ""} section-text-reveal${isVisible ? " is-visible" : ""}`}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
 
