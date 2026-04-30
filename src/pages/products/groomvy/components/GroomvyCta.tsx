@@ -1,42 +1,31 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const GroomvyCta: React.FC = () => {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-14 lg:py-20">
-      <div className="grid gap-10 overflow-hidden rounded-[32px] bg-[linear-gradient(135deg,#4f39d9,#6d5ef5_45%,#7c3aed)] p-8 text-white shadow-[0_28px_60px_rgba(91,33,182,0.22)] lg:grid-cols-[1fr_0.8fr] lg:items-center">
-        <div>
-          <h2 className="font-serif text-4xl font-black tracking-tight">
-            Ready to Transform Your Salon Operations?
-          </h2>
-          <p className="mt-4 max-w-xl text-base leading-8 text-white/85">
-            Join Groomvy and simplify the way you manage appointments, billing,
-            staff, and customer experiences.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              to="/book-appointment"
-              className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-violet-700 transition-colors hover:bg-slate-100"
-            >
-              Book a Demo
-              <ArrowRight size={16} />
-            </Link>
-            <a
-              href="#groomvy-features"
-              className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
-            >
-              Explore Features
-            </a>
+    <section className="mx-auto max-w-7xl px-6 py-12 lg:py-16">
+      <div className="flex flex-col gap-6 rounded-[28px] bg-[linear-gradient(135deg,#2F190E,#4a2a19_50%,#5A341F)] px-6 py-6 text-white shadow-[0_28px_60px_rgba(47,25,14,0.24)] lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <div className="flex items-start gap-4">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-white/20 bg-white/10 text-white">
+            <CalendarDays size={24} />
+          </div>
+          <div>
+            <h2 className="font-serif text-2xl font-black tracking-tight lg:text-3xl">
+              Ready to Transform Your Salon Operations?
+            </h2>
+            <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
+              Join Groomvy and simplify the way you manage appointments, billing,
+              staff, and customer experiences.
+            </p>
           </div>
         </div>
-
-        <div className="rounded-[28px] border border-white/15 bg-white/10 p-4 backdrop-blur-sm">
-          <img
-            src="/hero/salondesk.webp"
-            alt="Groomvy preview"
-            className="w-full rounded-[20px] object-cover"
-          />
-        </div>
+        <Link
+          to="/book-appointment"
+          className="inline-flex items-center justify-center gap-2 self-start rounded-xl bg-white px-6 py-3 text-sm font-semibold text-[#5A341F] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#f6f1ed] hover:shadow-[0_16px_32px_rgba(255,255,255,0.18)] lg:self-center"
+        >
+          Book a Demo
+          <ArrowRight size={16} />
+        </Link>
       </div>
     </section>
   );

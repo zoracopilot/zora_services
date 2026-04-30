@@ -1,7 +1,9 @@
 import {
   BarChart3,
   ClipboardList,
+  Clock3,
   Globe,
+  Headset,
   LayoutDashboard,
   Package,
   Receipt,
@@ -37,6 +39,7 @@ export type GroomvyAudience = {
   title: string;
   description: string;
   icon: LucideIcon;
+  image: string;
 };
 
 export type GroomvyOutcome = {
@@ -46,11 +49,29 @@ export type GroomvyOutcome = {
 };
 
 export const groomvyHero = {
-  title: "Groomvy",
+  badge: "All-in-One Salon & Spa Management",
+  title: "Grow Your Salon Business Effortlessly",
   subtitle: "Salon & Spa Management System",
   description:
-    "Groomvy is an all-in-one salon management system that streamlines daily operations, enhances customer experience, and drives business growth.",
+    "Groomvy is a complete salon management system that streamlines daily operations, enhances customer experience, and drives measurable business growth.",
   heroImage: "/hero/salondesk.webp",
+  highlights: [
+    {
+      title: "Easy to Use",
+      description: "Intuitive interface",
+      icon: Clock3,
+    },
+    {
+      title: "Secure & Reliable",
+      description: "Your data is safe",
+      icon: ShieldCheck,
+    },
+    {
+      title: "24/7 Support",
+      description: "We're here for you",
+      icon: Headset,
+    },
+  ],
 };
 
 export const groomvyFeatures: GroomvyFeature[] = [
@@ -97,7 +118,7 @@ export const groomvyFeatures: GroomvyFeature[] = [
     icon: Globe,
   },
   {
-    title: "Role-Based Dashboards",
+    title: "Role-Based Access",
     description:
       "Separate views for owners, managers, and staff for better control.",
     icon: LayoutDashboard,
@@ -169,21 +190,25 @@ export const groomvyAudiences: GroomvyAudience[] = [
     title: "Salon Owners",
     description: "Digitize operations, improve efficiency, and grow revenue.",
     icon: Store,
+    image: "/about/company.jpeg",
   },
   {
     title: "Spa Managers",
     description: "Coordinate appointments, staff, and services seamlessly.",
     icon: ShieldCheck,
+    image: "/about/our_story.jpeg",
   },
   {
     title: "Multi-Branch Salons",
     description: "Centralize performance tracking and operations across locations.",
     icon: LayoutDashboard,
+    image: "/hero/salondesk.webp",
   },
   {
     title: "Grooming Businesses",
     description: "Support barbershops, grooming studios, and beauty centers.",
     icon: Scissors,
+    image: "/it-hero/inventory.webp",
   },
 ];
 

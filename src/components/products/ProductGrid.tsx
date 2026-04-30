@@ -23,7 +23,7 @@ const ProductGrid: React.FC = () => {
             >
               <article
                 id={id}
-                className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(148,163,184,0.08)] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_24px_50px_rgba(148,163,184,0.14)]"
+                className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_18px_40px_rgba(148,163,184,0.08)] transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02] group-hover:border-violet-200 group-hover:shadow-[0_28px_60px_rgba(124,58,237,0.16)]"
               >
                 <div className="flex items-start gap-4">
                   <div
