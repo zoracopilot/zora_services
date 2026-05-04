@@ -404,10 +404,10 @@ const ItWebsiteWebApplicationServicesWebsiteDesignDevelopment: React.FC = () => 
       </div>
 
       {/* ================= HERO ================= */}
-      <div className="pt-28 pb-16 px-6 border-b border-white/10">
-        <div className="max-w-6xl mx-auto">
-          <div className="rounded-[32px] overflow-hidden border border-white/10 bg-white/5 shadow-[0_30px_100px_rgba(37,99,235,0.12)] backdrop-blur-2xl">
-            <div className="relative h-[420px] md:h-[500px] lg:h-[560px]">
+      <div className="pt-28 pb-16 border-b border-white/10">
+        <div className="w-full">
+          <div className="overflow-hidden border-y border-white/10 bg-white/5 shadow-[0_30px_100px_rgba(37,99,235,0.12)] backdrop-blur-2xl">
+            <div className="relative h-[340px] md:h-[400px] lg:h-[430px]">
               <img
                 src={heroImage}
                 alt={item.title}
@@ -437,7 +437,7 @@ const ItWebsiteWebApplicationServicesWebsiteDesignDevelopment: React.FC = () => 
                     {(content?.heroTitle ?? item.title).replace("Website Design & Development Solutions", "Website Design &\nDevelopment Solutions")}
                   </h1>
 
-                  <p className="mt-6 max-w-[520px] text-lg leading-8 text-white/88 md:text-[1.7rem] md:leading-9 lg:text-[1.95rem] lg:leading-10">
+                  <p className="mt-6 max-w-[520px] text-base leading-7 text-white/88 md:text-[1.35rem] md:leading-8 lg:text-[1.5rem] lg:leading-9">
                     {content?.heroSubtitle ??
                       "High-impact delivery with security, performance and enterprise scalability built in."}
                   </p>

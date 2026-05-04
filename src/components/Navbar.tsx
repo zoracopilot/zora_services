@@ -9,28 +9,16 @@ import { NON_IT_SERVICE_CATEGORIES } from "../data/nonItServicesData";
 type NavServiceItem = {
   label: string;
   to: string;
-  children?: Array<{
-    label: string;
-    to: string;
-  }>;
 };
 
 const itServices: NavServiceItem[] = IT_SERVICE_CATEGORIES.map((category) => ({
   label: category.title,
   to: `/services/${category.slug}`,
-  children: category.items.map((item) => ({
-    label: item.title,
-    to: `/services/${category.slug}/${item.slug}`,
-  })),
 }));
 
 const nonItServices: NavServiceItem[] = NON_IT_SERVICE_CATEGORIES.map((category) => ({
   label: category.title,
   to: `/services/${category.slug}`,
-  children: category.items.map((item) => ({
-    label: item.title,
-    to: `/services/${category.slug}/${item.slug}`,
-  })),
 }));
 
 const serviceGroups = [
@@ -239,42 +227,14 @@ const Navbar: React.FC = () => {
                     >
                       <div className="w-full max-w-md space-y-1">
                         {group.items.map((item) => (
-                          <div
-                            key={item.to}
-                            className="group/item"
-                          >
+                          <div key={item.to}>
                             <Link
                               to={item.to}
-                              className="flex items-center justify-center gap-2 py-3 text-[15px] font-semibold leading-7 text-slate-800 transition-colors duration-200 hover:text-violet-700"
+                              className="flex items-center justify-center py-3 text-[15px] font-semibold leading-7 text-slate-800 transition-colors duration-200 hover:text-violet-700"
                               onClick={scrollTop}
                             >
                               <span>{item.label}</span>
-                              {item.children?.length ? (
-                                <ChevronDown
-                                  size={14}
-                                  className="text-violet-500 transition-transform duration-200 group-hover/item:rotate-180"
-                                />
-                              ) : null}
                             </Link>
-
-                            {item.children?.length ? (
-                              <div className="grid overflow-hidden transition-all duration-300 ease-out grid-rows-[0fr] opacity-0 group-hover/item:grid-rows-[1fr] group-hover/item:opacity-100">
-                                <div className="min-h-0">
-                                  <div className="mx-auto mt-1 w-full max-w-sm space-y-1 border-l-2 border-violet-100 pl-4 text-left">
-                                    {item.children.map((child) => (
-                                      <Link
-                                        key={child.to}
-                                        to={child.to}
-                                        className="block py-2 text-sm font-semibold text-slate-600 transition-colors duration-200 hover:text-violet-700"
-                                        onClick={scrollTop}
-                                      >
-                                        {child.label}
-                                      </Link>
-                                    ))}
-                                  </div>
-                                </div>
-                              </div>
-                            ) : null}
                           </div>
                         ))}
                       </div>
@@ -374,7 +334,7 @@ const Navbar: React.FC = () => {
             >
               <div className="space-y-1">
                 {group.items.map((item) => (
-                  <div key={item.to} className="space-y-1">
+                  <div key={item.to}>
                     <Link
                       to={item.to}
                       className="block py-2 text-sm font-semibold text-slate-700 transition-colors hover:text-violet-700"
@@ -382,20 +342,6 @@ const Navbar: React.FC = () => {
                     >
                       {item.label}
                     </Link>
-                    {item.children?.length ? (
-                      <div className="pl-4">
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.to}
-                            to={child.to}
-                            className="block py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-slate-500 transition-colors hover:text-violet-700"
-                            onClick={scrollTop}
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
-                    ) : null}
                   </div>
                 ))}
               </div>

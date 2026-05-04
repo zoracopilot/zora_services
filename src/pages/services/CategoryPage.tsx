@@ -6,6 +6,7 @@ import PageSEO from "../../components/PageSEO";
 import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 import { SERVICE_CATEGORY_KIND, findServiceCategory } from "../../data/serviceCategories";
 import { IT_SERVICE_CATEGORIES } from "../../data/itServicesData";
+import WebsiteWebApplicationCategoryLandingPage from "./website-web-application-services/CategoryLandingPage";
 
 const ServiceCategoryPage: React.FC = () => {
   const { categorySlug } = useParams();
@@ -25,6 +26,26 @@ const ServiceCategoryPage: React.FC = () => {
 
   if (!itCategory) {
     return <Navigate to="/services/website-web-application-services" replace />;
+  }
+
+  if (itCategory.slug === "website-web-application-services") {
+    return (
+      <>
+        <PageSEO
+          title={`${itCategory.title} | Zora Global AI`}
+          description={itCategory.desc}
+          canonical={`/services/${itCategory.slug}`}
+        />
+        <BreadcrumbSchema
+          crumbs={[
+            { name: "Home", path: "/" },
+            { name: "Services", path: "/services" },
+            { name: itCategory.title, path: `/services/${itCategory.slug}` },
+          ]}
+        />
+        <WebsiteWebApplicationCategoryLandingPage category={itCategory} />
+      </>
+    );
   }
 
   return (
