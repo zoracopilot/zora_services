@@ -30,10 +30,17 @@ const technologyCards: TechnologyCard[] = [
 
 const TechnologiesSection: React.FC = () => {
   return (
+<<<<<<< HEAD
     <section className="overflow-hidden rounded-[24px] border border-[#ece8fb] bg-[linear-gradient(180deg,#ffffff_0%,#f7f8ff_100%)] px-5 py-8 shadow-[0_10px_30px_rgba(89,76,160,0.04)] sm:px-6 sm:py-9 lg:px-8 lg:py-10">
       <div className="mx-auto flex max-w-[1160px] flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
         <div className="max-w-[260px] flex-none pt-1">
           <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#9a90c4]">
+=======
+    <section className="border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f9fbff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
+      <div className="grid gap-8 lg:grid-cols-[minmax(260px,0.72fr)_minmax(0,1.28fr)]">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
+>>>>>>> 1f6d61e57327d7abbe9b2ba7c71d76270402d363
             Technologies We Use
           </p>
           <h2 className="mt-3 max-w-[10ch] text-[1.9rem] font-semibold leading-[1.06] tracking-[-0.035em] text-[#1d1b24] sm:text-[2.1rem] lg:text-[2.02rem]">

@@ -9,10 +9,17 @@ const TimelineSection: React.FC = () => {
   };
 
   return (
+<<<<<<< HEAD
     <section className="overflow-hidden rounded-[24px] border border-[#efebfb] bg-[#faf8ff] px-5 py-9 shadow-[0_10px_34px_rgba(89,76,160,0.04)] sm:px-6 lg:px-8 lg:py-10">
       <div className="mx-auto grid max-w-[1160px] gap-7 xl:grid-cols-[178px_minmax(0,1fr)] xl:items-start xl:gap-6">
         <div className="pt-1">
           <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#9a90c4]">
+=======
+    <section className="border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f8faff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
+      <div className="grid gap-6 lg:grid-cols-[minmax(250px,0.7fr)_minmax(0,1.3fr)]">
+        <div className="rounded-[28px] border border-slate-200/80 bg-white p-8 shadow-[0_16px_48px_rgba(15,23,42,0.06)]">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
+>>>>>>> 1f6d61e57327d7abbe9b2ba7c71d76270402d363
             Project Duration
           </p>
           <h2 className="mt-3 max-w-[8ch] text-[1.9rem] font-semibold leading-[1.06] tracking-[-0.035em] text-[#1d1b24] sm:text-[2.15rem] xl:text-[2.05rem]">

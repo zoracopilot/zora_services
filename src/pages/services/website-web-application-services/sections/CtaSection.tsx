@@ -9,9 +9,15 @@ const CtaSection: React.FC = () => {
 
   return (
     <section id="cta" className="px-1 pt-2">
+<<<<<<< HEAD
       <div className="overflow-hidden rounded-[16px] bg-[linear-gradient(90deg,#2a1066_0%,#4c1d95_45%,#6d28d9_100%)] px-5 py-7 text-white shadow-[0_22px_60px_rgba(76,29,149,0.28)] sm:px-7 sm:py-8 lg:flex lg:items-center lg:justify-between lg:px-10 lg:py-7">
         <div className="max-w-[620px]">
           <p className="text-[10px] font-semibold uppercase tracking-[0.18em] !text-white">
+=======
+      <div className="overflow-hidden bg-[linear-gradient(90deg,#120e42_0%,#171357_48%,#27108f_100%)] px-8 py-10 text-white shadow-[0_28px_90px_rgba(33,16,110,0.3)] lg:flex lg:items-center lg:justify-between lg:px-12">
+        <div className="max-w-[580px]">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/64">
+>>>>>>> 1f6d61e57327d7abbe9b2ba7c71d76270402d363
             Ready To Build Your Next Big Thing?
           </p>
           <h2 className="mt-3 text-[1.9rem] font-semibold leading-[1.12] tracking-[-0.03em] !text-white sm:text-[2.2rem] lg:text-[2.15rem]">
