@@ -69,7 +69,7 @@ const OverviewSection: React.FC = () => {
         <div className="lg:sticky lg:top-36">
           <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
             <img
-              src="/services/Web_application/webServices.png"
+              src="/services/Web_application/webServices.webp"
               alt="Website and web application services"
               className="h-full w-full object-cover"
             />
