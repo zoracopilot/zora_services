@@ -9,7 +9,7 @@ const TimelineSection: React.FC = () => {
   };
 
   return (
-    <section className="rounded-[32px] border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f8faff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
+    <section className="border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f8faff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
       <div className="grid gap-6 lg:grid-cols-[minmax(250px,0.7fr)_minmax(0,1.3fr)]">
         <div className="rounded-[28px] border border-slate-200/80 bg-white p-8 shadow-[0_16px_48px_rgba(15,23,42,0.06)]">
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">

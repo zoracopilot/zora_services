@@ -6,7 +6,7 @@ const icons = [Search, Users, PencilRuler, Code2, ShieldCheck, Rocket] as const;
 
 const ProcessSection: React.FC = () => {
   return (
-    <section className="rounded-[32px] border border-slate-200/70 bg-white/92 px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] backdrop-blur-sm lg:px-8">
+    <section className="border border-slate-200/70 bg-white/92 px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] backdrop-blur-sm lg:px-8">
       <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
         How We Deliver
       </p>

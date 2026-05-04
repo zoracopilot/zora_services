@@ -17,7 +17,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number }>> = {
 
 const TechnologiesSection: React.FC = () => {
   return (
-    <section className="rounded-[32px] border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f9fbff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
+    <section className="border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f9fbff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
       <div className="grid gap-8 lg:grid-cols-[minmax(260px,0.72fr)_minmax(0,1.28fr)]">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
