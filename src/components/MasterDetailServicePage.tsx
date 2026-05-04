@@ -13,31 +13,27 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
   const { itemSlug } = useParams();
 
   const initialItem: ServiceItem =
-    category.items.find((i) => i.slug === itemSlug) ?? category.items[0];
+    category.items.find((item) => item.slug === itemSlug) ?? category.items[0];
 
   const [selectedSlug, setSelectedSlug] = useState(initialItem.slug);
 
-  // ✅ keep selection in sync if URL changes
   useEffect(() => {
     if (!itemSlug) return;
     setSelectedSlug(itemSlug);
   }, [itemSlug]);
 
   const selectedItem = useMemo(
-    () => category.items.find((i) => i.slug === selectedSlug) ?? category.items[0],
+    () => category.items.find((item) => item.slug === selectedSlug) ?? category.items[0],
     [category.items, selectedSlug]
   );
 
   const heroImage = IT_HERO_IMAGES[selectedItem.slug];
 
-  // ✅ scroll helper
   const scrollToTop = () => {
-    // handle both window + common scroll containers
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
 
-    // if your app uses an inner scroll container
     const container =
       document.querySelector<HTMLElement>("#app-scroll") ||
       document.querySelector<HTMLElement>("[data-scroll-container]");
@@ -45,52 +41,38 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#050816] text-white overflow-hidden pt-28 pb-16 px-6">
-      {/* Background Glow (UNCHANGED) */}
+    <section className="relative min-h-screen overflow-hidden bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_52%,#eef4ff_100%)] px-6 pb-16 pt-28 text-slate-900">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[900px] h-[900px] bg-purple-800/25 blur-[180px] rounded-full top-[-260px] left-[-260px]" />
-        <div className="absolute w-[850px] h-[850px] bg-blue-700/25 blur-[170px] rounded-full bottom-[-280px] right-[-280px]" />
+        <div className="absolute left-[-260px] top-[-260px] h-[900px] w-[900px] rounded-full bg-violet-200/45 blur-[180px]" />
+        <div className="absolute bottom-[-280px] right-[-280px] h-[850px] w-[850px] rounded-full bg-sky-200/45 blur-[170px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.08)_1px,transparent_1px)] bg-[size:80px_80px]" />
       </div>
 
-      <div className="max-w-7xl mx-auto">
-        {/* ================= BREADCRUMB ================= */}
-        <div className="text-sm text-gray-400 mb-6">
-          <Link to="/services" className="hover:text-purple-300">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-6 text-sm text-slate-500">
+          <Link to="/services" className="hover:text-violet-600">
             Services
           </Link>
           <span className="mx-2">/</span>
-          <Link to={backTo} className="hover:text-purple-300">
-            IT Services
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-200">{category.title}</span>
+          <span className="text-slate-900">{category.title}</span>
         </div>
 
-        {/* ================= ✅ CATEGORY HEADER (FIX ADDED) ================= */}
         <div className="mb-14">
-          <h1 className="text-4xl md:text-6xl font-extrabold">
-            {category.title}
-          </h1>
-
-          <p className="mt-4 text-lg text-gray-400 max-w-3xl leading-relaxed">
+          <h1 className="text-4xl font-extrabold md:text-6xl">{category.title}</h1>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate-600">
             {category.desc}
           </p>
-
-          <div className="mt-6 w-24 h-[3px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full" />
+          <div className="mt-6 h-[3px] w-24 rounded-full bg-gradient-to-r from-sky-500 to-violet-500" />
         </div>
 
-        {/* ================= LAYOUT ================= */}
-        <div className="grid lg:grid-cols-12 gap-8">
-          {/* LEFT PANEL */}
+        <div className="grid gap-8 lg:grid-cols-12">
           <aside className="lg:col-span-4">
-            <div className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl overflow-hidden">
-              <div className="p-6 border-b border-white/10">
-                <p className="text-sm text-gray-300">
-                  Select a service to view details
-                </p>
+            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white/92 shadow-[0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur-xl">
+              <div className="border-b border-slate-200 p-6">
+                <p className="text-sm text-slate-500">Select a service to view details</p>
               </div>
 
-              <div className="p-3 space-y-3">
+              <div className="space-y-3 p-3">
                 {category.items.map((item) => {
                   const active = item.slug === selectedSlug;
 
@@ -99,107 +81,90 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
                       key={item.slug}
                       onClick={() => {
                         setSelectedSlug(item.slug);
-
-                        // ✅ FIX: scroll to top when switching item within same route
                         requestAnimationFrame(() => {
                           scrollToTop();
                         });
                       }}
-                      className={`w-full text-left rounded-2xl px-6 py-5 transition border ${
+                      className={`w-full rounded-2xl border px-6 py-5 text-left transition ${
                         active
-                          ? "bg-gradient-to-r from-blue-600/25 to-purple-600/25 border-white/10"
-                          : "bg-[#0b1220]/60 border-white/5 hover:bg-[#0b1220]"
+                          ? "border-violet-200 bg-gradient-to-r from-sky-50 to-violet-50 shadow-[0_12px_30px_rgba(99,102,241,0.12)]"
+                          : "border-slate-200 bg-white hover:border-violet-200 hover:bg-slate-50"
                       }`}
                     >
-                      <div className="text-lg font-semibold text-gray-100">
-                        {item.title}
-                      </div>
-                      <div className="text-sm text-gray-400 mt-1">
-                        {item.description}
-                      </div>
+                      <div className="text-lg font-semibold text-slate-900">{item.title}</div>
+                      <div className="mt-1 text-sm text-slate-600">{item.description}</div>
                     </button>
                   );
                 })}
               </div>
 
-              <div className="p-6 border-t border-white/10">
+              <div className="border-t border-slate-200 p-6">
                 <Link
                   to={backTo}
-                  className="text-sm text-gray-300 hover:text-purple-300"
-                  onClick={() => scrollToTop()} // ✅ optional
+                  className="text-sm text-slate-500 hover:text-violet-600"
+                  onClick={scrollToTop}
                 >
-                  ← Back to IT Services
+                  Back to Services
                 </Link>
               </div>
             </div>
           </aside>
 
-          {/* RIGHT PANEL */}
-          <main className="lg:col-span-8 space-y-8">
-            <div className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-2xl overflow-hidden">
-              {/* ===== TOP IMAGE BANNER ===== */}
+          <main className="space-y-8 lg:col-span-8">
+            <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white/92 shadow-[0_24px_70px_rgba(15,23,42,0.08)] backdrop-blur-xl">
               <div className="relative w-full">
-                {heroImage && (
+                {heroImage ? (
                   <img
                     src={heroImage}
                     alt={selectedItem.title}
-                    className="w-full h-auto object-contain"
+                    className="h-auto w-full object-contain"
                   />
-                )}
+                ) : null}
 
-                <div className="absolute inset-0 bg-gradient-to-b from-[#050816]/20 via-[#050816]/40 to-[#050816]/90" />
+                <div className="absolute inset-0 bg-gradient-to-b from-white/5 via-white/35 to-white/95" />
               </div>
 
-              {/* ===== CONTENT ===== */}
               <div className="p-10">
-                <p className="text-xs tracking-[0.25em] text-gray-300">
-                  ZORA GLOBAL AI
-                </p>
-
-                <h2 className="text-3xl md:text-5xl font-extrabold mt-3">
-                  {selectedItem.title}
-                </h2>
-
-                <p className="text-gray-300 mt-5 text-lg leading-relaxed">
+                <p className="text-xs tracking-[0.25em] text-violet-500">ZORA GLOBAL AI</p>
+                <h2 className="mt-3 text-3xl font-extrabold md:text-5xl">{selectedItem.title}</h2>
+                <p className="mt-5 text-lg leading-relaxed text-slate-600">
                   {selectedItem.description}
                 </p>
 
-                {/* Feature Chips */}
                 <div className="mt-7 flex flex-wrap gap-3">
-                  {selectedItem.features?.map((f, i) => (
+                  {selectedItem.features?.map((feature, index) => (
                     <span
-                      key={i}
-                      className="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-sm"
+                      key={index}
+                      className="rounded-full border border-slate-200 bg-slate-50 px-5 py-2 text-sm text-slate-700"
                     >
-                      {f}
+                      {feature}
                     </span>
                   ))}
                 </div>
 
-                {/* Buttons */}
                 <div className="mt-10 flex flex-wrap gap-4">
                   <Link
-                    to={`/services/it/${category.slug}/${selectedItem.slug}`}
-                    onClick={() => scrollToTop()} // ✅ ensures top on navigation
-                    className="px-10 py-4 rounded-2xl text-white bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#a78bfa] hover:from-[#8b5cf6] hover:via-[#a78bfa] hover:to-[#c4b5fd] font-semibold"
+                    to={`/services/${category.slug}/${selectedItem.slug}`}
+                    onClick={scrollToTop}
+                    className="rounded-2xl bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#a78bfa] px-10 py-4 font-semibold text-white hover:from-[#8b5cf6] hover:via-[#a78bfa] hover:to-[#c4b5fd]"
                   >
                     View Service
                   </Link>
 
                   <Link
                     to="/book-appointment"
-                    onClick={() => scrollToTop()} // ✅ ensures top on navigation
-                    className="px-10 py-4 rounded-2xl text-white bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#a78bfa] hover:from-[#8b5cf6] hover:via-[#a78bfa] hover:to-[#c4b5fd] font-semibold"
+                    onClick={scrollToTop}
+                    className="rounded-2xl bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#a78bfa] px-10 py-4 font-semibold text-white hover:from-[#8b5cf6] hover:via-[#a78bfa] hover:to-[#c4b5fd]"
                   >
                     Book Appointment
                   </Link>
 
                   <button
                     onClick={() => {
-                      scrollToTop(); // ✅ ensure top after back as well
+                      scrollToTop();
                       navigate(-1);
                     }}
-                    className="px-10 py-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10"
+                    className="rounded-2xl border border-slate-200 bg-white px-10 py-4 text-slate-700 hover:bg-slate-50"
                   >
                     Go Back
                   </button>
@@ -214,3 +179,4 @@ const MasterDetailServicePage: React.FC<Props> = ({ category, backTo }) => {
 };
 
 export default MasterDetailServicePage;
+

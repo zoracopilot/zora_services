@@ -1,4 +1,3 @@
-import { BarChart3 } from "lucide-react";
 import SectionReveal from "./SectionReveal";
 
 const EnterpriseDifferentiators: React.FC = () => {

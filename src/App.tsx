@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Navigate, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Navigate, Routes, Route, useLocation, useParams } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 
 /* ================= MAIN PAGES ================= */
 const About = lazy(() => import("./pages/About"));
-const Services = lazy(() => import("./pages/services"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
 const BookAppointment = lazy(() => import("./pages/BookAppointment"));
 const ProductDetail = lazy(() => import("./pages/products/ItemPage"));
@@ -18,27 +17,31 @@ const ProductDetail = lazy(() => import("./pages/products/ItemPage"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 
-/* ================= IT SERVICES ================= */
-const ITServices = lazy(() => import("./pages/services/it"));
-const ITServiceCategoryPage = lazy(() => import("./pages/services/it/CategoryPage"));
-const ITServiceItemPage = lazy(() => import("./pages/services/it/ItemPage"));
-
-/* ================= NON-IT SERVICES ================= */
-const NonITServices = lazy(() => import("./pages/services/non-it"));
-const NonITServiceCategoryPage = lazy(() => import("./pages/services/non-it/CategoryPage"));
-const NonITServiceItemPage = lazy(() => import("./pages/services/non-it/ItemPage"));
+const ServiceCategoryPage = lazy(() => import("./pages/services/CategoryPage"));
+const ServiceItemPage = lazy(() => import("./pages/services/ItemPage"));
 
 const RouteFallback: React.FC = () => (
   <div className="min-h-[85vh] bg-gradient-to-b from-[#0b0318] via-[#120424] to-[#16062d]" />
 );
 
-const App: React.FC = () => {
-  return (
-    <Router>
+const LegacyServiceRedirect: React.FC = () => {
+  const { categorySlug, itemSlug } = useParams();
+  const target = itemSlug
+    ? `/services/${categorySlug}/${itemSlug}`
+    : `/services/${categorySlug}`;
 
+  return <Navigate to={target} replace />;
+};
+
+const AppShell: React.FC = () => {
+  const location = useLocation();
+  const isServicesRoute = location.pathname.startsWith("/services");
+
+  return (
+    <>
       <ScrollToTop />
 
-      <div className="bg-[#0b0618] text-white min-h-screen flex flex-col">
+      <div className={`${isServicesRoute ? "services-theme bg-white text-slate-900" : "bg-[#0b0618] text-white"} min-h-screen flex flex-col`}>
 
         {/* NAVBAR */}
         <Navbar />
@@ -51,7 +54,10 @@ const App: React.FC = () => {
             {/* ---------- MAIN PAGES ---------- */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
+            <Route
+              path="/services"
+              element={<Navigate to="/services/website-web-application-services" replace />}
+            />
             <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -60,26 +66,38 @@ const App: React.FC = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
 
-            {/* ---------- IT SERVICES ---------- */}
-            <Route path="/services/it" element={<ITServices />} />
+            <Route
+              path="/services/:categorySlug"
+              element={<ServiceCategoryPage />}
+            />
+            <Route
+              path="/services/:categorySlug/:itemSlug"
+              element={<ServiceItemPage />}
+            />
+
+            <Route
+              path="/services/it"
+              element={<Navigate to="/services/website-web-application-services" replace />}
+            />
+            <Route
+              path="/services/non-it"
+              element={<Navigate to="/services/business-strategy-consulting" replace />}
+            />
             <Route
               path="/services/it/:categorySlug"
-              element={<ITServiceCategoryPage />}
+              element={<LegacyServiceRedirect />}
+            />
+            <Route
+              path="/services/non-it/:categorySlug"
+              element={<LegacyServiceRedirect />}
             />
             <Route
               path="/services/it/:categorySlug/:itemSlug"
-              element={<ITServiceItemPage />}
-            />
-
-            {/* ---------- NON-IT SERVICES ---------- */}
-            <Route path="/services/non-it" element={<NonITServices />} />
-            <Route
-              path="/services/non-it/:categorySlug"
-              element={<NonITServiceCategoryPage />}
+              element={<LegacyServiceRedirect />}
             />
             <Route
               path="/services/non-it/:categorySlug/:itemSlug"
-              element={<NonITServiceItemPage />}
+              element={<LegacyServiceRedirect />}
             />
 
             {/* ---------- OTHER ---------- */}
@@ -94,8 +112,17 @@ const App: React.FC = () => {
         <CookieNotice />
 
       </div>
+    </>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <AppShell />
     </Router>
   );
 };
 
 export default App;
+

@@ -216,18 +216,18 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 <li>
                   <Link
-                    to="/services/it"
+                    to="/services/website-web-application-services"
                     className="transition hover:text-violet-600"
                   >
-                    IT Services
+                    Website Services
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/services/non-it"
+                    to="/services/business-strategy-consulting"
                     className="transition hover:text-violet-600"
                   >
-                    Non-IT Services
+                    Business Consulting
                   </Link>
                 </li>
                 <li>

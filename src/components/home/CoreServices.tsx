@@ -153,7 +153,7 @@ const CoreServices: React.FC = () => {
       <div className="mx-auto max-w-[92rem] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 sm:mb-12">
           <h2 className="text-center font-serif text-3xl font-black text-slate-950 sm:text-4xl lg:text-5xl">
-            IT Services &amp; Solutions
+            Core Services &amp; Solutions
           </h2>
         </div>
 
@@ -224,7 +224,7 @@ const CoreServices: React.FC = () => {
                             </p>
 
                             <Link
-                              to={`/services/it/${service.slug}`}
+                              to={`/services/${service.slug}`}
                               onClick={(e) => e.stopPropagation()}
                               className="mt-4 inline-flex items-center gap-2 rounded-lg bg-[#c4b5fd] px-4 py-2 text-xs font-semibold text-[#2f1f52] sm:mt-5 sm:px-5 sm:text-sm"
                             >

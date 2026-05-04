@@ -11,18 +11,14 @@ const RouteTitle: React.FC = () => {
       "/": "Home",
       "/about": "About",
       "/services": "Services",
-      "/services/it": "IT Services",
-      "/services/non-it": "Non-IT Services",
       "/products": "Products",
       "/contact": "Contact Us",
       "/book-appointment": "Book Appointment",
     };
 
-    // ✅ handle dynamic routes too
-    let pageTitle =
+    const pageTitle =
       titles[pathname] ??
-      (pathname.startsWith("/services/it/") ? "IT Services" : undefined) ??
-      (pathname.startsWith("/services/non-it/") ? "Non-IT Services" : undefined) ??
+      (pathname.startsWith("/services/") ? "Services" : undefined) ??
       DEFAULT_TITLE;
 
     document.title = `${pageTitle} | ${DEFAULT_TITLE}`;

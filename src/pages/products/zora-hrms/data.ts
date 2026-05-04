@@ -53,7 +53,7 @@ export const hrmsHero = {
   secondaryCta: "Book a Demo",
 };
 
-export const hrmsHighlights = [
+export const hrmsHighlights = [ 
   "Centralized Data",
   "Automated Workflows",
   "Real-time Insights",
