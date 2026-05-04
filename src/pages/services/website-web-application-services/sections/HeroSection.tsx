@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
             <Link
               to="/book-appointment"
               onClick={scrollTop}
-              className="inline-flex items-center gap-3 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-100"
+              className="inline-flex items-center gap-3 bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-100"
             >
               Connect with our experts
               <ArrowRight size={17} />

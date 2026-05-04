@@ -51,9 +51,9 @@ const OverviewSection: React.FC = () => {
               return (
                 <article
                   key={item.title}
-                  className="rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_16px_48px_rgba(15,23,42,0.06)]"
+                  className="border border-slate-200/80 bg-white p-7 shadow-[0_16px_48px_rgba(15,23,42,0.06)]"
                 >
-                  <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-50 text-violet-600">
+                  <div className="inline-flex h-14 w-14 items-center justify-center bg-violet-50 text-violet-600">
                     <Icon size={24} />
                   </div>
                   <h3 className="mt-6 text-2xl font-semibold leading-tight tracking-[-0.02em] text-slate-950">
