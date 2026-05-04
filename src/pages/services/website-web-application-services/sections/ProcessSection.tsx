@@ -6,7 +6,6 @@ const icons = [Search, Users, PencilRuler, Code2, ShieldCheck, Rocket] as const;
 
 const ProcessSection: React.FC = () => {
   return (
-<<<<<<< HEAD
     <section className="overflow-hidden rounded-[30px] border border-[#ece9fb] bg-[linear-gradient(180deg,#ffffff_0%,#fafbff_100%)] px-6 py-8 shadow-[0_14px_34px_rgba(89,76,160,0.03)] sm:px-8 sm:py-10 lg:px-10 lg:py-12 xl:px-14">
       <div className="mx-auto max-w-[1180px]">
         <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#6f7390]">
@@ -19,18 +18,6 @@ const ProcessSection: React.FC = () => {
           We follow a collaborative and agile process to deliver high-quality solutions.
         </p>
       </div>
-=======
-    <section className="border border-slate-200/70 bg-white/92 px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] backdrop-blur-sm lg:px-8">
-      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
-        How We Deliver
-      </p>
-      <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-slate-950 md:text-[2.45rem]">
-        Our Proven Delivery Process
-      </h2>
-      <p className="mt-4 max-w-[520px] text-sm leading-7 text-slate-600">
-        We follow a collaborative and agile process to deliver high-quality solutions.
-      </p>
->>>>>>> 1f6d61e57327d7abbe9b2ba7c71d76270402d363
 
       <div className="mx-auto mt-10 grid max-w-[1180px] grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:mt-12 xl:grid-cols-6 xl:gap-x-4 xl:gap-y-0">
         {websiteWebAppProcessSteps.map((step, index) => {
