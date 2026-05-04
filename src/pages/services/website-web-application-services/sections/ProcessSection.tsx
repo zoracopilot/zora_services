@@ -6,16 +6,16 @@ const icons = [Search, Users, PencilRuler, Code2, ShieldCheck, Rocket] as const;
 
 const ProcessSection: React.FC = () => {
   return (
-    <section className="overflow-hidden rounded-[30px] border border-[#ece9fb] bg-[linear-gradient(180deg,#ffffff_0%,#fafbff_100%)] px-6 py-8 shadow-[0_14px_34px_rgba(89,76,160,0.03)] sm:px-8 sm:py-10 lg:px-10 lg:py-12 xl:px-14">
+    <section className="overflow-hidden border border-[#ece9fb] bg-[linear-gradient(180deg,#ffffff_0%,#fafbff_100%)] px-6 py-8 shadow-[0_14px_34px_rgba(89,76,160,0.03)] sm:px-8 sm:py-10 lg:px-10 lg:py-12 xl:px-14">
       <div className="mx-auto max-w-[1180px]">
-        <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#6f7390]">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
           How We Deliver
         </p>
-        <h2 className="mt-4 max-w-[420px] text-[2rem] font-semibold leading-[1.08] tracking-[-0.045em] text-[#0f172a] sm:text-[2.35rem] xl:max-w-[460px] xl:text-[2.1rem]">
+        <h2 className="mt-4 max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
           Our Proven Delivery Process
         </h2>
-        <p className="mt-4 max-w-[360px] text-[13px] leading-7 text-[#475569]">
-          We follow a collaborative and agile process to deliver high-quality solutions.
+        <p className="mt-4 max-w-[520px] text-base leading-8 text-slate-600">
+          We follow a collaborative and agile process to deliver high-quality solutions with clear communication, quick iterations, and continuous improvement at every stage of development.
         </p>
       </div>
 
@@ -31,12 +31,12 @@ const ProcessSection: React.FC = () => {
                     <div className="w-full border-t border-dotted border-[#d7d0fb]" />
                   </div>
                 ) : null}
-                <div className="inline-flex h-[62px] w-[62px] items-center justify-center rounded-full border border-[#ddd5fb] bg-[linear-gradient(180deg,#ffffff_0%,#fcfbff_100%)] text-[#7057f5] shadow-[0_4px_12px_rgba(112,87,245,0.04)]">
+                <div className="inline-flex h-[62px] w-[62px] items-center justify-center border border-[#ddd5fb] bg-[linear-gradient(180deg,#ffffff_0%,#fcfbff_100%)] text-[#7057f5] shadow-[0_4px_12px_rgba(112,87,245,0.04)]">
                   <Icon size={21} strokeWidth={1.95} />
                 </div>
               </div>
-              <h3 className="text-[13px] font-semibold leading-6 text-[#111827]">{step.title}</h3>
-              <p className="mx-auto mt-2.5 max-w-[18ch] text-[10.5px] leading-6 text-[#475569]">
+              <h3 className="text-base font-semibold leading-7 text-slate-950">{step.title}</h3>
+              <p className="mx-auto mt-3 max-w-[18ch] text-sm leading-7 text-slate-600">
                 {step.description}
               </p>
             </article>

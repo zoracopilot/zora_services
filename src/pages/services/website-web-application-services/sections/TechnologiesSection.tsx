@@ -30,44 +30,43 @@ const technologyCards: TechnologyCard[] = [
 
 const TechnologiesSection: React.FC = () => {
   return (
-    <section className="overflow-hidden rounded-[24px] border border-[#ece8fb] bg-[linear-gradient(180deg,#ffffff_0%,#f7f8ff_100%)] px-5 py-8 shadow-[0_10px_30px_rgba(89,76,160,0.04)] sm:px-6 sm:py-9 lg:px-8 lg:py-10">
-      <div className="mx-auto flex max-w-[1160px] flex-col gap-8 lg:flex-row lg:items-start lg:gap-10">
-        <div className="max-w-[260px] flex-none pt-1">
-          <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#9a90c4]">
+    <section className="overflow-hidden border border-[#ece8fb] bg-[linear-gradient(180deg,#ffffff_0%,#f7f8ff_100%)] px-5 py-8 shadow-[0_10px_30px_rgba(89,76,160,0.04)] sm:px-6 sm:py-9 lg:px-8 lg:py-10">
+      <div className="mx-auto max-w-[1160px]">
+        <div className="max-w-[760px] pt-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
             Technologies We Use
           </p>
-          <h2 className="mt-3 max-w-[10ch] text-[1.9rem] font-semibold leading-[1.06] tracking-[-0.035em] text-[#1d1b24] sm:text-[2.1rem] lg:text-[2.02rem]">
+          <h2 className="mt-4 max-w-[560px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
             Modern Technologies for Modern Solutions
           </h2>
-          <p className="mt-4 max-w-[235px] text-[12px] leading-[1.75] text-[#666979]">
+          <p className="mt-4 max-w-[620px] text-base leading-8 text-slate-600">
             We leverage the latest technologies and frameworks to build fast, secure, and
             future-ready applications.
           </p>
         </div>
 
-        <div className="min-w-0 flex-1 lg:pt-1">
+        <div className="mt-10">
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 lg:gap-3">
             {technologyCards.map((technology) => (
               <div
                 key={technology.name}
-                className="flex min-h-[72px] items-center justify-center rounded-[10px] border border-[#f0ecfb] bg-[#fdfcff] px-3 py-3 shadow-[0_4px_14px_rgba(96,83,160,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(96,83,160,0.06)]"
+                className="flex min-h-[92px] items-center justify-center border border-[#f0ecfb] bg-[#fdfcff] px-4 py-4 shadow-[0_4px_14px_rgba(96,83,160,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(96,83,160,0.06)]"
               >
-                <div className="flex w-full items-center justify-center gap-2.5">
+                <div className="flex w-full items-center justify-center gap-3">
                   <img
                     src={technology.image}
                     alt={technology.name}
-                    className="h-7 w-auto max-w-[56px] object-contain"
+                    className="h-9 w-auto max-w-[68px] object-contain"
                     loading="lazy"
                     draggable={false}
                   />
-                  <span className="text-[12px] font-semibold text-[#232330]">
+                  <span className="text-base font-semibold text-slate-950">
                     {technology.name}
                   </span>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
       </div>
     </section>
