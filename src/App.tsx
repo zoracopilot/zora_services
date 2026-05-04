@@ -1,11 +1,12 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Navigate, Routes, Route, useLocation, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Navigate, Routes, Route, useLocation } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
+import WebsiteWebApplicationServicesPage from "./pages/services/website-web-application-services";
 
 /* ================= MAIN PAGES ================= */
 const About = lazy(() => import("./pages/About"));
@@ -17,21 +18,9 @@ const ProductDetail = lazy(() => import("./pages/products/ItemPage"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 
-const ServiceCategoryPage = lazy(() => import("./pages/services/CategoryPage"));
-const ServiceItemPage = lazy(() => import("./pages/services/ItemPage"));
-
 const RouteFallback: React.FC = () => (
   <div className="min-h-[85vh] bg-gradient-to-b from-[#0b0318] via-[#120424] to-[#16062d]" />
 );
-
-const LegacyServiceRedirect: React.FC = () => {
-  const { categorySlug, itemSlug } = useParams();
-  const target = itemSlug
-    ? `/services/${categorySlug}/${itemSlug}`
-    : `/services/${categorySlug}`;
-
-  return <Navigate to={target} replace />;
-};
 
 const AppShell: React.FC = () => {
   const location = useLocation();
@@ -58,6 +47,10 @@ const AppShell: React.FC = () => {
               path="/services"
               element={<Navigate to="/services/website-web-application-services" replace />}
             />
+            <Route
+              path="/services/website-web-application-services"
+              element={<WebsiteWebApplicationServicesPage />}
+            />
             <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -67,37 +60,40 @@ const AppShell: React.FC = () => {
             <Route path="/blog/:slug" element={<BlogPost />} />
 
             <Route
-              path="/services/:categorySlug"
-              element={<ServiceCategoryPage />}
-            />
-            <Route
-              path="/services/:categorySlug/:itemSlug"
-              element={<ServiceItemPage />}
-            />
-
-            <Route
               path="/services/it"
               element={<Navigate to="/services/website-web-application-services" replace />}
             />
             <Route
               path="/services/non-it"
-              element={<Navigate to="/services/business-strategy-consulting" replace />}
+              element={<Navigate to="/services/website-web-application-services" replace />}
+            />
+            <Route
+              path="/services/website-web-application-services/:itemSlug"
+              element={<Navigate to="/services/website-web-application-services" replace />}
+            />
+            <Route
+              path="/services/:categorySlug"
+              element={<Navigate to="/services/website-web-application-services" replace />}
+            />
+            <Route
+              path="/services/:categorySlug/:itemSlug"
+              element={<Navigate to="/services/website-web-application-services" replace />}
             />
             <Route
               path="/services/it/:categorySlug"
-              element={<LegacyServiceRedirect />}
+              element={<Navigate to="/services/website-web-application-services" replace />}
             />
             <Route
               path="/services/non-it/:categorySlug"
-              element={<LegacyServiceRedirect />}
+              element={<Navigate to="/services/website-web-application-services" replace />}
             />
             <Route
               path="/services/it/:categorySlug/:itemSlug"
-              element={<LegacyServiceRedirect />}
+              element={<Navigate to="/services/website-web-application-services" replace />}
             />
             <Route
               path="/services/non-it/:categorySlug/:itemSlug"
-              element={<LegacyServiceRedirect />}
+              element={<Navigate to="/services/website-web-application-services" replace />}
             />
 
             {/* ---------- OTHER ---------- */}
