@@ -9,43 +9,47 @@ const TimelineSection: React.FC = () => {
   };
 
   return (
-    <section className="rounded-[32px] border border-slate-200/70 bg-[linear-gradient(180deg,#ffffff_0%,#f8faff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8">
-      <div className="grid gap-6 lg:grid-cols-[minmax(250px,0.7fr)_minmax(0,1.3fr)]">
-        <div className="rounded-[28px] border border-slate-200/80 bg-white p-8 shadow-[0_16px_48px_rgba(15,23,42,0.06)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
+    <section className="overflow-hidden rounded-[24px] border border-[#efebfb] bg-[#faf8ff] px-5 py-9 shadow-[0_10px_34px_rgba(89,76,160,0.04)] sm:px-6 lg:px-8 lg:py-10">
+      <div className="mx-auto grid max-w-[1160px] gap-7 xl:grid-cols-[178px_minmax(0,1fr)] xl:items-start xl:gap-6">
+        <div className="pt-1">
+          <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#9a90c4]">
             Project Duration
           </p>
-          <h2 className="mt-4 max-w-[280px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950">
+          <h2 className="mt-3 max-w-[8ch] text-[1.9rem] font-semibold leading-[1.06] tracking-[-0.035em] text-[#1d1b24] sm:text-[2.15rem] xl:text-[2.05rem]">
             Timelines That Fit Your Goals
           </h2>
-          <p className="mt-4 text-sm leading-7 text-slate-600">
+          <p className="mt-4 max-w-[190px] text-[12px] leading-[1.75] text-[#666979]">
             Every project is unique. Our agile approach ensures transparency and delivery on time,
             every time.
           </p>
           <Link
             to="/book-appointment"
             onClick={scrollTop}
-            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-violet-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-violet-500"
+            className="mt-6 inline-flex min-h-[36px] w-full items-center justify-center rounded-[4px] bg-[#6f3df4] px-4 py-2 text-[11px] font-semibold text-white shadow-[0_8px_18px_rgba(111,61,244,0.22)] transition-all duration-300 hover:bg-[#6433ec] hover:shadow-[0_10px_22px_rgba(111,61,244,0.26)] sm:w-auto"
           >
             Discuss Your Project
           </Link>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4">
           {websiteWebAppTimelineCards.map((item) => (
             <article
               key={item.title}
-              className="rounded-[28px] border border-slate-200/80 bg-white p-7 shadow-[0_16px_48px_rgba(15,23,42,0.06)]"
+              className="flex min-h-[214px] flex-col rounded-[6px] border border-[#f0ecfb] bg-[#fdfcff] px-[15px] pb-[14px] pt-[16px] shadow-[0_4px_14px_rgba(96,83,160,0.04)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_10px_22px_rgba(96,83,160,0.07)] lg:min-h-[208px]"
             >
-              <div className="text-[1.7rem] font-semibold tracking-[-0.03em] text-violet-600">
+              <div className="text-[1.1rem] font-semibold tracking-[-0.02em] text-[#7655ea] sm:text-[1.2rem]">
                 {item.duration}
               </div>
-              <h3 className="mt-5 text-xl font-semibold leading-tight text-slate-950">
+              <h3 className="mt-5 max-w-[14ch] text-[13px] font-semibold leading-[1.45] text-[#232330]">
                 {item.title}
               </h3>
-              <p className="mt-4 text-sm leading-7 text-slate-600">{item.description}</p>
-              <div className="mt-8 inline-flex h-11 w-11 items-center justify-center rounded-full bg-violet-50 text-violet-600">
-                <Clock3 size={18} />
+              <p className="mt-4 max-w-[17ch] text-[11px] leading-[1.7] text-[#666979]">
+                {item.description}
+              </p>
+              <div className="mt-auto pt-5">
+                <div className="inline-flex h-[26px] w-[26px] items-center justify-center rounded-[6px] border border-[#ddd5fb] bg-[#f8f3ff] text-[#7655ea]">
+                  <Clock3 size={12} strokeWidth={1.9} />
+                </div>
               </div>
             </article>
           ))}
