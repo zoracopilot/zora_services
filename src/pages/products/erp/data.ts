@@ -124,13 +124,13 @@ export const erpAudiences: ErpAudience[] = [
   {
     title: "Retail Businesses",
     description: "Manage sales, invoices, and customer billing with better speed and visibility.",
-    image: "/about/our_story.jpeg",
+    image: "/about/our_story.webp",
     icon: ShoppingCart,
   },
   {
     title: "Service Providers",
     description: "Bill clients accurately, track outstanding payments, and simplify recurring invoicing.",
-    image: "/about/company.jpeg",
+    image: "/about/company.webp",
     icon: UserCog,
   },
   {

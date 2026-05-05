@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
         className="absolute inset-0"
         style={{
           backgroundImage:
-            "linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.32)), url('/products/productHero_bg.png')",
+            "linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.32)), url('/products/productHero_bg.webp')",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",

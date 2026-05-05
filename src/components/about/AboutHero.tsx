@@ -8,7 +8,7 @@ const AboutHero: React.FC = () => {
         <div className="relative min-h-[500px] overflow-hidden bg-white lg:min-h-[500px]">
           <div className="absolute inset-x-0 top-0 h-72 overflow-hidden lg:inset-y-0 lg:left-auto lg:right-0 lg:h-full lg:w-[66%]">
             <img
-              src="/about/company.jpeg"
+              src="/about/company.webp"
               alt="Zora Global AI company building"
               className="h-full w-full object-cover object-center lg:object-[54%_center]"
             />

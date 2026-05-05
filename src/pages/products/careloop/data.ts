@@ -159,14 +159,14 @@ export const careloopAudiences: CareloopAudience[] = [
     description:
       "Access patient records, manage appointments, and provide prescriptions digitally.",
     icon: Stethoscope,
-    image: "/about/our_story.jpeg",
+    image: "/about/our_story.webp",
   },
   {
     title: "Patients",
     description:
       "Receive prescriptions, appointment updates, and communicate with clinics easily.",
     icon: HeartHandshake,
-    image: "/about/company.jpeg",
+    image: "/about/company.webp",
   },
   {
     title: "Admin",

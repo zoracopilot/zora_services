@@ -189,7 +189,7 @@ const ContactPage: React.FC = () => {
             </h1>
 
             <img
-              src="/contact/contact2.png"
+              src="/contact/contact2.webp"
               alt="Contact support illustration"
               className="mt-8 w-full max-w-[520px] object-contain"
             />
@@ -384,7 +384,7 @@ const ContactPage: React.FC = () => {
           <div
             className="absolute inset-0 bg-cover opacity-95"
             style={{
-              backgroundImage: "url('/contact/Contact_cta.png')",
+              backgroundImage: "url('/contact/Contact_cta.webp')",
               backgroundPosition: "center -56px",
             }}
             aria-hidden="true"

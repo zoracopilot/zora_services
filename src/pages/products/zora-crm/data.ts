@@ -131,13 +131,13 @@ export const crmAudiences: CrmAudience[] = [
     title: "Sales Teams",
     description: "Manage leads, follow-ups, proposals, and conversion pipelines in one system.",
     icon: TrendingUp,
-    image: "/about/company.jpeg",
+    image: "/about/company.webp",
   },
   {
     title: "Marketing Teams",
     description: "Track lead sources, campaign quality, and handoff performance with better visibility.",
     icon: Target,
-    image: "/about/our_story.jpeg",
+    image: "/about/our_story.webp",
   },
   {
     title: "Customer Support",

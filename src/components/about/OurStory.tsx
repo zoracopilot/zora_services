@@ -10,7 +10,7 @@ const OurStory: React.FC = () => {
           <div className="relative overflow-hidden rounded-[28px] border border-violet-100 bg-[linear-gradient(135deg,#ffffff,#f7f5ff)] p-5 shadow-[0_24px_70px_rgba(148,163,184,0.12)]">
             <div className="min-h-[290px] overflow-hidden rounded-[22px] bg-white">
               <img
-                src="/about/our_story.jpeg"
+                src="/about/our_story.webp"
                 alt="Zora Global AI team story"
                 className="h-full min-h-[290px] w-full object-cover object-center"
               />

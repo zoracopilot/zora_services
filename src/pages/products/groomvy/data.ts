@@ -157,13 +157,13 @@ export const groomvyAudiences: GroomvyAudience[] = [
     title: "Salon Owners",
     description: "Digitize operations, improve efficiency, and grow revenue.",
     icon: Store,
-    image: "/about/company.jpeg",
+    image: "/about/company.webp",
   },
   {
     title: "Spa Managers",
     description: "Coordinate appointments, staff, and services seamlessly.",
     icon: ShieldCheck,
-    image: "/about/our_story.jpeg",
+    image: "/about/our_story.webp",
   },
   {
     title: "Multi-Branch Salons",

@@ -4,7 +4,7 @@ import TextReveal from "./TextReveal";
 const VisionMission: React.FC = () => {
   return (
     <section className="mt-20">
-      <div className="relative overflow-hidden rounded-[24px] border border-violet-100 bg-[url('/about/mission_vision_bg.png')] bg-cover bg-center shadow-[0_24px_70px_rgba(148,163,184,0.14)]">
+      <div className="relative overflow-hidden rounded-[24px] border border-violet-100 bg-[url('/about/mission_vision_bg.webp')] bg-cover bg-center shadow-[0_24px_70px_rgba(148,163,184,0.14)]">
         <div className="absolute inset-0 bg-violet-950/10" aria-hidden="true" />
 
         <div className="relative grid min-h-[190px] gap-0 lg:grid-cols-[1.05fr_1fr_1fr_1.05fr]">

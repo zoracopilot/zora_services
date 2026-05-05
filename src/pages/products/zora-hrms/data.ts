@@ -157,14 +157,14 @@ export const hrmsUseCases: HrmsAudience[] = [
     description:
       "Monitor team attendance, performance, and productivity.",
     icon: UserCog,
-    image: "/about/our_story.jpeg",
+    image: "/about/our_story.webp",
   },
   {
     title: "Administrators",
     description:
       "Manage system settings, users, roles, and organizational policies.",
     icon: ShieldCheck,
-    image: "/about/company.jpeg",
+    image: "/about/company.webp",
   },
   {
     title: "Small & Medium Businesses",
@@ -178,14 +178,14 @@ export const hrmsUseCases: HrmsAudience[] = [
     description:
       "Handle complex HR operations across multiple departments and locations.",
     icon: Globe,
-    image: "/about/company.jpeg",
+    image: "/about/company.webp",
   },
   {
     title: "Remote & Hybrid Teams",
     description:
       "Access HRMS anytime, anywhere and stay connected.",
     icon: BriefcaseBusiness,
-    image: "/about/our_story.jpeg",
+    image: "/about/our_story.webp",
   },
 ];
 
