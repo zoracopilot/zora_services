@@ -23,8 +23,8 @@ const HeroSection: React.FC = () => {
               className="max-w-[560px] text-[2.7rem] font-semibold leading-[0.98] tracking-[-0.05em] !text-white sm:text-5xl lg:text-[4.2rem]"
               style={{ textShadow: "0 10px 30px rgba(15, 23, 42, 0.45)" }}
             >
-              Website &amp; Web
-              <span className="block">Application Services</span>
+           Cybersecurity Solutions
+             
             </h1>
           </TextReveal>
 
