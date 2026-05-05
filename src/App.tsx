@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
+import MobileApplicationDevelopmentPage from "./pages/services/mobile-application-development";
 import WebsiteWebApplicationServicesPage from "./pages/services/website-web-application-services";
 
 /* ================= MAIN PAGES ================= */
@@ -51,6 +52,10 @@ const AppShell: React.FC = () => {
               path="/services/website-web-application-services"
               element={<WebsiteWebApplicationServicesPage />}
             />
+            <Route
+              path="/services/mobile-application-development"
+              element={<MobileApplicationDevelopmentPage />}
+            />
             <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -70,6 +75,10 @@ const AppShell: React.FC = () => {
             <Route
               path="/services/website-web-application-services/:itemSlug"
               element={<Navigate to="/services/website-web-application-services" replace />}
+            />
+            <Route
+              path="/services/mobile-application-development/:itemSlug"
+              element={<Navigate to="/services/mobile-application-development" replace />}
             />
             <Route
               path="/services/:categorySlug"
