@@ -109,3 +109,27 @@ export const websiteWebAppDifferentiators = [
     description: "From launch to scale, we're with you at every step of your journey.",
   },
 ] as const;
+
+export const websiteWebAppExploreServices = [
+  {
+    title: "Digital Marketing Services",
+    description:
+      "SEO, social media, ads, and content strategies to increase visibility and leads.",
+    image: "/non-it-hero/performance-marketing.webp",
+    href: "/services/digital-marketing-services",
+  },
+  {
+    title: "Mobile Application Development",
+    description:
+      "Build user-friendly Android and iOS apps for your customers and business operations.",
+    image: "/home-services/mobileapplication.webp",
+    href: "/services/mobile-application-development",
+  },
+  {
+    title: "AI & Automation Solutions",
+    description:
+      "Automate workflows, improve productivity, and make smarter decisions with AI.",
+    image: "/home-services/aiandautomation.webp",
+    href: "/services/ai-automation-solutions",
+  },
+] as const;

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import BreadcrumbSchema from "../../../components/BreadcrumbSchema";
 import PageSEO from "../../../components/PageSEO";
 import CtaSection from "./sections/CtaSection";
+import ExploreMoreServicesSection from "./sections/ExploreMoreServicesSection";
 import HeroSection from "./sections/HeroSection";
 import OverviewSection from "./sections/OverviewSection";
 import ProcessSection from "./sections/ProcessSection";
@@ -40,6 +41,7 @@ const WebsiteWebApplicationServicesPage: React.FC = () => {
           <ProcessSection />
           <TechnologiesSection />
           <WhyChooseSection />
+          <ExploreMoreServicesSection />
           <CtaSection />
         </div>
       </div>
