@@ -6,24 +6,24 @@ export const websiteWebAppHeroHighlights = [
 
 export const websiteWebAppOverviewCards = [
   {
-    title: "Website Design & Development",
+    title: "Mobile App Design & Development",
     description:
-      "Responsive, modern, and SEO-friendly websites that create a lasting first impression and drive engagement.",
+      "Modern, user-friendly mobile apps with intuitive UI/UX and seamless performance.",
   },
   {
-    title: "Web Application Development",
+    title: "iOS & Android App Development",
     description:
-      "Robust, scalable, and secure web applications tailored to your business processes and user needs.",
+      "High-performance iOS and Android apps built for speed, scalability, and reliability.",
   },
   {
-    title: "E-Commerce Platform Development",
+    title: "Custom Mobile App Development",
     description:
-      "High-performance e-commerce solutions with seamless shopping experiences and secure payments.",
+      "Tailored mobile app solutions designed to match your business goals and user needs.",
   },
   {
-    title: "SaaS Application Development",
+    title: "Enterprise Mobile Solutions",
     description:
-      "Scalable SaaS products with multi-tenant architecture, analytics, and subscription management.",
+      "Secure, scalable mobile applications to streamline operations and drive growth.",
   },
 ] as const;
 
@@ -110,26 +110,26 @@ export const websiteWebAppDifferentiators = [
   },
 ] as const;
 
-export const websiteWebAppExploreServices = [
+export const mobileApplicationExploreServices = [
   {
-    title: "Digital Marketing Services",
+    title: "Website & Web Application Services",
     description:
-      "SEO, social media, ads, and content strategies to increase visibility and leads.",
-    image: "/non-it-hero/performance-marketing.webp",
-    href: "/services/digital-marketing-services",
-  },
-  {
-    title: "Mobile Application Development",
-    description:
-      "Build user-friendly Android and iOS apps for your customers and business operations.",
-    image: "/home-services/mobileapplication.webp",
-    href: "/services/mobile-application-development",
+      "Build fast, scalable digital platforms that integrate smoothly with your mobile app ecosystem.",
+    image: "/home-services/webandwebapplications.webp",
+    href: "/services/website-web-application-services",
   },
   {
     title: "AI & Automation Solutions",
     description:
-      "Automate workflows, improve productivity, and make smarter decisions with AI.",
+      "Add intelligent workflows, recommendations, and automation features to your mobile products.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
+  },
+  {
+    title: "Cloud & Infrastructure Services",
+    description:
+      "Support your apps with secure cloud backends, APIs, storage, and scalable deployment infrastructure.",
+    image: "/home-services/cloudandinfrastructure.webp",
+    href: "/services/cloud-infrastructure-services",
   },
 ] as const;

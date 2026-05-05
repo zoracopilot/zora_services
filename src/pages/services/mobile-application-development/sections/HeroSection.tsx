@@ -23,8 +23,8 @@ const HeroSection: React.FC = () => {
               className="max-w-[560px] text-[2.7rem] font-semibold leading-[0.98] tracking-[-0.05em] !text-white sm:text-5xl lg:text-[4.2rem]"
               style={{ textShadow: "0 10px 30px rgba(15, 23, 42, 0.45)" }}
             >
-              Website &amp; Web
-              <span className="block">Application Services</span>
+              Mobile Application
+              <span className="block">Development</span>
             </h1>
           </TextReveal>
 
@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
               className="mt-5 max-w-[520px] text-base leading-7 !text-white sm:text-lg sm:leading-8"
               style={{ textShadow: "0 8px 24px rgba(15, 23, 42, 0.4)" }}
             >
-              Building conversion-focused websites and scalable web applications for modern business growth.
+              We build scalable mobile applications for iOS and Android, focusing on performance, modern UI/UX design, and seamless user experience.
             </p>
           </TextReveal>
 

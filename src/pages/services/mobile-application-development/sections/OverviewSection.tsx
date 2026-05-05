@@ -19,22 +19,16 @@ const OverviewSection: React.FC = () => {
                 Overview
               </p>
               <h2 className="mt-4 max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
-                End-to-End Web Solutions
-                <span className="block">Built for Growth</span>
+               Scalable Mobile App Solutions
+             
               </h2>
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
-                We deliver end-to-end website and web application solutions designed to help startups
-                and growing businesses establish a strong digital foundation. Our approach combines
-                modern UI/UX design, scalable architecture, and performance-driven development to
-                build platforms that not only look great but also deliver real business impact.
+                We provide mobile application development services for startups, enterprises, and growing businesses looking to build high-performance mobile apps. Our team specializes in custom mobile app development, creating scalable, secure, and user-friendly applications for both iOS and Android platforms.
               </p>
               <p>
-                From concept to deployment, we focus on creating fast, secure, and user-centric
-                digital experiences tailored to your unique business goals. Whether it&apos;s a
-                high-converting website, a complex web application, or a scalable SaaS platform, our
-                solutions are built to grow with your business.
+                From idea validation to deployment, we design and develop mobile apps that deliver seamless user experiences, fast performance, and long-term business growth.
               </p>
             </TextReveal>
           </div>
