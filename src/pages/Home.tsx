@@ -5,11 +5,11 @@ import {
   EnterpriseDifferentiators,
   Industries,
   Technologies,
-  CoreServices,
   GlobalImpact,
   ProductsShowcase,
   DeliveryProcess,
   InsightsPreview,
+  Testimonials,
   Cta,
   SectionReveal,
 } from "../components/home";
@@ -35,10 +35,6 @@ const Home: React.FC = () => {
         <SectionReveal>
           <Industries />
         </SectionReveal>
-        {/* Core Services wrapper */}
-        <SectionReveal className="relative z-20">
-          <CoreServices />
-        </SectionReveal>
         <SectionReveal>
           <ProductsShowcase />
         </SectionReveal>
@@ -51,6 +47,9 @@ const Home: React.FC = () => {
         <EnterpriseDifferentiators />
         <SectionReveal>
           <InsightsPreview />
+        </SectionReveal>
+        <SectionReveal>
+          <Testimonials />
         </SectionReveal>
         <SectionReveal>
           <Cta />

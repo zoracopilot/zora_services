@@ -11,6 +11,7 @@ export { default as ImpactMetrics } from "./ImpactMetrics";
 export { default as ProductsShowcase } from "./ProductsShowcase";
 export { default as DeliveryProcess } from "./DeliveryProcess";
 export { default as InsightsPreview } from "./InsightsPreview";
+export { default as Testimonials } from "./Testimonials";
 export { default as Cta } from "./Cta";
 export { default as Counter } from "./Counter";
 export { default as SectionReveal } from "./SectionReveal";

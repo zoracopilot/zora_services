@@ -20,7 +20,7 @@ const OverviewSection: React.FC = () => {
               </p>
               <h2 className="mt-4 max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
               Custom Enterprise Software Solutions
-                <span className="block">Built for Growth</span>
+            
               </h2>
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
@@ -65,8 +65,8 @@ const OverviewSection: React.FC = () => {
         <TextReveal delay={0.12} className="lg:sticky lg:top-36">
           <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
             <img
-              src="/services/Web_application/webServices.webp"
-              alt="Website and web application services"
+              src="/services/Custom_enterprise_software/overview.png"
+              alt="Custom enterprise software solutions"
               className="h-full w-full object-cover"
             />
           </div>
