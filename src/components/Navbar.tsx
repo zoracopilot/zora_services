@@ -17,6 +17,14 @@ const CANONICAL_SERVICE_PATHS: Record<string, string> = {
   "ai-automation-solutions": "/services/ai-automation-solutions",
 };
 
+const normalizeServicePath = (path: string) => {
+  const match = path.match(/^\/services\/(?:it\/)?([^/]+)/);
+  if (!match) return path;
+
+  const slug = match[1];
+  return `/services/${slug}`;
+};
+
 const itServices: NavServiceItem[] = IT_SERVICE_CATEGORIES.map((category) => ({
   label: category.title,
   to: CANONICAL_SERVICE_PATHS[category.slug] ?? `/services/it/${category.slug}`,
@@ -54,28 +62,20 @@ const Navbar: React.FC = () => {
     event: React.MouseEvent<HTMLAnchorElement>,
     to: string,
   ) => {
-    const matchedCanonical = Object.values(CANONICAL_SERVICE_PATHS).find((path) => path === to);
     const currentPath = location.pathname;
-    const canonicalAlias = matchedCanonical
-      ? currentPath === matchedCanonical ||
-        currentPath === `/services/it/${matchedCanonical.split("/").pop()}`
-      : false;
-
-    if (!matchedCanonical) {
-      scrollTop();
-      return;
-    }
+    const normalizedCurrentPath = normalizeServicePath(currentPath);
+    const normalizedTargetPath = normalizeServicePath(to);
 
     event.preventDefault();
     setMenuOpen(false);
     setServicesOpen(false);
 
-    if (canonicalAlias) {
+    if (normalizedCurrentPath === normalizedTargetPath) {
       window.location.assign(to);
       return;
     }
 
-    navigate(to);
+    navigate(CANONICAL_SERVICE_PATHS[normalizedTargetPath.split("/").pop() ?? ""] ?? to);
     scrollTop();
   };
 
