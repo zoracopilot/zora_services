@@ -76,6 +76,11 @@ body {
   color: #475569;
 }
 
+.services-theme main .services-section-label {
+  color: #6d28d9 !important;
+  font-weight: 700 !important;
+}
+
 .services-theme main [class*="stroke-blue-200"],
 .services-theme main [class*="stroke-purple-200"] {
   stroke: #6366f1 !important;

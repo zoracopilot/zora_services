@@ -13,7 +13,7 @@ const ExploreMoreServicesSection: React.FC = () => {
     <section className="border-t border-[#ece8fb] bg-[linear-gradient(180deg,#ffffff_0%,#f7f8ff_100%)] px-5 py-7 sm:px-6 sm:py-8 lg:px-8 lg:py-9">
       <div className="mx-auto max-w-[1160px]">
         <TextReveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
+          <p className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
             Explore More Services
           </p>
         </TextReveal>

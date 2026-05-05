@@ -38,7 +38,7 @@ const TimelineSection: React.FC = () => {
           <TextReveal delay={0.08}>
             <h2 className="max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#0b123f] md:text-[2.55rem]">
               48 Services.
-              <span className="mt-2 block text-[#5d3df5]">Delivered in 48 Hours.</span>
+              <span className="mt-2 block font-bold text-[#5d3df5]">Delivered in 48 Hours.</span>
             </h2>
           </TextReveal>
 

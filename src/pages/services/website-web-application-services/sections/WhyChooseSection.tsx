@@ -10,7 +10,7 @@ const WhyChooseSection: React.FC = () => {
     <section className="overflow-hidden border border-[#ece8fb] bg-[linear-gradient(180deg,#ffffff_0%,#f7f8ff_100%)] px-5 py-8 shadow-[0_10px_30px_rgba(89,76,160,0.04)] sm:px-6 sm:py-9 lg:px-8 lg:py-10">
       <div className="mx-auto max-w-[1160px]">
         <TextReveal>
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
+        <p className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
           Why Choose Us
         </p>
 

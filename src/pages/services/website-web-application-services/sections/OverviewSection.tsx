@@ -15,7 +15,7 @@ const OverviewSection: React.FC = () => {
         <div>
           <div className="max-w-[760px]">
             <TextReveal>
-              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
+              <p className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
                 Overview
               </p>
               <h2 className="mt-4 max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
