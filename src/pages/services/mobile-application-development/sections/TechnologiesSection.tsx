@@ -1,9 +1,14 @@
 import React from "react";
 import TextReveal from "../../../../components/about/TextReveal";
+import awsImage from "../../../../assets/amazonwebservice.webp";
+import dockerImage from "../../../../assets/doctor.webp";
+import firebaseImage from "../../../../assets/firebase.webp";
 import flutterImage from "../../../../assets/flutter.webp";
 import javaImage from "../../../../assets/java.webp";
 import azureImage from "../../../../assets/microsoftazure.webp";
+import nextjsImage from "../../../../assets/nextjs.webp";
 import nodejsImage from "../../../../assets/nodejs.webp";
+import pythonImage from "../../../../assets/python.webp";
 import reactImage from "../../../../assets/react.svg";
 
 type TechnologyCard = {
@@ -12,11 +17,16 @@ type TechnologyCard = {
 };
 
 const technologyCards: TechnologyCard[] = [
-  { name: "React Native", image: reactImage },
-  { name: "Flutter", image: flutterImage },
+  { name: "React", image: reactImage },
+  { name: "Next.js", image: nextjsImage },
   { name: "Node.js", image: nodejsImage },
+  { name: "Firebase", image: firebaseImage },
+  { name: "Python", image: pythonImage },
   { name: "Java", image: javaImage },
+  { name: "Flutter", image: flutterImage },
   { name: "Azure", image: azureImage },
+  { name: "AWS", image: awsImage },
+  { name: "Docker", image: dockerImage },
 ];
 
 const TechnologiesSection: React.FC = () => {
@@ -28,11 +38,11 @@ const TechnologiesSection: React.FC = () => {
             Technologies We Use
           </p>
           <h2 className="mt-4 max-w-[560px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
-            Modern Technologies for Modern Mobile Apps
+            Modern Technologies for Modern Solutions
           </h2>
           <p className="mt-4 max-w-[620px] text-base leading-8 text-slate-600">
-            We leverage proven mobile and backend technologies to deliver secure,
-            scalable, and future-ready applications.
+            We leverage the latest technologies and frameworks to build fast, secure, and
+            future-ready applications.
           </p>
         </TextReveal>
 

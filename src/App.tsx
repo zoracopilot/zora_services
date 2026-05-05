@@ -56,6 +56,14 @@ const AppShell: React.FC = () => {
               path="/services/mobile-application-development"
               element={<MobileApplicationDevelopmentPage />}
             />
+            <Route
+              path="/services/it/website-web-application-services"
+              element={<WebsiteWebApplicationServicesPage />}
+            />
+            <Route
+              path="/services/it/mobile-application-development"
+              element={<MobileApplicationDevelopmentPage />}
+            />
             <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
             <Route path="/contact" element={<ContactPage />} />
@@ -78,6 +86,14 @@ const AppShell: React.FC = () => {
             />
             <Route
               path="/services/mobile-application-development/:itemSlug"
+              element={<Navigate to="/services/mobile-application-development" replace />}
+            />
+            <Route
+              path="/services/it/website-web-application-services/:itemSlug"
+              element={<Navigate to="/services/website-web-application-services" replace />}
+            />
+            <Route
+              path="/services/it/mobile-application-development/:itemSlug"
               element={<Navigate to="/services/mobile-application-development" replace />}
             />
             <Route

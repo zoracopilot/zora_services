@@ -3,28 +3,42 @@ import { BadgeCheck, Rocket, ShieldCheck } from "lucide-react";
 import TextReveal from "../../../../components/about/TextReveal";
 
 const highlights = [
-  { icon: Rocket, title: "FAST DELIVERY", description: "Rapid MVP Launches" },
-  { icon: ShieldCheck, title: "QUALITY FIRST", description: "Reliable Performance" },
-  { icon: BadgeCheck, title: "USER FOCUSED", description: "Built for Engagement" },
+  {
+    icon: Rocket,
+    title: "48 HOURS",
+    description: "Fast Delivery",
+  },
+  {
+    icon: ShieldCheck,
+    title: "100% QUALITY",
+    description: "No Compromise",
+  },
+  {
+    icon: BadgeCheck,
+    title: "CLIENT FOCUSED",
+    description: "Your Success, Our Priority",
+  },
 ] as const;
 
 const TimelineSection: React.FC = () => {
   return (
-    <section className="relative overflow-hidden border border-[#efebfb] bg-white px-4 pb-5 pt-6 shadow-[0_14px_40px_rgba(89,76,160,0.05)] sm:px-6 sm:pb-6 sm:pt-8 lg:min-h-[520px] lg:px-8 lg:pb-7 lg:pt-9">
+    <section
+      className="relative overflow-hidden border border-[#efebfb] bg-white px-4 pt-6 pb-5 shadow-[0_14px_40px_rgba(89,76,160,0.05)] sm:px-6 sm:pt-8 sm:pb-6 lg:min-h-[520px] lg:px-8 lg:pt-9 lg:pb-7"
+    >
       <div className="relative z-10 mx-auto grid max-w-[1380px] gap-8 lg:grid-cols-[minmax(0,0.88fr)_minmax(440px,1fr)] lg:items-center lg:gap-6">
         <div className="flex max-w-[760px] flex-col items-start justify-center lg:min-h-[440px]">
           <TextReveal delay={0.08}>
-            <h2 className="max-w-[340px] text-[2rem] font-semibold leading-tight tracking-[-0.03em] text-[#0b123f] sm:max-w-[460px] sm:text-[2.25rem] md:max-w-[560px] md:text-[2.55rem]">
-              Mobile Apps.
-              <span className="mt-2 block font-bold text-[#5d3df5]">Delivered with Speed.</span>
+            <h2 className="max-w-[320px] text-[2rem] font-semibold leading-tight tracking-[-0.03em] text-[#0b123f] sm:max-w-[420px] sm:text-[2.25rem] md:max-w-[520px] md:text-[2.55rem]">
+              48 Services.
+              <span className="mt-2 block font-bold text-[#5d3df5]">Delivered in 48 Hours.</span>
             </h2>
           </TextReveal>
 
           <TextReveal delay={0.16}>
-            <p className="mt-3 max-w-[340px] text-sm leading-6 text-[#5e6684] sm:mt-4 sm:max-w-[560px] sm:text-base sm:leading-7 md:max-w-[700px]">
-              We help businesses launch mobile experiences faster with structured
-              planning, agile delivery, and scalable engineering for Android, iOS,
-              and cross-platform products.
+            <p className="mt-3 max-w-[320px] text-sm leading-6 text-[#5e6684] sm:mt-4 sm:max-w-[520px] sm:text-base sm:leading-7 md:max-w-[700px]">
+              We help businesses launch, grow, and scale with 48 essential digital
+              solutions, all designed, developed, and delivered within 48 hours with
+              finalized requirements.
             </p>
           </TextReveal>
 
@@ -56,16 +70,11 @@ const TimelineSection: React.FC = () => {
         </div>
 
         <TextReveal delay={0.12} className="hidden lg:block">
-          <div className="grid gap-4 lg:grid-cols-2">
+          <div className="flex justify-end">
             <img
-              src="/it-hero/android.webp"
-              alt="Android app development"
-              className="h-full w-full object-cover"
-            />
-            <img
-              src="/it-hero/ios.webp"
-              alt="iOS app development"
-              className="h-full w-full object-cover"
+              src="/services/Web_application/timeline.png"
+              alt="48 services delivery timeline"
+              className="w-full max-w-[640px] object-contain"
             />
           </div>
         </TextReveal>

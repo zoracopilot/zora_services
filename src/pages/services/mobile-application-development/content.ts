@@ -1,96 +1,135 @@
-export const mobileAppOverviewCards = [
+export const websiteWebAppHeroHighlights = [
+  "User-Centric Design",
+  "Scalable Architecture",
+  "Performance Driven",
+] as const;
+
+export const websiteWebAppOverviewCards = [
   {
-    title: "Android App Development",
+    title: "Website Design & Development",
     description:
-      "High-performance Android applications tailored for modern user needs, business workflows, and Play Store readiness.",
+      "Responsive, modern, and SEO-friendly websites that create a lasting first impression and drive engagement.",
   },
   {
-    title: "iOS App Development",
+    title: "Web Application Development",
     description:
-      "Premium iPhone and iPad applications designed for performance, usability, and long-term scalability.",
+      "Robust, scalable, and secure web applications tailored to your business processes and user needs.",
   },
   {
-    title: "Cross-Platform Development",
+    title: "E-Commerce Platform Development",
     description:
-      "Efficient mobile products built for both Android and iOS using shared architecture and reusable components.",
+      "High-performance e-commerce solutions with seamless shopping experiences and secure payments.",
   },
   {
-    title: "App Maintenance & Scaling",
+    title: "SaaS Application Development",
     description:
-      "Ongoing optimization, feature upgrades, security improvements, and support as your mobile product grows.",
+      "Scalable SaaS products with multi-tenant architecture, analytics, and subscription management.",
   },
 ] as const;
 
-export const mobileAppProcessSteps = [
+export const websiteWebAppTimelineCards = [
+  {
+    duration: "2-4 Weeks",
+    title: "Website Design & Development",
+    description: "Ideal for business websites, landing pages, and portfolio sites.",
+  },
+  {
+    duration: "4-8 Weeks",
+    title: "Web Application Development",
+    description: "Custom web apps with advanced features and integrations.",
+  },
+  {
+    duration: "6-10 Weeks",
+    title: "E-Commerce Platform Development",
+    description: "Full-featured online stores with payment, inventory, and order management.",
+  },
+  {
+    duration: "8-16 Weeks",
+    title: "SaaS Application Development",
+    description: "Scalable SaaS products with complex workflows and user management.",
+  },
+] as const;
+
+export const websiteWebAppProcessSteps = [
   {
     title: "Discover",
-    description: "We understand your app goals, users, and business requirements.",
+    description: "We understand your goals, challenges, and users.",
   },
   {
     title: "Plan",
-    description: "We define the roadmap, platform strategy, and milestones.",
+    description: "We define the roadmap, architecture, and milestones.",
   },
   {
     title: "Design",
-    description: "We create intuitive mobile-first interfaces and user journeys.",
+    description: "We create intuitive UI/UX designs that engage.",
   },
   {
     title: "Develop",
-    description: "We build secure, scalable, and performance-focused mobile apps.",
+    description: "We build scalable, secure, and performance-driven solutions.",
   },
   {
     title: "Test",
-    description: "We validate quality, responsiveness, and cross-device compatibility.",
+    description: "We ensure quality, security, and cross-platform compatibility.",
   },
   {
-    title: "Launch & Support",
-    description: "We deploy, monitor, and continuously improve your app post-launch.",
-  },
-] as const;
-
-export const mobileAppDifferentiators = [
-  {
-    title: "Mobile-First Thinking",
-    description:
-      "We design mobile experiences around usability, performance, and engagement from day one.",
-  },
-  {
-    title: "Cross-Platform Expertise",
-    description:
-      "We help you choose the right native or cross-platform approach for faster, smarter delivery.",
-  },
-  {
-    title: "Scalable Architecture",
-    description:
-      "Our apps are built to support future features, growing users, and evolving business needs.",
-  },
-  {
-    title: "Continuous Support",
-    description:
-      "From app store launch to updates and optimization, we stay involved after release.",
+    title: "Deploy & Support",
+    description: "We launch, monitor, and provide continuous support.",
   },
 ] as const;
 
-export const mobileAppExploreServices = [
+export const websiteWebAppTechnologies = [
+  "React",
+  "Next.js",
+  "Node.js",
+  "Laravel",
+  "PHP",
+  "Python",
+  "MongoDB",
+  "MySQL",
+  "AWS",
+  "Docker",
+] as const;
+
+export const websiteWebAppDifferentiators = [
   {
-    title: "Website & Web Applications",
+    title: "Startup-Focused",
     description:
-      "Build fast, scalable digital platforms that work seamlessly with your mobile ecosystem.",
-    image: "/home-services/webandwebapplications.webp",
-    href: "/services/website-web-application-services",
+      "We understand the challenges startup teams face and build cost-effective solutions.",
+  },
+  {
+    title: "Agile & Transparent",
+    description: "Regular updates, quick iterations, and complete transparency.",
+  },
+  {
+    title: "Scalable Solutions",
+    description: "We build solutions that grow with your business and adapt to change.",
+  },
+  {
+    title: "Dedicated Support",
+    description: "From launch to scale, we're with you at every step of your journey.",
+  },
+] as const;
+
+export const websiteWebAppExploreServices = [
+  {
+    title: "Digital Marketing Services",
+    description:
+      "SEO, social media, ads, and content strategies to increase visibility and leads.",
+    image: "/non-it-hero/performance-marketing.webp",
+    href: "/services/digital-marketing-services",
+  },
+  {
+    title: "Mobile Application Development",
+    description:
+      "Build user-friendly Android and iOS apps for your customers and business operations.",
+    image: "/home-services/mobileapplication.webp",
+    href: "/services/mobile-application-development",
   },
   {
     title: "AI & Automation Solutions",
     description:
-      "Add smarter workflows, in-app intelligence, and automation to your mobile products.",
+      "Automate workflows, improve productivity, and make smarter decisions with AI.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
-  },
-  {
-    title: "Cloud & Infrastructure Services",
-    description:
-      "Power your apps with secure backend systems, cloud deployment, and reliable scalability.",
-    image: "/home-services/cloudandinfrastructure.webp",
-    href: "/services/cloud-infrastructure-services",
   },
 ] as const;

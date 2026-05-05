@@ -1,9 +1,9 @@
 import React from "react";
-import { AppWindow, PencilRuler, Rocket, Search, ShieldCheck, Smartphone } from "lucide-react";
+import { Code2, PencilRuler, Rocket, Search, ShieldCheck, Users } from "lucide-react";
 import TextReveal from "../../../../components/about/TextReveal";
-import { mobileAppProcessSteps } from "../content";
+import { websiteWebAppProcessSteps } from "../content";
 
-const icons = [Search, AppWindow, PencilRuler, Smartphone, ShieldCheck, Rocket] as const;
+const icons = [Search, Users, PencilRuler, Code2, ShieldCheck, Rocket] as const;
 
 const ProcessSection: React.FC = () => {
   return (
@@ -16,13 +16,12 @@ const ProcessSection: React.FC = () => {
           Our Proven Delivery Process
         </h2>
         <p className="mt-4 max-w-[700px] text-base leading-7 text-slate-600 sm:leading-8">
-          We follow a structured and collaborative mobile delivery process that helps
-          teams move from idea to launch with clarity, speed, and quality.
+          We follow a collaborative and agile process to deliver high-quality solutions with clear communication, quick iterations, and continuous improvement at every stage of development.
         </p>
       </TextReveal>
 
       <div className="mx-auto mt-8 grid max-w-[1160px] grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3 lg:gap-6 xl:mt-12 xl:grid-cols-6 xl:gap-4">
-        {mobileAppProcessSteps.map((step, index) => {
+        {websiteWebAppProcessSteps.map((step, index) => {
           const Icon = icons[index] ?? Search;
 
           return (
@@ -32,7 +31,7 @@ const ProcessSection: React.FC = () => {
               className="relative flex h-full flex-col items-center rounded-[22px] border border-[#efeafb] bg-white/90 px-5 py-6 text-center shadow-[0_10px_24px_rgba(89,76,160,0.04)] sm:px-6 xl:border-transparent xl:bg-transparent xl:px-2 xl:py-2 xl:shadow-none"
             >
               <div className="relative mx-auto mb-4 flex h-[60px] w-[60px] items-center justify-center sm:h-[62px] sm:w-[62px]">
-                {index < mobileAppProcessSteps.length - 1 ? (
+                {index < websiteWebAppProcessSteps.length - 1 ? (
                   <div className="absolute left-full top-1/2 hidden h-0 w-[calc(100%+0.75rem)] -translate-y-1/2 xl:block">
                     <div className="w-full border-t border-dotted border-[#d7d0fb]" />
                   </div>

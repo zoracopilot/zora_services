@@ -1,9 +1,9 @@
 import React from "react";
-import { AppWindow, Smartphone, TabletSmartphone, Wrench } from "lucide-react";
+import { Globe, Layers3, MonitorSmartphone, ShoppingCart } from "lucide-react";
 import TextReveal from "../../../../components/about/TextReveal";
-import { mobileAppOverviewCards } from "../content";
+import { websiteWebAppOverviewCards } from "../content";
 
-const icons = [Smartphone, TabletSmartphone, AppWindow, Wrench] as const;
+const icons = [Globe, MonitorSmartphone, ShoppingCart, Layers3] as const;
 
 const OverviewSection: React.FC = () => {
   return (
@@ -19,21 +19,22 @@ const OverviewSection: React.FC = () => {
                 Overview
               </p>
               <h2 className="mt-4 max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
-                End-to-End Mobile Apps
-                <span className="block">Built for Real Users</span>
+                End-to-End Web Solutions
+                <span className="block">Built for Growth</span>
               </h2>
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
-                We build mobile applications that combine strong user experience,
-                scalable engineering, and business-focused functionality. From startup
-                MVPs to enterprise mobile products, our team creates solutions that
-                feel intuitive and perform reliably across devices.
+                We deliver end-to-end website and web application solutions designed to help startups
+                and growing businesses establish a strong digital foundation. Our approach combines
+                modern UI/UX design, scalable architecture, and performance-driven development to
+                build platforms that not only look great but also deliver real business impact.
               </p>
               <p>
-                Whether you need an Android app, an iOS experience, or a cross-platform
-                product, we focus on speed, stability, and long-term maintainability so
-                your app can grow with your users and your business.
+                From concept to deployment, we focus on creating fast, secure, and user-centric
+                digital experiences tailored to your unique business goals. Whether it&apos;s a
+                high-converting website, a complex web application, or a scalable SaaS platform, our
+                solutions are built to grow with your business.
               </p>
             </TextReveal>
           </div>
@@ -45,8 +46,8 @@ const OverviewSection: React.FC = () => {
           </TextReveal>
 
           <div className="mt-6 grid max-w-[920px] gap-5 md:grid-cols-2">
-            {mobileAppOverviewCards.map((item, index) => {
-              const Icon = icons[index] ?? Smartphone;
+            {websiteWebAppOverviewCards.map((item, index) => {
+              const Icon = icons[index] ?? Globe;
 
               return (
                 <TextReveal
@@ -70,8 +71,8 @@ const OverviewSection: React.FC = () => {
         <TextReveal delay={0.12} className="lg:sticky lg:top-36">
           <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
             <img
-              src="/home-services/mobileapplication.webp"
-              alt="Mobile application development"
+              src="/services/Web_application/webServices.webp"
+              alt="Website and web application services"
               className="h-full w-full object-cover"
             />
           </div>

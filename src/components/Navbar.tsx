@@ -13,12 +13,12 @@ type NavServiceItem = {
 
 const itServices: NavServiceItem[] = IT_SERVICE_CATEGORIES.map((category) => ({
   label: category.title,
-  to: `/services/${category.slug}`,
+  to: `/services/it/${category.slug}`,
 }));
 
 const nonItServices: NavServiceItem[] = NON_IT_SERVICE_CATEGORIES.map((category) => ({
   label: category.title,
-  to: `/services/${category.slug}`,
+  to: `/services/non-it/${category.slug}`,
 }));
 
 const serviceGroups = [

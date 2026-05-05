@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import TextReveal from "../../../../components/about/TextReveal";
-import { mobileAppExploreServices } from "../content";
+import { websiteWebAppExploreServices } from "../content";
 
 const ExploreMoreServicesSection: React.FC = () => {
   const scrollTop = () => {
@@ -19,7 +19,7 @@ const ExploreMoreServicesSection: React.FC = () => {
         </TextReveal>
 
         <div className="mt-5 grid gap-4 lg:grid-cols-3">
-          {mobileAppExploreServices.map((service, index) => (
+          {websiteWebAppExploreServices.map((service, index) => (
             <TextReveal
               key={service.title}
               delay={0.08 * index}

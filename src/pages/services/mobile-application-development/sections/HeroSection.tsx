@@ -9,32 +9,31 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="restore-hero relative overflow-hidden border border-slate-200 bg-[linear-gradient(135deg,#0a0f35_0%,#0b133f_42%,#140734_100%)] shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+    <section className="relative overflow-hidden border border-slate-200 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
       <div
-        className="absolute inset-0 hidden bg-cover bg-right-center bg-no-repeat lg:block"
-        style={{ backgroundImage: "url('/home-services/mobileapplication.webp')" }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/services/Web_application/Web_application_hero.webp')" }}
       />
-      <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,rgba(2,6,23,0.84)_0%,rgba(2,6,23,0.68)_42%,rgba(2,6,23,0.16)_100%)] lg:block" />
+      <div className="absolute inset-0 bg-slate-950/52" />
 
-      <div className="relative px-6 py-12 sm:px-8 sm:py-14 lg:px-16 lg:py-16">
+      <div className="relative px-6 py-10 sm:px-8 lg:px-16 lg:py-14">
         <div className="max-w-[620px]">
           <TextReveal>
             <h1
-              className="max-w-[340px] text-[2.55rem] font-semibold leading-[0.98] tracking-[-0.05em] !text-white sm:max-w-[460px] sm:text-5xl lg:max-w-[560px] lg:text-[4.2rem]"
+              className="max-w-[560px] text-[2.7rem] font-semibold leading-[0.98] tracking-[-0.05em] !text-white sm:text-5xl lg:text-[4.2rem]"
               style={{ textShadow: "0 10px 30px rgba(15, 23, 42, 0.45)" }}
             >
-              Mobile Application
-              <span className="block">Development</span>
+              Website &amp; Web
+              <span className="block">Application Services</span>
             </h1>
           </TextReveal>
 
           <TextReveal delay={0.1}>
             <p
-              className="mt-5 max-w-[340px] text-base leading-7 !text-white sm:max-w-[520px] sm:text-lg sm:leading-8"
+              className="mt-5 max-w-[520px] text-base leading-7 !text-white sm:text-lg sm:leading-8"
               style={{ textShadow: "0 8px 24px rgba(15, 23, 42, 0.4)" }}
             >
-              Build intuitive Android, iOS, and cross-platform applications that
-              improve customer experience and accelerate business growth.
+              Building conversion-focused websites and scalable web applications for modern business growth.
             </p>
           </TextReveal>
 

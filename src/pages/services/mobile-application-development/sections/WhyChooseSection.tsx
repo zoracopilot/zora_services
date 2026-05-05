@@ -1,26 +1,26 @@
 import React from "react";
-import { LifeBuoy, Rocket, Smartphone, Users } from "lucide-react";
+import { LifeBuoy, Rocket, Settings2, Users } from "lucide-react";
 import TextReveal from "../../../../components/about/TextReveal";
-import { mobileAppDifferentiators } from "../content";
+import { websiteWebAppDifferentiators } from "../content";
 
-const icons = [Smartphone, Users, Rocket, LifeBuoy] as const;
+const icons = [Rocket, Users, Settings2, LifeBuoy] as const;
 
 const WhyChooseSection: React.FC = () => {
   return (
     <section className="overflow-hidden border border-[#ece8fb] bg-[linear-gradient(180deg,#ffffff_0%,#f7f8ff_100%)] px-5 py-8 shadow-[0_10px_30px_rgba(89,76,160,0.04)] sm:px-6 sm:py-9 lg:px-8 lg:py-10">
       <div className="mx-auto max-w-[1160px]">
         <TextReveal>
-          <p className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
-            Why Choose Us
-          </p>
+        <p className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
+          Why Choose Us
+        </p>
 
-          <h2 className="mt-4 max-w-[720px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
-            Why Companies Trust Us
-          </h2>
+        <h2 className="mt-4 max-w-[720px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
+          Why Companies Trust Us
+        </h2>
         </TextReveal>
 
         <div className="mt-6 grid gap-5 sm:grid-cols-2 xl:grid-cols-4 xl:gap-8">
-          {mobileAppDifferentiators.map((item, index) => {
+          {websiteWebAppDifferentiators.map((item, index) => {
             const Icon = icons[index] ?? Rocket;
 
             return (
