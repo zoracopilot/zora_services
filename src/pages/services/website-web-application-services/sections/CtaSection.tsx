@@ -9,7 +9,7 @@ const CtaSection: React.FC = () => {
   };
 
   return (
-    <section id="cta" className="px-1 pt-5 pb-5 lg:pt-6 lg:pb-6">
+    <section id="cta" className="px-1 pt-5 pb-1 lg:pt-6 lg:pb-1">
       <div className="mx-auto max-w-[1120px] overflow-hidden border border-[#ebe7ff] bg-[radial-gradient(circle_at_top_left,rgba(130,98,255,0.08),transparent_34%),linear-gradient(180deg,#ffffff_0%,#fbf9ff_100%)] shadow-[0_24px_70px_rgba(109,61,244,0.12)]">
         <div className="grid items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 lg:min-h-[190px] lg:grid-cols-[minmax(0,1.12fr)_minmax(240px,0.48fr)] lg:px-6 lg:py-2.5 xl:px-7">
           <TextReveal className="flex h-full max-w-[860px] flex-col justify-center">
