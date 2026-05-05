@@ -92,7 +92,7 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Custom Enterprise Software",
     description:
       "Extend delivery capacity with dedicated teams that support custom software projects, platforms and internal systems.",
-    image: "/home-services/custom-enterprice-software.webp",
+    image: "/home-services/enterprisesoftware.webp",
     href: "/services/custom-enterprise-software",
   },
   {
