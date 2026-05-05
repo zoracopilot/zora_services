@@ -13,13 +13,10 @@ const CtaSection: React.FC = () => {
       <div className="mx-auto max-w-[1120px] overflow-hidden rounded-[24px] border border-[#ebe7ff] bg-[radial-gradient(circle_at_top_left,rgba(130,98,255,0.12),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(167,139,250,0.12),transparent_30%),linear-gradient(180deg,#ffffff_0%,#fbf9ff_100%)] shadow-[0_24px_70px_rgba(109,61,244,0.12)]">
         <div className="grid items-center gap-6 px-5 py-6 sm:px-6 sm:py-7 lg:min-h-[210px] lg:grid-cols-[minmax(0,0.92fr)_minmax(220px,0.58fr)] lg:px-8 xl:px-10">
           <TextReveal className="flex h-full max-w-[640px] flex-col justify-center text-center lg:text-left">
-            <p
-              className="text-sm font-extrabold uppercase tracking-[0.22em]"
-              style={{ color: "#6d28d9" }}
-            >
+            <span className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
               Ready to Grow Your Business?
-            </p>
-            <h2 className="mt-3 text-[1.8rem] font-semibold leading-tight tracking-[-0.03em] text-[#111834] sm:text-[1.95rem] md:text-[2.35rem]">
+            </span>
+            <h2 className="mt-3 text-[1.75rem] font-semibold leading-tight tracking-[-0.03em] text-[#111834] md:text-[2rem]">
               Let&apos;s Build Your <span className="text-[#6a3df6]">Success Story</span>
             </h2>
             <p className="mx-auto mt-3 max-w-[560px] text-sm leading-7 text-[#4f5878] sm:text-base lg:mx-0">

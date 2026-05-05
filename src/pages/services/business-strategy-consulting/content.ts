@@ -15,35 +15,30 @@ export const businessStrategyHeroHighlights: HeroHighlight[] = [
 
 export const businessStrategyOverviewCards: OverviewCard[] = [
   {
-    title: "Business & Strategy Consulting",
+    title: "Business Process Optimisation",
     description:
-      "Actionable strategies to improve performance, enter new markets, and drive sustainable growth.",
+      "Improve workflows with business process optimization to reduce costs, increase efficiency, and enhance productivity.",
     href: "/services/business-strategy-consulting",
   },
   {
-    title: "Staff Augmentation & Workforce Solutions",
+    title: "Operational Efficiency Consulting",
     description:
-      "Skilled professionals and dedicated teams to extend your capabilities and scale your business.",
+      "Enhance performance with operational efficiency consulting focused on streamlining processes and maximizing output.",
     href: "/services/staff-augmentation-workforce-solutions",
   },
   {
-    title: "Branding & Creative Services",
+    title: "Digital Transformation Consulting",
     description:
-      "Creative branding and design that connect, engage, and leave a lasting impression on your audience.",
+      "Accelerate growth with digital transformation consulting to modernize operations and adopt scalable technologies.",
     href: "/services/branding-creative-services",
   },
   {
-    title: "Accounting & Financial Operations",
+    title: "Performance & Growth Strategy",
     description:
-      "Accurate accounting, reporting, payroll, and compliance support to keep your business financially strong.",
+      "Develop data-driven business strategies to improve performance, unlock opportunities, and drive sustainable growth.",
     href: "/services/accounting-financial-operations",
   },
-  {
-    title: "Digital Marketing Services",
-    description:
-      "Data-driven marketing strategies to increase visibility, generate leads, and maximize your ROI.",
-    href: "/services/digital-marketing-services",
-  },
+  
 ];
 
 export const businessStrategyProcessSteps: ProcessStep[] = [
@@ -94,24 +89,24 @@ export const businessStrategyDifferentiators: Differentiator[] = [
 
 export const businessStrategyExploreServices: ExploreService[] = [
   {
-    title: "IT Services",
+    title: "Website & Web Application Services",
     description:
-      "Custom software, web, mobile, cloud and IT consulting services.",
+      "Scalable websites and web applications built to support growth, performance, and digital operations.",
     image: "/home-services/webandwebapplications.webp",
     href: "/services/website-web-application-services",
   },
   {
-    title: "AI & Automation Services",
+    title: "AI & Automation Solutions",
     description:
-      "AI solutions, automation, RPA and data intelligence services.",
+      "Automate workflows, improve productivity, and enable smarter decisions with AI-powered systems.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
-    title: "Mobile App Development",
+    title: "Digital Marketing Services",
     description:
-      "Native and cross-platform mobile apps for your business.",
-    image: "/home-services/mobileapplication.webp",
-    href: "/services/mobile-application-development",
+      "Increase visibility, generate qualified leads, and grow your brand with performance-driven marketing strategies.",
+    image: "/non-it-hero/performance-marketing.webp",
+    href: "/services/digital-marketing-services",
   },
 ];

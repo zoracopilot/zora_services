@@ -27,20 +27,14 @@ const OverviewSection: React.FC = () => {
     <section className="px-4 py-9 sm:px-6 sm:py-10 lg:px-8 lg:py-11">
       <div className="mx-auto max-w-[1160px]">
         <TextReveal className="mx-auto max-w-[860px] text-center">
-          <p
-            className="text-sm font-extrabold uppercase tracking-[0.22em]"
-            style={{ color: "#6d28d9" }}
-          >
+          <span className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
             Overview
-          </p>
-          <h2 className="mt-4 text-[2rem] font-semibold leading-tight tracking-[-0.03em] text-slate-950 sm:text-[2.25rem] md:text-[2.45rem]">
+          </span>
+          <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
             End-to-End Business Solutions Built for Success
           </h2>
           <p className="mx-auto mt-5 max-w-[760px] text-base leading-8 text-slate-600">
-            We help organizations overcome challenges, optimize operations, and
-            unlock new opportunities. From strategy to execution, our solutions
-            are designed to deliver measurable results and long-term business
-            value.
+           We help organizations overcome challenges, optimize operations, and unlock growth through business and strategy consulting services designed to deliver measurable results and long-term value.
           </p>
         </TextReveal>
 

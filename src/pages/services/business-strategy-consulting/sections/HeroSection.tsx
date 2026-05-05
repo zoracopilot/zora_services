@@ -13,17 +13,15 @@ const HeroSection: React.FC = () => {
       <div className="mx-auto grid max-w-[1180px] items-center gap-6 px-4 py-5 sm:px-6 sm:py-6 md:gap-8 md:px-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(340px,1.08fr)] lg:gap-6 lg:px-10 lg:py-0 xl:px-12">
         <div className="order-2 mx-auto max-w-[540px] py-1 text-center sm:py-2 lg:order-1 lg:mx-0 lg:max-w-[470px] lg:py-10 lg:text-left">
           <TextReveal delay={0.06}>
-            <h1 className="mx-auto max-w-[620px] text-[2.2rem] font-semibold leading-[0.95] tracking-[-0.05em] text-[#171a4d] sm:text-[2.8rem] md:text-[3.35rem] lg:mx-0 lg:text-[4.15rem]">
-              Business Solutions
-              <span className="block">That Drive Growth</span>
+            <h1 className="mx-auto max-w-[620px] text-[2.7rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#171a4d] sm:text-5xl lg:mx-0 lg:text-[4.2rem]">
+              Business & Strategy
+              <span className="block">Consulting</span>
             </h1>
           </TextReveal>
 
           <TextReveal delay={0.12}>
             <p className="mx-auto mt-4 max-w-[520px] text-[0.98rem] leading-7 text-slate-600 sm:mt-5 sm:text-base sm:leading-7 md:text-lg md:leading-8 lg:mx-0">
-              Strategic consulting, workforce solutions, creative services,
-              financial operations, and digital marketing to help your business
-              grow stronger and smarter.
+              We provide business and strategy consulting services to help organizations improve performance, optimize operations, and achieve sustainable growth.
             </p>
           </TextReveal>
 
