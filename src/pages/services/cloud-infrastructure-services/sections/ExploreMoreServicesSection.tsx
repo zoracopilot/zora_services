@@ -26,13 +26,15 @@ const ExploreMoreServicesSection: React.FC = () => {
               className="h-full"
             >
               <article className="group mx-auto flex h-full w-full max-w-[348px] flex-col overflow-hidden rounded-[22px] border border-[#ece8fb] bg-white px-5 py-5 shadow-[0_12px_30px_rgba(89,76,160,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-[0_16px_36px_rgba(89,76,160,0.09)] active:-translate-y-0.5 active:border-violet-300 active:shadow-[0_14px_28px_rgba(89,76,160,0.1)]">
-                <div className="mx-auto flex h-[132px] w-[132px] items-center justify-center overflow-hidden rounded-full bg-[radial-gradient(circle_at_center,#f7f2ff_0%,#eef2ff_72%,#ffffff_100%)] transition-transform duration-300 group-hover:scale-[1.03] group-active:scale-[1.02]">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="h-[110px] w-[110px] object-contain"
-                    loading="lazy"
-                  />
+                <div className="mx-auto flex h-[132px] w-[132px] items-center justify-center rounded-full bg-[radial-gradient(circle_at_center,#f7f2ff_0%,#eef2ff_72%,#ffffff_100%)] p-2 transition-transform duration-300 group-hover:scale-[1.03] group-active:scale-[1.02]">
+                  <div className="h-full w-full overflow-hidden rounded-full">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="h-full w-full object-cover object-center"
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
 
                 <div className="mt-5 flex flex-1 flex-col text-center">
