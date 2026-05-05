@@ -112,11 +112,11 @@ export const websiteWebAppDifferentiators = [
 
 export const websiteWebAppExploreServices = [
   {
-    title: "Cybersecurity Solutions",
+    title: "AI & Automation Solutions",
     description:
-      "Protect your cloud environments with stronger security controls, monitoring, compliance, and risk reduction.",
-    image: "/home-services/cloudandinfrastructure.webp",
-    href: "/services/cybersecurity-solutions",
+      "Enhance cloud operations with intelligent automation, smart workflows, and AI-powered efficiency improvements.",
+    image: "/home-services/aiandautomation.webp",
+    href: "/services/ai-automation-solutions",
   },
   {
     title: "Custom Enterprise Software",
