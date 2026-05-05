@@ -9,6 +9,8 @@ import TextReveal from "../../../../components/about/TextReveal";
 import { businessStrategyOverviewCards } from "../content";
 
 const icons = [BriefcaseBusiness, ReceiptText, Palette, Megaphone] as const;
+const overviewCards = businessStrategyOverviewCards;
+const overviewImage = "/services/Staff_augmentation/overview.png?v=20260505";
 
 const OverviewSection: React.FC = () => {
   return (
@@ -45,7 +47,7 @@ const OverviewSection: React.FC = () => {
           </TextReveal>
 
           <div className="mt-6 grid max-w-[920px] gap-5 md:grid-cols-2">
-            {businessStrategyOverviewCards.map((item, index) => {
+            {overviewCards.map((item, index) => {
               const Icon = icons[index] ?? BriefcaseBusiness;
 
               return (
@@ -70,8 +72,8 @@ const OverviewSection: React.FC = () => {
         <TextReveal delay={0.12} className="lg:sticky lg:top-36">
           <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
             <img
-              src="/services/Business_strategy_consulting/overview.png"
-              alt="Business strategy consulting overview"
+              src={overviewImage}
+              alt="Staff augmentation and workforce solutions overview"
               className="h-full w-full object-cover"
             />
           </div>

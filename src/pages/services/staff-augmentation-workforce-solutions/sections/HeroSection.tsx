@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import TextReveal from "../../../../components/about/TextReveal";
 
 const HeroSection: React.FC = () => {
+  const heroImage = "/services/Staff_augmentation/hero.png?v=20260505";
+
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -12,7 +14,7 @@ const HeroSection: React.FC = () => {
     <section className="relative overflow-hidden border border-slate-200 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/services/Business_strategy_consulting/hero.png')" }}
+        style={{ backgroundImage: `url('${heroImage}')` }}
       />
       <div className="absolute inset-0 bg-slate-950/52" />
 
