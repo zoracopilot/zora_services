@@ -13,7 +13,7 @@ export const websiteWebAppOverviewCards = [
   {
     title: "CRM Services",
     description:
-      "Implement CRM solutions to manage customer relationships, improve engagement, and boost sales efficiency.",
+      "Implement CRM solutions to manage customer relationships, improve engagement and boost sales efficiency.",
   },
   {
     title: "IT Staff Augmentation",
@@ -31,7 +31,7 @@ export const websiteWebAppTimelineCards = [
   {
     duration: "2-4 Weeks",
     title: "Website Design & Development",
-    description: "Ideal for business websites, landing pages, and portfolio sites.",
+    description: "Ideal for business websites, landing pages and portfolio sites.",
   },
   {
     duration: "4-8 Weeks",
@@ -41,7 +41,7 @@ export const websiteWebAppTimelineCards = [
   {
     duration: "6-10 Weeks",
     title: "E-Commerce Platform Development",
-    description: "Full-featured online stores with payment, inventory, and order management.",
+    description: "Full-featured online stores with payment, inventory and order management.",
   },
   {
     duration: "8-16 Weeks",
@@ -53,11 +53,11 @@ export const websiteWebAppTimelineCards = [
 export const websiteWebAppProcessSteps = [
   {
     title: "Discover",
-    description: "We understand your goals, challenges, and users.",
+    description: "We understand your goals, challenges and users.",
   },
   {
     title: "Plan",
-    description: "We define the roadmap, architecture, and milestones.",
+    description: "We define the roadmap, architecture and milestones.",
   },
   {
     title: "Design",
@@ -65,15 +65,15 @@ export const websiteWebAppProcessSteps = [
   },
   {
     title: "Develop",
-    description: "We build scalable, secure, and performance-driven solutions.",
+    description: "We build scalable, secure and performance-driven solutions.",
   },
   {
     title: "Test",
-    description: "We ensure quality, security, and cross-platform compatibility.",
+    description: "We ensure quality, security and cross-platform compatibility.",
   },
   {
     title: "Deploy & Support",
-    description: "We launch, monitor, and provide continuous support.",
+    description: "We launch, monitor and provide continuous support.",
   },
 ] as const;
 
@@ -98,7 +98,7 @@ export const websiteWebAppDifferentiators = [
   },
   {
     title: "Agile & Transparent",
-    description: "Regular updates, quick iterations, and complete transparency.",
+    description: "Regular updates, quick iterations and complete transparency.",
   },
   {
     title: "Scalable Solutions",
@@ -114,21 +114,21 @@ export const customEnterpriseExploreServices = [
   {
     title: "Cloud & Infrastructure Services",
     description:
-      "Support enterprise software with secure hosting, backend scalability, integrations, and cloud modernization.",
+      "Support enterprise software with secure hosting, backend scalability, integrations and cloud modernization.",
     image: "/home-services/cloudandinfrastructure.webp",
     href: "/services/cloud-infrastructure-services",
   },
   {
     title: "AI & Automation Solutions",
     description:
-      "Add workflow automation, intelligent assistants, and operational AI to your enterprise platforms.",
+      "Add workflow automation, intelligent assistants and operational AI to your enterprise platforms.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Business Strategy Consulting",
     description:
-      "Align enterprise systems with business processes, operations, and long-term transformation goals.",
+      "Align enterprise systems with business processes, operations and long-term transformation goals.",
     image: "/non-it-hero/performance-marketing.webp",
     href: "/services/business-strategy-consulting",
   },

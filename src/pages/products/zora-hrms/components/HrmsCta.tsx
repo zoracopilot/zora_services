@@ -14,7 +14,7 @@ const HrmsCta: React.FC = () => {
               Build A More Efficient And Organized Workplace
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
-              Streamline daily HR operations with better visibility, stronger control, and the right support for business growth.
+              Streamline daily HR operations with better visibility, stronger control and the right support for business growth.
             </p>
           </div>
         </div>

@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
               className="mt-5 max-w-[520px] text-base leading-7 !text-white sm:text-lg sm:leading-8"
               style={{ textShadow: "0 8px 24px rgba(15, 23, 42, 0.4)" }}
             >
-              We build custom enterprise software solutions that streamline operations, improve efficiency, and support scalable business growth.
+              We build custom enterprise software solutions that streamline operations, improve efficiency and support scalable business growth.
             </p>
           </TextReveal>
 

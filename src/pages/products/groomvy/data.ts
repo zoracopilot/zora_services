@@ -47,7 +47,7 @@ export const groomvyHero = {
   title: "Grow Your Salon Business Effortlessly",
   subtitle: "Salon & Spa Management System",
   description:
-    "Groomvy is a complete salon management system that streamlines daily operations, enhances customer experience, and drives measurable business growth.",
+    "Groomvy is a complete salon management system that streamlines daily operations, enhances customer experience and drives measurable business growth.",
   heroImage: "/hero/salondesk.webp",
   highlights: [
     {
@@ -72,13 +72,13 @@ export const groomvyFeatures: GroomvyFeature[] = [
   {
     title: "Client Management",
     description:
-      "Store customer details, visit history, preferences, and loyalty insights.",
+      "Store customer details, visit history, preferences and loyalty insights.",
     icon: UserRound,
   },
   {
     title: "Service Management",
     description:
-      "Manage services, pricing, combos, and staff-wise assignments.",
+      "Manage services, pricing, combos and staff-wise assignments.",
     icon: Scissors,
   },
   {
@@ -90,19 +90,19 @@ export const groomvyFeatures: GroomvyFeature[] = [
   {
     title: "Inventory Control",
     description:
-      "Track products, stock alerts, and purchase management in one place.",
+      "Track products, stock alerts and purchase management in one place.",
     icon: Package,
   },
   {
     title: "Staff Management",
     description:
-      "Manage staff profiles, roles, commissions, attendance, and performance.",
+      "Manage staff profiles, roles, commissions, attendance and performance.",
     icon: Users,
   },
   {
     title: "Sales & Reports",
     description:
-      "Monitor sales, appointments, and business performance with clear reports.",
+      "Monitor sales, appointments and business performance with clear reports.",
     icon: BarChart3,
   },
   {
@@ -114,7 +114,7 @@ export const groomvyFeatures: GroomvyFeature[] = [
   {
     title: "Role-Based Access",
     description:
-      "Separate views for owners, managers, and staff for better control.",
+      "Separate views for owners, managers and staff for better control.",
     icon: LayoutDashboard,
   },
 ];
@@ -135,13 +135,13 @@ export const groomvySteps: GroomvyStep[] = [
   {
     title: "Generate Bill",
     description:
-      "Apply discounts, taxes, and service charges automatically.",
+      "Apply discounts, taxes and service charges automatically.",
     icon: ClipboardList,
   },
   {
     title: "Update Records",
     description:
-      "Inventory, sales, and customer history update in real time.",
+      "Inventory, sales and customer history update in real time.",
     icon: Package,
   },
   {
@@ -155,13 +155,13 @@ export const groomvySteps: GroomvyStep[] = [
 export const groomvyAudiences: GroomvyAudience[] = [
   {
     title: "Salon Owners",
-    description: "Digitize operations, improve efficiency, and grow revenue.",
+    description: "Digitize operations, improve efficiency and grow revenue.",
     icon: Store,
     image: "/about/company.webp",
   },
   {
     title: "Spa Managers",
-    description: "Coordinate appointments, staff, and services seamlessly.",
+    description: "Coordinate appointments, staff and services seamlessly.",
     icon: ShieldCheck,
     image: "/about/our_story.webp",
   },
@@ -173,7 +173,7 @@ export const groomvyAudiences: GroomvyAudience[] = [
   },
   {
     title: "Grooming Businesses",
-    description: "Support barbershops, grooming studios, and beauty centers.",
+    description: "Support barbershops, grooming studios and beauty centers.",
     icon: Scissors,
     image: "/it-hero/inventory.webp",
   },
@@ -192,7 +192,7 @@ export const groomvyOutcomes: GroomvyOutcome[] = [
   },
   {
     title: "Accurate Records",
-    description: "Keep clean customer, inventory, and billing data at all times.",
+    description: "Keep clean customer, inventory and billing data at all times.",
     icon: ClipboardList,
   },
   {
@@ -202,7 +202,7 @@ export const groomvyOutcomes: GroomvyOutcome[] = [
   },
   {
     title: "Increased Revenue",
-    description: "Upsell services, improve loyalty, and grow your business.",
+    description: "Upsell services, improve loyalty and grow your business.",
     icon: Wallet,
   },
   {

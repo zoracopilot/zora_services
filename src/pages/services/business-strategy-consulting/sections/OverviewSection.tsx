@@ -4,71 +4,82 @@ import {
   Megaphone,
   Palette,
   ReceiptText,
-  UsersRound,
 } from "lucide-react";
-import { Link } from "react-router-dom";
 import TextReveal from "../../../../components/about/TextReveal";
 import { businessStrategyOverviewCards } from "../content";
 
-const icons = [
-  BriefcaseBusiness,
-  UsersRound,
-  Palette,
-  ReceiptText,
-  Megaphone,
-] as const;
+const icons = [BriefcaseBusiness, ReceiptText, Palette, Megaphone] as const;
 
 const OverviewSection: React.FC = () => {
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  };
-
   return (
-    <section className="px-4 py-9 sm:px-6 sm:py-10 lg:px-8 lg:py-11">
-      <div className="mx-auto max-w-[1160px]">
-        <TextReveal className="mx-auto max-w-[860px] text-center">
-          <span className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
-            Overview
-          </span>
-          <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
-            End-to-End Business Solutions Built for Success
-          </h2>
-          <p className="mx-auto mt-5 max-w-[760px] text-base leading-8 text-slate-600">
-           We help organizations overcome challenges, optimize operations, and unlock growth through business and strategy consulting services designed to deliver measurable results and long-term value.
-          </p>
-        </TextReveal>
+    <section
+      id="overview"
+      className="border border-slate-200/70 bg-[linear-gradient(180deg,#f1f6ff_0%,#dfe9ff_100%)] px-6 py-14 shadow-[0_20px_70px_rgba(15,23,42,0.05)] lg:px-8"
+    >
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_420px] lg:items-start lg:gap-12">
+        <div>
+          <div className="max-w-[760px]">
+            <TextReveal>
+              <p className="services-section-label text-xs font-bold uppercase tracking-[0.22em]">
+                Overview
+              </p>
+              <h2 className="mt-4 max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-slate-950 md:text-[2.55rem]">
+                End-to-End Business Solutions
+              
+              </h2>
+            </TextReveal>
+            <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
+              <p>
+                We help organizations overcome challenges, optimize operations and
+                unlock growth through business and strategy consulting services designed
+                to deliver measurable results and long-term value.
+              </p>
+              <p>
+                From business process optimization to performance planning and digital
+                transformation, our approach is built around practical execution,
+                sustainable growth and sharper decision-making at every stage.
+              </p>
+            </TextReveal>
+          </div>
 
-        <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {businessStrategyOverviewCards.map((item, index) => {
-            const Icon = icons[index] ?? BriefcaseBusiness;
+          <TextReveal delay={0.14} className="mt-10">
+            <h3 className="text-2xl font-semibold tracking-[-0.02em] text-slate-950">
+              What We Offer
+            </h3>
+          </TextReveal>
 
-            return (
-              <TextReveal
-                key={item.title}
-                delay={0.06 * index}
-                className="flex h-full flex-col rounded-[22px] border border-[#ece8fb] bg-white p-5 shadow-[0_12px_30px_rgba(89,76,160,0.05)] sm:p-6 xl:min-h-[292px]"
-              >
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[radial-gradient(circle_at_center,#f5f0ff_0%,#ffffff_72%)] text-violet-600 shadow-[0_10px_28px_rgba(124,58,237,0.08)]">
-                  <Icon size={24} />
-                </div>
-                <h3 className="mt-5 text-[1.2rem] font-semibold leading-8 tracking-[-0.02em] text-[#171a4d]">
-                  {item.title}
-                </h3>
-                <p className="mt-3 flex-1 text-sm leading-7 text-slate-600">
-                  {item.description}
-                </p>
-                <Link
-                  to={item.href}
-                  onClick={scrollTop}
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-violet-600 transition-colors hover:text-violet-700"
+          <div className="mt-6 grid max-w-[920px] gap-5 md:grid-cols-2">
+            {businessStrategyOverviewCards.map((item, index) => {
+              const Icon = icons[index] ?? BriefcaseBusiness;
+
+              return (
+                <TextReveal
+                  key={item.title}
+                  delay={0.06 * index}
+                  className="border border-slate-200/80 bg-white p-7 shadow-[0_16px_48px_rgba(15,23,42,0.06)]"
                 >
-                  Learn More
-                  <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </TextReveal>
-            );
-          })}
+                  <div className="inline-flex h-14 w-14 items-center justify-center bg-violet-50 text-violet-600">
+                    <Icon size={24} />
+                  </div>
+                  <h3 className="mt-6 text-2xl font-semibold leading-tight tracking-[-0.02em] text-slate-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-slate-600">{item.description}</p>
+                </TextReveal>
+              );
+            })}
+          </div>
         </div>
+
+        <TextReveal delay={0.12} className="lg:sticky lg:top-36">
+          <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
+            <img
+              src="/services/Business_strategy_consulting/overview.png"
+              alt="Business strategy consulting overview"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </TextReveal>
       </div>
     </section>
   );

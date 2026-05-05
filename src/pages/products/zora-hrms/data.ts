@@ -64,37 +64,37 @@ export const hrmsFeatures: HrmsFeature[] = [
   {
     title: "Employee Management",
     description:
-      "Manage employee profiles, documents, and organizational details in one place.",
+      "Manage employee profiles, documents and organizational details in one place.",
     icon: UserRound,
   },
   {
     title: "Attendance Tracking",
     description:
-      "Track attendance with biometric, geo-location, and shift management.",
+      "Track attendance with biometric, geo-location and shift management.",
     icon: ClipboardCheck,
   },
   {
     title: "Payroll Processing",
     description:
-      "Automate payroll, salary slips, tax handling, and compliance tasks.",
+      "Automate payroll, salary slips, tax handling and compliance tasks.",
     icon: FileSpreadsheet,
   },
   {
     title: "Leave Management",
     description:
-      "Handle leave applications, approvals, balances, and holiday calendars.",
+      "Handle leave applications, approvals, balances and holiday calendars.",
     icon: BriefcaseBusiness,
   },
   {
     title: "Recruitment Management",
     description:
-      "Manage job posts, applicants, interviews, and offer letters with ease.",
+      "Manage job posts, applicants, interviews and offer letters with ease.",
     icon: Users,
   },
   {
     title: "Performance Evaluation",
     description:
-      "Set goals, track progress, conduct reviews, and manage appraisals.",
+      "Set goals, track progress, conduct reviews and manage appraisals.",
     icon: Target,
   },
   {
@@ -121,7 +121,7 @@ export const hrmsSteps: HrmsStep[] = [
   {
     title: "Automated Processes",
     description:
-      "Automate attendance, payroll, leave, recruitment, and HR tasks.",
+      "Automate attendance, payroll, leave, recruitment and HR tasks.",
     icon: Sparkles,
   },
   {
@@ -155,14 +155,14 @@ export const hrmsUseCases: HrmsAudience[] = [
   {
     title: "Managers",
     description:
-      "Monitor team attendance, performance, and productivity.",
+      "Monitor team attendance, performance and productivity.",
     icon: UserCog,
     image: "/about/our_story.webp",
   },
   {
     title: "Administrators",
     description:
-      "Manage system settings, users, roles, and organizational policies.",
+      "Manage system settings, users, roles and organizational policies.",
     icon: ShieldCheck,
     image: "/about/company.webp",
   },
@@ -193,7 +193,7 @@ export const hrmsBenefits: HrmsBenefit[] = [
   {
     title: "Improved Efficiency",
     description:
-      "Automate attendance, payroll, and leave tasks to reduce manual work and improve efficiency.",
+      "Automate attendance, payroll and leave tasks to reduce manual work and improve efficiency.",
     icon: Sparkles,
   },
   {
@@ -205,7 +205,7 @@ export const hrmsBenefits: HrmsBenefit[] = [
   {
     title: "Time Savings",
     description:
-      "Save time with automation, faster approvals, and streamlined workflows.",
+      "Save time with automation, faster approvals and streamlined workflows.",
     icon: CheckCheck,
   },
   {
@@ -223,7 +223,7 @@ export const hrmsBenefits: HrmsBenefit[] = [
   {
     title: "Higher Productivity",
     description:
-      "Boost productivity with efficient tools, clearer workflows, and reduced workload.",
+      "Boost productivity with efficient tools, clearer workflows and reduced workload.",
     icon: BarChart3,
   },
 ];

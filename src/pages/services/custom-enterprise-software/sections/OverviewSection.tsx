@@ -25,10 +25,10 @@ const OverviewSection: React.FC = () => {
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
-                We create custom enterprise software that simplifies complex business processes, connects systems, and improves operational efficiency. Our solutions are designed to handle large-scale workflows while maintaining high performance, security, and reliability.
+                We create custom enterprise software that simplifies complex business processes, connects systems and improves operational efficiency. Our solutions are designed to handle large-scale workflows while maintaining high performance, security and reliability.
               </p>
               <p>
-                By combining advanced architecture, automation, and system integration, we deliver enterprise applications that support smarter operations and faster decision-making. From ERP platforms and internal business systems to automation-driven enterprise tools, our software is built to adapt, scale, and evolve with your business needs.
+                By combining advanced architecture, automation and system integration, we deliver enterprise applications that support smarter operations and faster decision-making. From ERP platforms and internal business systems to automation-driven enterprise tools, our software is built to adapt, scale and evolve with your business needs.
               </p>
             </TextReveal>
           </div>

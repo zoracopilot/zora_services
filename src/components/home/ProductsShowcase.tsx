@@ -7,7 +7,7 @@ const products = [
     id: "careloop",
     title: "CARELOOP",
     description:
-      "Smart healthcare management for clinics and care teams with patient records, scheduling, and follow-up visibility.",
+      "Smart healthcare management for clinics and care teams with patient records, scheduling and follow-up visibility.",
     image: "/hero/careloop.webp",
     accent: "Healthcare Platform",
   },
@@ -15,7 +15,7 @@ const products = [
     id: "zora-crm",
     title: "ZORA CRM",
     description:
-      "Powerful CRM to manage leads, customers, and sales pipelines with clearer reporting and team coordination.",
+      "Powerful CRM to manage leads, customers and sales pipelines with clearer reporting and team coordination.",
     image: "/hero/crm.webp",
     accent: "Sales Operations",
   },
@@ -23,7 +23,7 @@ const products = [
     id: "zora-hrms",
     title: "ZORA HRMS",
     description:
-      "Centralize attendance, payroll, employee records, and workforce workflows in one operational dashboard.",
+      "Centralize attendance, payroll, employee records and workforce workflows in one operational dashboard.",
     image: "/hero/hrms.webp",
     accent: "People Operations",
   },
@@ -31,7 +31,7 @@ const products = [
     id: "erp",
     title: "ERP",
     description:
-      "A smart billing software designed for efficient order management, product handling, and seamless payment processing.",
+      "A smart billing software designed for efficient order management, product handling and seamless payment processing.",
     image: "/hero/billing.webp",
     accent: "Business Operations",
   },
@@ -39,7 +39,7 @@ const products = [
     id: "groomvy",
     title: "GROOMVY",
     description:
-      "Manage appointments, walk-ins, staff schedules, and customer histories for modern salon and spa teams.",
+      "Manage appointments, walk-ins, staff schedules and customer histories for modern salon and spa teams.",
     image: "/hero/salondesk.webp",
     accent: "Service Management",
   },

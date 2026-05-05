@@ -25,10 +25,10 @@ const OverviewSection: React.FC = () => {
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
-                We provide mobile application development services for startups, enterprises, and growing businesses looking to build high-performance mobile apps. Our team specializes in custom mobile app development, creating scalable, secure, and user-friendly applications for both iOS and Android platforms.
+                We provide mobile application development services for startups, enterprises and growing businesses looking to build high-performance mobile apps. Our team specializes in custom mobile app development, creating scalable, secure and user-friendly applications for both iOS and Android platforms.
               </p>
               <p>
-                From idea validation to deployment, we design and develop mobile apps that deliver seamless user experiences, fast performance, and long-term business growth.
+                From idea validation to deployment, we design and develop mobile apps that deliver seamless user experiences, fast performance and long-term business growth.
               </p>
             </TextReveal>
           </div>

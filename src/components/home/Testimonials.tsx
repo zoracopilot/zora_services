@@ -11,7 +11,7 @@ const testimonials = [
     name: "Arun Prakash",
     role: "Founder, Nexora Labs",
     quote:
-      "Zora helped us turn a complex idea into a polished product with speed, clarity, and strong technical execution.",
+      "Zora helped us turn a complex idea into a polished product with speed, clarity and strong technical execution.",
   },
   {
     name: "Meera S",
@@ -33,9 +33,9 @@ const testimonials = [
   },
   {
     name: "Karthik Raman",
-    role: "Product Head, OrbitOne",
+    role: "Product Head orbitOne",
     quote:
-      "The UI quality, responsiveness, and business understanding stood out. They built exactly what our users needed.",
+      "The UI quality, responsiveness and business understanding stood out. They built exactly what our users needed.",
   },
 ] as const;
 

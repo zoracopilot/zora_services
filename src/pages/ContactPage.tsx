@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
     <div className="relative min-h-screen w-full overflow-hidden bg-white text-[#17124a]">
       <PageSEO
         title="Contact Us - Get in Touch | Zora Global AI"
-        description="Contact Zora Global AI to discuss your AI automation, software development, or digital transformation project. Our team responds within 24 hours."
+        description="Contact Zora Global AI to discuss your AI automation, software development or digital transformation project. Our team responds within 24 hours."
         canonical="/contact"
       />
       <DocumentHead

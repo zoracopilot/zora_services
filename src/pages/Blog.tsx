@@ -149,7 +149,7 @@ export default function Blog() {
             className="mx-auto max-w-3xl text-lg leading-relaxed text-slate-600 md:text-xl"
           >
             Explore practical articles on AI, software engineering, automation,
-            digital strategy, and business transformation designed to help teams
+            digital strategy and business transformation designed to help teams
             make better technology decisions with confidence.
           </motion.p>
         </motion.div>

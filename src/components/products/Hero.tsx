@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
                 Integrated solutions to automate operations, elevate customer
-                experiences, and drive sustainable growth.
+                experiences and drive sustainable growth.
               </p>
 
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

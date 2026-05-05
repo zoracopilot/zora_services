@@ -86,7 +86,7 @@ export const products: ProductItem[] = [
     title: "GROOMVY",
     subtitle: "Salon & Spa Management System",
     description:
-      "Manage appointments, staff, inventory, and customer loyalty.",
+      "Manage appointments, staff, inventory and customer loyalty.",
     bullets: [
       "Appointment Management",
       "Staff & Services",
@@ -124,7 +124,7 @@ export const reasons: ProductReason[] = [
   },
   {
     title: "Proven Technology",
-    description: "Reliable, scalable, and built for performance.",
+    description: "Reliable, scalable and built for performance.",
     icon: Layers3,
   },
   {

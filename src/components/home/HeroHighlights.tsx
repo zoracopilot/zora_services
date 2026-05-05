@@ -18,12 +18,12 @@ const highlights = [
   },
   {
     title: "Innovation Driven",
-    description: "Modern delivery designed for growth, speed, and flexibility.",
+    description: "Modern delivery designed for growth, speed and flexibility.",
     Icon: Sparkles,
   },
   {
     title: "Business Focused",
-    description: "Every engagement aligned to outcomes, efficiency, and ROI.",
+    description: "Every engagement aligned to outcomes, efficiency and ROI.",
     Icon: BriefcaseBusiness,
   },
 ];

@@ -8,7 +8,7 @@ export const websiteWebAppOverviewCards = [
   {
     title: "Android App Development",
     description:
-      "Build scalable Android apps with high performance, smooth UI, and seamless user experience.",
+      "Build scalable Android apps with high performance, smooth UI and seamless user experience.",
   },
   {
     title: "iOS App Development",
@@ -31,7 +31,7 @@ export const websiteWebAppTimelineCards = [
   {
     duration: "2-4 Weeks",
     title: "Website Design & Development",
-    description: "Ideal for business websites, landing pages, and portfolio sites.",
+    description: "Ideal for business websites, landing pages and portfolio sites.",
   },
   {
     duration: "4-8 Weeks",
@@ -41,7 +41,7 @@ export const websiteWebAppTimelineCards = [
   {
     duration: "6-10 Weeks",
     title: "E-Commerce Platform Development",
-    description: "Full-featured online stores with payment, inventory, and order management.",
+    description: "Full-featured online stores with payment, inventory and order management.",
   },
   {
     duration: "8-16 Weeks",
@@ -53,11 +53,11 @@ export const websiteWebAppTimelineCards = [
 export const websiteWebAppProcessSteps = [
   {
     title: "Discover",
-    description: "We understand your goals, challenges, and users.",
+    description: "We understand your goals, challenges and users.",
   },
   {
     title: "Plan",
-    description: "We define the roadmap, architecture, and milestones.",
+    description: "We define the roadmap, architecture and milestones.",
   },
   {
     title: "Design",
@@ -65,15 +65,15 @@ export const websiteWebAppProcessSteps = [
   },
   {
     title: "Develop",
-    description: "We build scalable, secure, and performance-driven solutions.",
+    description: "We build scalable, secure and performance-driven solutions.",
   },
   {
     title: "Test",
-    description: "We ensure quality, security, and cross-platform compatibility.",
+    description: "We ensure quality, security and cross-platform compatibility.",
   },
   {
     title: "Deploy & Support",
-    description: "We launch, monitor, and provide continuous support.",
+    description: "We launch, monitor and provide continuous support.",
   },
 ] as const;
 
@@ -98,7 +98,7 @@ export const websiteWebAppDifferentiators = [
   },
   {
     title: "Agile & Transparent",
-    description: "Regular updates, quick iterations, and complete transparency.",
+    description: "Regular updates, quick iterations and complete transparency.",
   },
   {
     title: "Scalable Solutions",
@@ -121,14 +121,14 @@ export const mobileApplicationExploreServices = [
   {
     title: "AI & Automation Solutions",
     description:
-      "Add intelligent workflows, recommendations, and automation features to your mobile products.",
+      "Add intelligent workflows, recommendations and automation features to your mobile products.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Cloud & Infrastructure Services",
     description:
-      "Support your apps with secure cloud backends, APIs, storage, and scalable deployment infrastructure.",
+      "Support your apps with secure cloud backends, APIs, storage and scalable deployment infrastructure.",
     image: "/home-services/cloudandinfrastructure.webp",
     href: "/services/cloud-infrastructure-services",
   },

@@ -96,8 +96,8 @@ const Technologies: React.FC = () => {
         </h2>
 
         <p className="mx-auto mb-10 max-w-3xl text-sm leading-7 text-slate-600 sm:mb-14 sm:text-base sm:leading-8">
-          We use proven platforms, frameworks, and infrastructure tools to
-          deliver secure, scalable, and future-ready digital solutions.
+          We use proven platforms, frameworks and infrastructure tools to
+          deliver secure, scalable and future-ready digital solutions.
         </p>
 
         <div className="relative overflow-hidden">

@@ -17,7 +17,7 @@ const values: Array<{
   {
     title: "Integrity",
     description:
-      "We build trust through transparency, honesty, and ethical practices.",
+      "We build trust through transparency, honesty and ethical practices.",
     icon: ShieldCheck,
   },
   {
@@ -40,7 +40,7 @@ const values: Array<{
   {
     title: "Excellence",
     description:
-      "We are committed to quality, continuous learning, and exceeding expectations.",
+      "We are committed to quality, continuous learning and exceeding expectations.",
     icon: Star,
   },
 ];

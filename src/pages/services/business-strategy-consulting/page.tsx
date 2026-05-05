@@ -17,12 +17,12 @@ const BusinessStrategyConsultingPage: React.FC = () => {
     <section className="bg-white pb-10 pt-20 text-slate-900">
       <PageSEO
         title="Business Strategy Consulting | Zora Global AI"
-        description="Strategic consulting, workforce solutions, creative services, financial operations, and digital marketing to help businesses grow stronger and smarter."
+        description="Strategic consulting, workforce solutions, creative services, financial operations and digital marketing to help businesses grow stronger and smarter."
         canonical="/services/business-strategy-consulting"
         serviceSchema={{
           name: "Business Strategy Consulting",
           description:
-            "Strategic consulting and business support services that improve operations, accelerate growth, and strengthen execution.",
+            "Strategic consulting and business support services that improve operations, accelerate growth and strengthen execution.",
           url: "https://www.zoraglobalai.com/services/business-strategy-consulting",
         }}
       />

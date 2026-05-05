@@ -37,7 +37,7 @@ const industries = [
   {
     step: "05",
     title: "Telecommunications",
-    desc: "Scalable systems for service delivery, customer support, and network management.",
+    desc: "Scalable systems for service delivery, customer support and network management.",
     Icon: TowerControl,
   },
   {

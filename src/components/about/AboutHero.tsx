@@ -45,7 +45,7 @@ const AboutHero: React.FC = () => {
               <TextReveal delay={0.2}>
                 <p className="mt-6 max-w-[34rem] text-base leading-8 tracking-[0.01em] text-slate-700">
                   At Zora Global AI, we believe artificial intelligence has the
-                  power to transform industries, empower people, and solve complex
+                  power to transform industries, empower people and solve complex
                   challenges. Our mission is to deliver intelligent solutions that
                   create measurable impact for businesses and society.
                 </p>

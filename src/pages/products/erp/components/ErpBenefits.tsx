@@ -8,7 +8,7 @@ const ErpBenefits: React.FC = () => {
         <SectionHeading
           eyebrow="Benefits & Outcomes"
           title="Drive Efficiency, Accuracy & Growth"
-          description="Use Zora ERP to improve billing speed, financial visibility, and business reliability across operations."
+          description="Use Zora ERP to improve billing speed, financial visibility and business reliability across operations."
           align="center"
         />
       </div>

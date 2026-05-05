@@ -14,7 +14,7 @@ const ErpCta: React.FC = () => {
               Ready To Simplify Your Billing Process?
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
-              Bring invoices, reminders, payments, and reporting into one ERP workflow built to help your business move faster.
+              Bring invoices, reminders, payments and reporting into one ERP workflow built to help your business move faster.
             </p>
           </div>
         </div>

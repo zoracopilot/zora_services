@@ -43,7 +43,7 @@ export const crmHero = {
   title: "Manage Relationships. Close More Deals.",
   subtitle: "Customer Relationship Management System",
   description:
-    "Zora CRM helps you capture leads, manage pipelines, and build lasting customer relationships in one centralized, easy-to-use platform.",
+    "Zora CRM helps you capture leads, manage pipelines and build lasting customer relationships in one centralized, easy-to-use platform.",
   primaryCta: "Book a Demo",
   secondaryCta: "Explore Features",
 };
@@ -58,7 +58,7 @@ export const crmHighlights = [
 export const crmFeatures: CrmFeature[] = [
   {
     title: "Lead Management",
-    description: "Capture, assign, and nurture leads from multiple channels in one organized flow.",
+    description: "Capture, assign and nurture leads from multiple channels in one organized flow.",
     icon: User,
   },
   {
@@ -73,12 +73,12 @@ export const crmFeatures: CrmFeature[] = [
   },
   {
     title: "Task & Activity Tracking",
-    description: "Stay on top of calls, follow-ups, reminders, and next actions across the sales cycle.",
+    description: "Stay on top of calls, follow-ups, reminders and next actions across the sales cycle.",
     icon: ClipboardList,
   },
   {
     title: "Email & Messaging",
-    description: "Manage outreach, updates, and customer conversations without scattered tools.",
+    description: "Manage outreach, updates and customer conversations without scattered tools.",
     icon: Mail,
   },
   {
@@ -88,12 +88,12 @@ export const crmFeatures: CrmFeature[] = [
   },
   {
     title: "Workflow Automation",
-    description: "Reduce repetitive work with smart automations for routing, reminders, and updates.",
+    description: "Reduce repetitive work with smart automations for routing, reminders and updates.",
     icon: RefreshCw,
   },
   {
     title: "Team Collaboration",
-    description: "Keep sales, marketing, and support aligned with shared visibility into customer activity.",
+    description: "Keep sales, marketing and support aligned with shared visibility into customer activity.",
     icon: MessageCircleMore,
   },
 ];
@@ -101,7 +101,7 @@ export const crmFeatures: CrmFeature[] = [
 export const crmSteps: CrmStep[] = [
   {
     title: "Capture Leads",
-    description: "Collect and organize leads from forms, referrals, campaigns, and inbound inquiries.",
+    description: "Collect and organize leads from forms, referrals, campaigns and inbound inquiries.",
     icon: User,
   },
   {
@@ -111,7 +111,7 @@ export const crmSteps: CrmStep[] = [
   },
   {
     title: "Nurture & Engage",
-    description: "Follow up with timely communication, notes, reminders, and pipeline updates.",
+    description: "Follow up with timely communication, notes, reminders and pipeline updates.",
     icon: MessageCircleMore,
   },
   {
@@ -129,13 +129,13 @@ export const crmSteps: CrmStep[] = [
 export const crmAudiences: CrmAudience[] = [
   {
     title: "Sales Teams",
-    description: "Manage leads, follow-ups, proposals, and conversion pipelines in one system.",
+    description: "Manage leads, follow-ups, proposals and conversion pipelines in one system.",
     icon: TrendingUp,
     image: "/about/company.webp",
   },
   {
     title: "Marketing Teams",
-    description: "Track lead sources, campaign quality, and handoff performance with better visibility.",
+    description: "Track lead sources, campaign quality and handoff performance with better visibility.",
     icon: Target,
     image: "/about/our_story.webp",
   },
@@ -147,7 +147,7 @@ export const crmAudiences: CrmAudience[] = [
   },
   {
     title: "Business Owners",
-    description: "Monitor team performance, sales health, and customer activity through real-time dashboards.",
+    description: "Monitor team performance, sales health and customer activity through real-time dashboards.",
     icon: ShieldCheck,
     image: "/home-enterprise/insights.webp",
   },
@@ -161,7 +161,7 @@ export const crmBenefits: CrmBenefit[] = [
   },
   {
     title: "Improve Productivity",
-    description: "Save time with centralized records, task automation, and simpler team workflows.",
+    description: "Save time with centralized records, task automation and simpler team workflows.",
     icon: RefreshCw,
   },
   {
@@ -176,12 +176,12 @@ export const crmBenefits: CrmBenefit[] = [
   },
   {
     title: "Stronger Team Alignment",
-    description: "Give sales, marketing, and support a shared view of customer activity to reduce handoff gaps and confusion.",
+    description: "Give sales, marketing and support a shared view of customer activity to reduce handoff gaps and confusion.",
     icon: MessageCircleMore,
   },
   {
     title: "Better Follow-Up Consistency",
-    description: "Standardize reminders, task tracking, and next steps so no important opportunity gets missed.",
+    description: "Standardize reminders, task tracking and next steps so no important opportunity gets missed.",
     icon: CheckCheck,
   },
 ];

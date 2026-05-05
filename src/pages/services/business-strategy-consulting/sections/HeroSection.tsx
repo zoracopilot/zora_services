@@ -9,46 +9,47 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="overflow-hidden border border-slate-200 bg-[linear-gradient(180deg,#ffffff_0%,#fbf9ff_100%)] shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
-      <div className="mx-auto grid max-w-[1180px] items-center gap-6 px-4 py-5 sm:px-6 sm:py-6 md:gap-8 md:px-8 lg:grid-cols-[minmax(0,0.92fr)_minmax(340px,1.08fr)] lg:gap-6 lg:px-10 lg:py-0 xl:px-12">
-        <div className="order-2 mx-auto max-w-[540px] py-1 text-center sm:py-2 lg:order-1 lg:mx-0 lg:max-w-[470px] lg:py-10 lg:text-left">
-          <TextReveal delay={0.06}>
-            <h1 className="mx-auto max-w-[620px] text-[2.7rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#171a4d] sm:text-5xl lg:mx-0 lg:text-[4.2rem]">
+    <section className="relative overflow-hidden border border-slate-200 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/services/Business_strategy_consulting/hero.png')" }}
+      />
+      <div className="absolute inset-0 bg-slate-950/52" />
+
+      <div className="relative px-6 py-10 sm:px-8 lg:px-16 lg:py-14">
+        <div className="max-w-[620px]">
+          <TextReveal>
+            <h1
+              className="max-w-[560px] text-[2.7rem] font-semibold leading-[0.98] tracking-[-0.05em] !text-white sm:text-5xl lg:text-[4.2rem]"
+              style={{ textShadow: "0 10px 30px rgba(15, 23, 42, 0.45)" }}
+            >
               Business & Strategy
               <span className="block">Consulting</span>
             </h1>
           </TextReveal>
 
-          <TextReveal delay={0.12}>
-            <p className="mx-auto mt-4 max-w-[520px] text-[0.98rem] leading-7 text-slate-600 sm:mt-5 sm:text-base sm:leading-7 md:text-lg md:leading-8 lg:mx-0">
-              We provide business and strategy consulting services to help organizations improve performance, optimize operations, and achieve sustainable growth.
+          <TextReveal delay={0.1}>
+            <p
+              className="mt-5 max-w-[520px] text-base leading-7 !text-white sm:text-lg sm:leading-8"
+              style={{ textShadow: "0 8px 24px rgba(15, 23, 42, 0.4)" }}
+            >
+              We provide business and strategy consulting services to help organizations improve performance, optimize operations and achieve sustainable growth.
             </p>
           </TextReveal>
 
           <TextReveal delay={0.18}>
-            <div className="mt-6 flex flex-wrap justify-center gap-3 sm:mt-8 lg:justify-start">
+            <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 to="/book-appointment"
                 onClick={scrollTop}
-                className="inline-flex min-h-[48px] items-center gap-3 rounded-lg bg-[linear-gradient(135deg,#6d4aff_0%,#4f31d9_100%)] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(109,61,244,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(109,61,244,0.28)] sm:px-6 sm:py-3.5"
+                className="inline-flex items-center gap-3 bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-slate-100"
               >
-                Consult with Our Experts
+                Connect with our experts
                 <ArrowRight size={17} />
               </Link>
             </div>
           </TextReveal>
         </div>
-
-        <TextReveal delay={0.12} className="order-1 self-stretch lg:order-2 lg:min-h-[520px]">
-          <div className="relative aspect-[5/4] w-full overflow-hidden rounded-[24px] bg-white sm:aspect-[16/10] sm:rounded-[28px] lg:h-full lg:min-h-[520px] lg:aspect-auto lg:rounded-l-[160px] lg:rounded-r-none">
-            <div className="absolute inset-y-0 left-0 hidden w-24 bg-[linear-gradient(90deg,rgba(255,255,255,0.98),rgba(255,255,255,0))] lg:block" />
-            <img
-              src="/services/Business_strategy_consulting/overview.png"
-              alt="Business strategy consulting team reviewing performance and growth plans"
-              className="relative h-full w-full object-cover object-center lg:object-left"
-            />
-          </div>
-        </TextReveal>
       </div>
     </section>
   );

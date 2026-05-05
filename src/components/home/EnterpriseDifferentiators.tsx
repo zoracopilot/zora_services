@@ -5,14 +5,14 @@ const EnterpriseDifferentiators: React.FC = () => {
     {
       number: "01",
       title: "Board-Level AI Strategy",
-      desc: "We align artificial intelligence initiatives with executive business outcomes to drive measurable impact, long-term value, and sustainable growth across the organization.",
+      desc: "We align artificial intelligence initiatives with executive business outcomes to drive measurable impact, long-term value and sustainable growth across the organization.",
       image: "/home-enterprise/strategy.webp",
       imageLeft: true,
     },
     {
       number: "02",
       title: "Security-First Architecture",
-      desc: "Built with enterprise-grade compliance, strong data encryption, and resilient infrastructure to protect operations, users, and business-critical systems at every layer.",
+      desc: "Built with enterprise-grade compliance, strong data encryption and resilient infrastructure to protect operations, users and business-critical systems at every layer.",
       image: "/home-enterprise/security.webp",
       imageLeft: false,
     },
@@ -26,7 +26,7 @@ const EnterpriseDifferentiators: React.FC = () => {
     {
       number: "04",
       title: "Data-Driven Decision Intelligence",
-      desc: "Leverage real-time insights and predictive analytics to make smarter, faster, and more confident business decisions with greater operational clarity.",
+      desc: "Leverage real-time insights and predictive analytics to make smarter, faster and more confident business decisions with greater operational clarity.",
       image: "/home-enterprise/insights.webp",
       imageLeft: false,
     },
@@ -44,7 +44,7 @@ const EnterpriseDifferentiators: React.FC = () => {
           Built for What Matters Most
         </h2>
         <p className="mx-auto mt-4 max-w-3xl text-[1.05rem] leading-9 text-slate-600">
-          We deliver secure, scalable, and intelligent solutions that help enterprises
+          We deliver secure, scalable and intelligent solutions that help enterprises
           thrive in an AI-powered world.
         </p>
       </SectionReveal>

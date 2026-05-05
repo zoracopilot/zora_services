@@ -36,8 +36,8 @@ const TimelineSection: React.FC = () => {
 
           <TextReveal delay={0.16}>
             <p className="mt-3 max-w-[320px] text-sm leading-6 text-[#5e6684] sm:mt-4 sm:max-w-[520px] sm:text-base sm:leading-7 md:max-w-[700px]">
-              We help businesses launch, grow, and scale with 48 essential digital
-              solutions, all designed, developed, and delivered within 48 hours with
+              We help businesses launch, grow and scale with 48 essential digital
+              solutions, all designed, developed and delivered within 48 hours with
               finalized requirements.
             </p>
           </TextReveal>

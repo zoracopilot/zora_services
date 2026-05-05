@@ -16,7 +16,7 @@ const ProcessSection: React.FC = () => {
           Our Proven Delivery Process
         </h2>
         <p className="mt-4 max-w-[700px] text-base leading-7 text-slate-600 sm:leading-8">
-          We follow a collaborative and agile process to deliver high-quality solutions with clear communication, quick iterations, and continuous improvement at every stage of development.
+          We follow a collaborative and agile process to deliver high-quality solutions with clear communication, quick iterations and continuous improvement at every stage of development.
         </p>
       </TextReveal>
 

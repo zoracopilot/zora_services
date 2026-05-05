@@ -42,7 +42,7 @@ export const erpHero = {
   title: "Simplify Billing. Grow Your Business.",
   subtitle: "Enterprise Resource Planning",
   description:
-    "Zora ERP helps you create invoices, manage payments, track expenses, and automate operational workflows in one streamlined business platform.",
+    "Zora ERP helps you create invoices, manage payments, track expenses and automate operational workflows in one streamlined business platform.",
   primaryCta: "Book a Demo",
   secondaryCta: "Explore Features",
   heroImage: "/hero/billing.webp",
@@ -57,7 +57,7 @@ export const erpHighlights = [
 export const erpFeatures: ErpFeature[] = [
   {
     title: "Invoice Management",
-    description: "Create, send, and manage invoices with templates and status tracking.",
+    description: "Create, send and manage invoices with templates and status tracking.",
     icon: ReceiptIndianRupee,
   },
   {
@@ -82,7 +82,7 @@ export const erpFeatures: ErpFeature[] = [
   },
   {
     title: "Reports & Analytics",
-    description: "Use reports to track cash flow, collections, and performance.",
+    description: "Use reports to track cash flow, collections and performance.",
     icon: BarChart3,
   },
   {
@@ -100,7 +100,7 @@ export const erpFeatures: ErpFeature[] = [
 export const erpSteps: ErpStep[] = [
   {
     title: "Add Details",
-    description: "Enter customer, service, inventory, or billing details in one place.",
+    description: "Enter customer, service, inventory or billing details in one place.",
   },
   {
     title: "Create Invoice",
@@ -112,7 +112,7 @@ export const erpSteps: ErpStep[] = [
   },
   {
     title: "Receive Payments",
-    description: "Track collections, confirm receipts, and manage balances easily.",
+    description: "Track collections, confirm receipts and manage balances easily.",
   },
   {
     title: "Analyze & Grow",
@@ -123,25 +123,25 @@ export const erpSteps: ErpStep[] = [
 export const erpAudiences: ErpAudience[] = [
   {
     title: "Retail Businesses",
-    description: "Manage sales, invoices, and customer billing with better speed and visibility.",
+    description: "Manage sales, invoices and customer billing with better speed and visibility.",
     image: "/about/our_story.webp",
     icon: ShoppingCart,
   },
   {
     title: "Service Providers",
-    description: "Bill clients accurately, track outstanding payments, and simplify recurring invoicing.",
+    description: "Bill clients accurately, track outstanding payments and simplify recurring invoicing.",
     image: "/about/company.webp",
     icon: UserCog,
   },
   {
     title: "E-commerce Stores",
-    description: "Coordinate invoices, orders, refunds, and inventory-linked business workflows in one place.",
+    description: "Coordinate invoices orders, refunds and inventory-linked business workflows in one place.",
     image: "/it-hero/erp.webp",
     icon: Boxes,
   },
   {
     title: "Freelancers & Consultants",
-    description: "Create polished invoices, manage expenses, and monitor cash flow without heavy systems.",
+    description: "Create polished invoices, manage expenses and monitor cash flow without heavy systems.",
     image: "/home-enterprise/strategy.webp",
     icon: ReceiptIndianRupee,
   },
@@ -155,27 +155,27 @@ export const erpBenefits: ErpBenefit[] = [
   },
   {
     title: "Reduce Errors",
-    description: "Minimize manual mistakes through structured invoicing, tracked updates, and cleaner records.",
+    description: "Minimize manual mistakes through structured invoicing, tracked updates and cleaner records.",
     icon: ShieldCheck,
   },
   {
     title: "Improve Cash Flow",
-    description: "Track payments, reminders, and outstanding invoices to improve collection consistency.",
+    description: "Track payments, reminders and outstanding invoices to improve collection consistency.",
     icon: TrendingUp,
   },
   {
     title: "Better Financial Control",
-    description: "Gain clearer visibility into revenue, expenses, and payment activity across the business.",
+    description: "Gain clearer visibility into revenue, expenses and payment activity across the business.",
     icon: BarChart3,
   },
   {
     title: "Increase Productivity",
-    description: "Centralize billing, reporting, and coordination so teams spend less time switching tools.",
+    description: "Centralize billing, reporting and coordination so teams spend less time switching tools.",
     icon: UserCog,
   },
   {
     title: "Happy Customers",
-    description: "Deliver timely invoices, professional communication, and smoother payment experiences.",
+    description: "Deliver timely invoices, professional communication and smoother payment experiences.",
     icon: CreditCard,
   },
 ];

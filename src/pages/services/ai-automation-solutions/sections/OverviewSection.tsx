@@ -25,10 +25,10 @@ const OverviewSection: React.FC = () => {
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
-                We help businesses unlock the power of AI and automation by transforming manual processes into intelligent, self-optimizing systems. Our solutions are designed to enhance decision-making, streamline operations, and create a strong digital backbone for modern, data-driven organizations.
+                We help businesses unlock the power of AI and automation by transforming manual processes into intelligent, self-optimizing systems. Our solutions are designed to enhance decision-making, streamline operations and create a strong digital backbone for modern, data-driven organizations.
               </p>
               <p>
-               By combining artificial intelligence, machine learning, and workflow automation, we build scalable systems that adapt, learn, and evolve with your business. From intelligent process automation to AI-powered applications and analytics, our focus is on delivering faster outcomes, improved efficiency, and measurable growth.
+               By combining artificial intelligence, machine learning and workflow automation, we build scalable systems that adapt, learn and evolve with your business. From intelligent process automation to AI-powered applications and analytics, our focus is on delivering faster outcomes, improved efficiency and measurable growth.
               </p>
             </TextReveal>
           </div>

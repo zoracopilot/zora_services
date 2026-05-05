@@ -81,7 +81,7 @@ const ProductPageTemplate: React.FC<ProductPageTemplateProps> = ({ product }) =>
               </p>
               <p className="mt-3 max-w-xl text-sm leading-7 text-slate-600">
                 This page is now ready for dedicated content. We can add product
-                overview, modules, screenshots, pricing, FAQs, and call-to-action
+                overview, modules, screenshots, pricing, FAQs and call-to-action
                 sections here next.
               </p>
             </div>

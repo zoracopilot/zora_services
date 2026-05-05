@@ -27,13 +27,13 @@ const OverviewSection: React.FC = () => {
               <p>
                 We deliver end-to-end website and web application solutions designed to help startups
                 and growing businesses establish a strong digital foundation. Our approach combines
-                modern UI/UX design, scalable architecture, and performance-driven development to
+                modern UI/UX design, scalable architecture and performance-driven development to
                 build platforms that not only look great but also deliver real business impact.
               </p>
               <p>
-                From concept to deployment, we focus on creating fast, secure, and user-centric
+                From concept to deployment, we focus on creating fast, secure and user-centric
                 digital experiences tailored to your unique business goals. Whether it&apos;s a
-                high-converting website, a complex web application, or a scalable SaaS platform, our
+                high-converting website, a complex web application or a scalable SaaS platform, our
                 solutions are built to grow with your business.
               </p>
             </TextReveal>

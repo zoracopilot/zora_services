@@ -14,7 +14,7 @@ const CrmCta: React.FC = () => {
               Ready To Transform Your Customer Relationships?
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
-              Bring your leads, follow-ups, team actions, and deal visibility into one CRM flow built to support faster growth.
+              Bring your leads, follow-ups, team actions and deal visibility into one CRM flow built to support faster growth.
             </p>
           </div>
         </div>

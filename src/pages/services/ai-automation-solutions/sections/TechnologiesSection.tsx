@@ -41,7 +41,7 @@ const TechnologiesSection: React.FC = () => {
             Modern Technologies for Modern Solutions
           </h2>
           <p className="mt-4 max-w-[620px] text-base leading-8 text-slate-600">
-            We leverage the latest technologies and frameworks to build fast, secure, and
+            We leverage the latest technologies and frameworks to build fast, secure and
             future-ready applications.
           </p>
         </TextReveal>

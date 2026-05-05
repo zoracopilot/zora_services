@@ -8,12 +8,12 @@ export const websiteWebAppOverviewCards = [
   {
     title: "Website Design & Development",
     description:
-      "Responsive, modern, and SEO-friendly websites that create a lasting first impression and drive engagement.",
+      "Responsive, modern and SEO-friendly websites that create a lasting first impression and drive engagement.",
   },
   {
     title: "Web Application Development",
     description:
-      "Robust, scalable, and secure web applications tailored to your business processes and user needs.",
+      "Robust, scalable and secure web applications tailored to your business processes and user needs.",
   },
   {
     title: "E-Commerce Platform Development",
@@ -23,7 +23,7 @@ export const websiteWebAppOverviewCards = [
   {
     title: "SaaS Application Development",
     description:
-      "Scalable SaaS products with multi-tenant architecture, analytics, and subscription management.",
+      "Scalable SaaS products with multi-tenant architecture, analytics and subscription management.",
   },
 ] as const;
 
@@ -31,7 +31,7 @@ export const websiteWebAppTimelineCards = [
   {
     duration: "2-4 Weeks",
     title: "Website Design & Development",
-    description: "Ideal for business websites, landing pages, and portfolio sites.",
+    description: "Ideal for business websites, landing pages and portfolio sites.",
   },
   {
     duration: "4-8 Weeks",
@@ -41,7 +41,7 @@ export const websiteWebAppTimelineCards = [
   {
     duration: "6-10 Weeks",
     title: "E-Commerce Platform Development",
-    description: "Full-featured online stores with payment, inventory, and order management.",
+    description: "Full-featured online stores with payment, inventory and order management.",
   },
   {
     duration: "8-16 Weeks",
@@ -53,11 +53,11 @@ export const websiteWebAppTimelineCards = [
 export const websiteWebAppProcessSteps = [
   {
     title: "Discover",
-    description: "We understand your goals, challenges, and users.",
+    description: "We understand your goals, challenges and users.",
   },
   {
     title: "Plan",
-    description: "We define the roadmap, architecture, and milestones.",
+    description: "We define the roadmap, architecture and milestones.",
   },
   {
     title: "Design",
@@ -65,15 +65,15 @@ export const websiteWebAppProcessSteps = [
   },
   {
     title: "Develop",
-    description: "We build scalable, secure, and performance-driven solutions.",
+    description: "We build scalable, secure and performance-driven solutions.",
   },
   {
     title: "Test",
-    description: "We ensure quality, security, and cross-platform compatibility.",
+    description: "We ensure quality, security and cross-platform compatibility.",
   },
   {
     title: "Deploy & Support",
-    description: "We launch, monitor, and provide continuous support.",
+    description: "We launch, monitor and provide continuous support.",
   },
 ] as const;
 
@@ -98,7 +98,7 @@ export const websiteWebAppDifferentiators = [
   },
   {
     title: "Agile & Transparent",
-    description: "Regular updates, quick iterations, and complete transparency.",
+    description: "Regular updates, quick iterations and complete transparency.",
   },
   {
     title: "Scalable Solutions",
@@ -114,7 +114,7 @@ export const websiteWebAppExploreServices = [
   {
     title: "Digital Marketing Services",
     description:
-      "SEO, social media, ads, and content strategies to increase visibility and leads.",
+      "SEO, social media, ads and content strategies to increase visibility and leads.",
     image: "/non-it-hero/performance-marketing.webp",
     href: "/services/digital-marketing-services",
   },
@@ -128,7 +128,7 @@ export const websiteWebAppExploreServices = [
   {
     title: "AI & Automation Solutions",
     description:
-      "Automate workflows, improve productivity, and make smarter decisions with AI.",
+      "Automate workflows, improve productivity and make smarter decisions with AI.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },

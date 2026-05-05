@@ -8,7 +8,7 @@ const HrmsUseCases: React.FC = () => {
           Who It's For
         </p>
         <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-[#1F3A5F] sm:text-4xl">
-          Built For HR Teams, Managers, And Modern Organizations
+          Built For HR Teams, Managers and Modern Organizations
         </h2>
       </div>
 

@@ -15,7 +15,7 @@ const Cta: React.FC = () => {
               </h2>
               <p className="mt-3 max-w-2xl text-sm leading-7 text-violet-100 sm:text-base">
                 Book an appointment with our experts to explore AI-driven solutions,
-                enterprise software, and digital transformation strategies tailored
+                enterprise software and digital transformation strategies tailored
                 to your business goals.
               </p>
             </SectionReveal>

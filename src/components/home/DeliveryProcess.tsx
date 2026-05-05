@@ -13,7 +13,7 @@ const steps = [
     number: "01",
     title: "Discover",
     description:
-      "Understand business goals, users, and operating context before defining scope.",
+      "Understand business goals, users and operating context before defining scope.",
     bullets: ["Business Analysis", "User Research", "Opportunity Mapping"],
     Icon: Search,
   },
@@ -21,7 +21,7 @@ const steps = [
     number: "02",
     title: "Design",
     description:
-      "Shape the right user flows, technical direction, and solution blueprint for delivery.",
+      "Shape the right user flows, technical direction and solution blueprint for delivery.",
     bullets: [
       "UX & UI Planning",
       "Architecture & Prototyping",
@@ -33,7 +33,7 @@ const steps = [
     number: "03",
     title: "Develop",
     description:
-      "Build with precision, test continuously, and keep execution aligned with real priorities.",
+      "Build with precision, test continuously and keep execution aligned with real priorities.",
     bullets: ["Agile Development", "Quality & Testing", "Performance & Security"],
     Icon: Code2,
   },
@@ -41,7 +41,7 @@ const steps = [
     number: "04",
     title: "Deliver",
     description:
-      "Launch, support, iterate, and help teams turn technology into long-term business value.",
+      "Launch, support, iterate and help teams turn technology into long-term business value.",
     bullets: [
       "Deployment & Integration",
       "Monitoring & Optimization",
@@ -106,7 +106,7 @@ const DeliveryProcess: React.FC = () => {
             style={{ color: colors.body }}
           >
             A structured delivery model across strategy, design, engineering,
-            and rollout ensuring clarity, momentum, and measurable outcomes at
+            and rollout ensuring clarity, momentum and measurable outcomes at
             every stage.
           </p>
         </div>

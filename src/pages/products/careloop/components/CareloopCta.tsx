@@ -15,7 +15,7 @@ const CareloopCta: React.FC = () => {
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
               Join hundreds of clinics that trust Care Loop to simplify operations,
-              improve communication, and deliver exceptional care every day.
+              improve communication and deliver exceptional care every day.
             </p>
           </div>
         </div>

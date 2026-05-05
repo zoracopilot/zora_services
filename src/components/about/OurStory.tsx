@@ -29,20 +29,20 @@ const OurStory: React.FC = () => {
             <TextReveal delay={0.08}>
               <p>
                 Zora Global AI was founded with a simple idea: make AI
-                accessible, actionable, and transformative for every business.
+                accessible, actionable and transformative for every business.
               </p>
             </TextReveal>
             <TextReveal delay={0.16}>
               <p>
                 What started as a focused technology vision has grown into a
                 trusted AI solutions company helping organizations modernize
-                operations, improve decision-making, and unlock sustainable
+                operations, improve decision-making and unlock sustainable
                 digital growth.
               </p>
             </TextReveal>
             <TextReveal delay={0.24}>
               <p>
-                Our journey is built on innovation, collaboration, and a
+                Our journey is built on innovation, collaboration and a
                 relentless focus on delivering value through intelligent systems
                 that solve real business problems.
               </p>

@@ -17,7 +17,7 @@ export const businessStrategyOverviewCards: OverviewCard[] = [
   {
     title: "Business Process Optimisation",
     description:
-      "Improve workflows with business process optimization to reduce costs, increase efficiency, and enhance productivity.",
+      "Improve workflows with business process optimization to reduce costs, increase efficiency and enhance productivity.",
     href: "/services/business-strategy-consulting",
   },
   {
@@ -35,7 +35,7 @@ export const businessStrategyOverviewCards: OverviewCard[] = [
   {
     title: "Performance & Growth Strategy",
     description:
-      "Develop data-driven business strategies to improve performance, unlock opportunities, and drive sustainable growth.",
+      "Develop data-driven business strategies to improve performance, unlock opportunities and drive sustainable growth.",
     href: "/services/accounting-financial-operations",
   },
   
@@ -44,7 +44,7 @@ export const businessStrategyOverviewCards: OverviewCard[] = [
 export const businessStrategyProcessSteps: ProcessStep[] = [
   {
     title: "01. Discover",
-    description: "We understand your business, challenges, and goals.",
+    description: "We understand your business, challenges and goals.",
   },
   {
     title: "02. Strategize",
@@ -91,21 +91,21 @@ export const businessStrategyExploreServices: ExploreService[] = [
   {
     title: "Website & Web Application Services",
     description:
-      "Scalable websites and web applications built to support growth, performance, and digital operations.",
+      "Scalable websites and web applications built to support growth, performance and digital operations.",
     image: "/home-services/webandwebapplications.webp",
     href: "/services/website-web-application-services",
   },
   {
     title: "AI & Automation Solutions",
     description:
-      "Automate workflows, improve productivity, and enable smarter decisions with AI-powered systems.",
+      "Automate workflows, improve productivity and enable smarter decisions with AI-powered systems.",
     image: "/home-services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Digital Marketing Services",
     description:
-      "Increase visibility, generate qualified leads, and grow your brand with performance-driven marketing strategies.",
+      "Increase visibility, generate qualified leads and grow your brand with performance-driven marketing strategies.",
     image: "/non-it-hero/performance-marketing.webp",
     href: "/services/digital-marketing-services",
   },

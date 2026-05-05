@@ -15,7 +15,7 @@ const GroomvyCta: React.FC = () => {
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/85">
               Join Groomvy and simplify the way you manage appointments, billing,
-              staff, and customer experiences.
+              staff and customer experiences.
             </p>
           </div>
         </div>

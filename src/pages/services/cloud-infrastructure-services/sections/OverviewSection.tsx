@@ -25,10 +25,10 @@ const OverviewSection: React.FC = () => {
             </TextReveal>
             <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
-                We provide cloud and infrastructure services that enable startups and growing businesses to build a secure, scalable, and high-performance digital foundation. Our approach combines cloud computing, DevOps practices, and modern infrastructure architecture to deliver reliable environments that support seamless application performance, data security, and business continuity.
+                We provide cloud and infrastructure services that enable startups and growing businesses to build a secure, scalable and high-performance digital foundation. Our approach combines cloud computing, DevOps practices and modern infrastructure architecture to deliver reliable environments that support seamless application performance, data security and business continuity.
               </p>
               <p>
-               From planning to deployment, we focus on creating resilient, cost-efficient, and scalable cloud solutions tailored to your operational needs. Whether it’s cloud migration, infrastructure management, or scalable cloud platforms, our solutions are designed to ensure high availability, optimize performance, and support long-term business growth.
+               From planning to deployment, we focus on creating resilient, cost-efficient and scalable cloud solutions tailored to your operational needs. Whether it’s cloud migration, infrastructure management or scalable cloud platforms, our solutions are designed to ensure high availability, optimize performance and support long-term business growth.
               </p>
             </TextReveal>
           </div>

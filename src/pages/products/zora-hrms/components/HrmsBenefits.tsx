@@ -8,7 +8,7 @@ const HrmsBenefits: React.FC = () => {
           Benefits & Outcomes
         </p>
         <h2 className="mt-3 font-serif text-3xl font-black tracking-tight text-[#1F3A5F] sm:text-4xl">
-          Measurable Outcomes For Efficiency, Accuracy, And Growth
+          Measurable Outcomes For Efficiency, Accuracy and Growth
         </h2>
       </div>
 

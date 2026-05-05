@@ -20,11 +20,11 @@ Sources: Grammarly (2025), Microsoft 365 Life Hacks (2025), GPTHuman (2025), Wal
 
 **The em dash (—) has become one of the most reliable markers of AI-generated content.**
 
-Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, or parenthetical information. While they have legitimate uses in writing, AI models drastically overuse them.
+Em dashes are longer than hyphens (-) and are used for emphasis, interruptions or parenthetical information. While they have legitimate uses in writing, AI models drastically overuse them.
 
 ### Why Em Dashes Signal AI Writing
 - AI models were trained on edited books, academic papers and style guides where em dashes appear frequently
-- AI uses em dashes as a shortcut for sentence variety instead of commas, colons, or parentheses
+- AI uses em dashes as a shortcut for sentence variety instead of commas, colons or parentheses
 - Most human writers rarely use em dashes because they don't exist as a standard keyboard key
 - The overuse is so consistent that it has become the unofficial signature of ChatGPT writing
 
@@ -78,8 +78,8 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 | vital | important, essential, necessary |
 | transformative | significant, important, major |
 | cutting-edge | new, advanced, recent, modern |
-| groundbreaking | new, original, significant |
-| innovative | new, original, creative |
+| groundbreaking | new original, significant |
+| innovative | new original, creative |
 | seamless | smooth, easy, effortless |
 | intricate | complex, detailed, complicated |
 | nuanced | subtle, complex, detailed |
@@ -135,7 +135,7 @@ Em dashes are longer than hyphens (-) and are used for emphasis, interruptions, 
 - "At the end of the day..."
 
 ### Structural Patterns to Avoid
-- "Whether you're a [X], [Y], or [Z]..." (listing three examples after "whether")
+- "Whether you're a [X], [Y] or [Z]..." (listing three examples after "whether")
 - "It's not just [X], it's also [Y]..."
 - "Think of [X] as [elaborate metaphor]..."
 - Starting sentences with "By" followed by a gerund: "By understanding X, you can Y..."
