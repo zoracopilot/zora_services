@@ -7,6 +7,7 @@ import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import AiAutomationSolutionsPage from "./pages/services/ai-automation-solutions";
+import BrandingCreativeServicesPage from "./pages/services/branding-creative-services";
 import BusinessStrategyConsultingPage from "./pages/services/business-strategy-consulting";
 import CloudInfrastructureServicesPage from "./pages/services/cloud-infrastructure-services";
 import CustomEnterpriseSoftwarePage from "./pages/services/custom-enterprise-software";
@@ -77,6 +78,10 @@ const AppShell: React.FC = () => {
               element={<BusinessStrategyConsultingPage />}
             />
             <Route
+              path="/services/branding-creative-services"
+              element={<BrandingCreativeServicesPage />}
+            />
+            <Route
               path="/services/it/website-web-application-services"
               element={<WebsiteWebApplicationServicesPage />}
             />
@@ -99,6 +104,10 @@ const AppShell: React.FC = () => {
             <Route
               path="/services/non-it/business-strategy-consulting"
               element={<BusinessStrategyConsultingPage />}
+            />
+            <Route
+              path="/services/non-it/branding-creative-services"
+              element={<BrandingCreativeServicesPage />}
             />
             <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
@@ -141,6 +150,10 @@ const AppShell: React.FC = () => {
               element={<Navigate to="/services/business-strategy-consulting" replace />}
             />
             <Route
+              path="/services/branding-creative-services/:itemSlug"
+              element={<Navigate to="/services/branding-creative-services" replace />}
+            />
+            <Route
               path="/services/it/website-web-application-services/:itemSlug"
               element={<Navigate to="/services/website-web-application-services" replace />}
             />
@@ -163,6 +176,10 @@ const AppShell: React.FC = () => {
             <Route
               path="/services/non-it/business-strategy-consulting/:itemSlug"
               element={<Navigate to="/services/business-strategy-consulting" replace />}
+            />
+            <Route
+              path="/services/non-it/branding-creative-services/:itemSlug"
+              element={<Navigate to="/services/branding-creative-services" replace />}
             />
             <Route
               path="/services/:categorySlug"
