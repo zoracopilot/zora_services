@@ -1,5 +1,6 @@
 import React from "react";
 import { Globe, Layers3, MonitorSmartphone, ShoppingCart } from "lucide-react";
+import TextReveal from "../../../../components/about/TextReveal";
 import { websiteWebAppOverviewCards } from "../content";
 
 const icons = [Globe, MonitorSmartphone, ShoppingCart, Layers3] as const;
@@ -13,7 +14,7 @@ const OverviewSection: React.FC = () => {
       <div className="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_420px] lg:items-start lg:gap-12">
         <div>
           <div className="max-w-[760px]">
-            <div>
+            <TextReveal>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
                 Overview
               </p>
@@ -21,8 +22,8 @@ const OverviewSection: React.FC = () => {
                 End-to-End Web Solutions
                 <span className="block">Built for Growth</span>
               </h2>
-            </div>
-            <div className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
+            </TextReveal>
+            <TextReveal delay={0.08} className="mt-6 max-w-[760px] space-y-5 text-base leading-8 text-slate-600">
               <p>
                 We deliver end-to-end website and web application solutions designed to help startups
                 and growing businesses establish a strong digital foundation. Our approach combines
@@ -35,22 +36,23 @@ const OverviewSection: React.FC = () => {
                 high-converting website, a complex web application, or a scalable SaaS platform, our
                 solutions are built to grow with your business.
               </p>
-            </div>
+            </TextReveal>
           </div>
 
-          <div className="mt-10">
+          <TextReveal delay={0.14} className="mt-10">
             <h3 className="text-2xl font-semibold tracking-[-0.02em] text-slate-950">
               What We Offer
             </h3>
-          </div>
+          </TextReveal>
 
           <div className="mt-6 grid max-w-[920px] gap-5 md:grid-cols-2">
             {websiteWebAppOverviewCards.map((item, index) => {
               const Icon = icons[index] ?? Globe;
 
               return (
-                <article
+                <TextReveal
                   key={item.title}
+                  delay={0.06 * index}
                   className="border border-slate-200/80 bg-white p-7 shadow-[0_16px_48px_rgba(15,23,42,0.06)]"
                 >
                   <div className="inline-flex h-14 w-14 items-center justify-center bg-violet-50 text-violet-600">
@@ -60,13 +62,13 @@ const OverviewSection: React.FC = () => {
                     {item.title}
                   </h3>
                   <p className="mt-4 text-sm leading-7 text-slate-600">{item.description}</p>
-                </article>
+                </TextReveal>
               );
             })}
           </div>
         </div>
 
-        <div className="lg:sticky lg:top-36">
+        <TextReveal delay={0.12} className="lg:sticky lg:top-36">
           <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
             <img
               src="/services/Web_application/webServices.png"
@@ -74,7 +76,7 @@ const OverviewSection: React.FC = () => {
               className="h-full w-full object-cover"
             />
           </div>
-        </div>
+        </TextReveal>
       </div>
     </section>
   );

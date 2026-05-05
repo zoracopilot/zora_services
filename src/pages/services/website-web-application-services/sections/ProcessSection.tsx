@@ -1,5 +1,6 @@
 import React from "react";
 import { Code2, PencilRuler, Rocket, Search, ShieldCheck, Users } from "lucide-react";
+import TextReveal from "../../../../components/about/TextReveal";
 import { websiteWebAppProcessSteps } from "../content";
 
 const icons = [Search, Users, PencilRuler, Code2, ShieldCheck, Rocket] as const;
@@ -7,7 +8,7 @@ const icons = [Search, Users, PencilRuler, Code2, ShieldCheck, Rocket] as const;
 const ProcessSection: React.FC = () => {
   return (
     <section className="overflow-hidden border border-[#ece9fb] bg-[linear-gradient(180deg,#ffffff_0%,#fafbff_100%)] px-6 py-8 shadow-[0_14px_34px_rgba(89,76,160,0.03)] sm:px-8 sm:py-10 lg:px-10 lg:py-12 xl:px-14">
-      <div className="mx-auto max-w-[1180px]">
+      <TextReveal className="mx-auto max-w-[1180px]">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-violet-500">
           How We Deliver
         </p>
@@ -17,14 +18,14 @@ const ProcessSection: React.FC = () => {
         <p className="mt-4 max-w-[520px] text-base leading-8 text-slate-600">
           We follow a collaborative and agile process to deliver high-quality solutions with clear communication, quick iterations, and continuous improvement at every stage of development.
         </p>
-      </div>
+      </TextReveal>
 
       <div className="mx-auto mt-10 grid max-w-[1180px] grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3 xl:mt-12 xl:grid-cols-6 xl:gap-x-4 xl:gap-y-0">
         {websiteWebAppProcessSteps.map((step, index) => {
           const Icon = icons[index] ?? Search;
 
           return (
-            <article key={step.title} className="relative text-center">
+            <TextReveal key={step.title} delay={0.06 * index} className="relative text-center">
               <div className="relative mx-auto mb-4 flex h-[62px] w-[62px] items-center justify-center xl:mb-4">
                 {index < websiteWebAppProcessSteps.length - 1 ? (
                   <div className="absolute left-full top-1/2 hidden h-0 w-[calc(100%+1rem)] -translate-y-1/2 xl:block">
@@ -39,7 +40,7 @@ const ProcessSection: React.FC = () => {
               <p className="mx-auto mt-3 max-w-[18ch] text-sm leading-7 text-slate-600">
                 {step.description}
               </p>
-            </article>
+            </TextReveal>
           );
         })}
       </div>
