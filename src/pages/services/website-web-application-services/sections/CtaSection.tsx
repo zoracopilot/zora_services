@@ -9,36 +9,36 @@ const CtaSection: React.FC = () => {
   };
 
   return (
-    <section id="cta" className="px-1 pt-2">
-      <div className="overflow-hidden border border-[#ebe7ff] bg-[radial-gradient(circle_at_top_left,rgba(130,98,255,0.08),transparent_34%),linear-gradient(180deg,#ffffff_0%,#fbf9ff_100%)] shadow-[0_24px_70px_rgba(109,61,244,0.12)]">
-        <div className="grid items-center gap-7 px-5 py-7 sm:px-7 sm:py-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(320px,0.78fr)] lg:px-10 lg:py-8 xl:px-12">
-          <TextReveal className="max-w-[860px]">
-            <h2 className="max-w-[720px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#111834] md:text-[2.55rem]">
+    <section id="cta" className="px-1 pt-5 pb-5 lg:pt-6 lg:pb-6">
+      <div className="mx-auto max-w-[1120px] overflow-hidden border border-[#ebe7ff] bg-[radial-gradient(circle_at_top_left,rgba(130,98,255,0.08),transparent_34%),linear-gradient(180deg,#ffffff_0%,#fbf9ff_100%)] shadow-[0_24px_70px_rgba(109,61,244,0.12)]">
+        <div className="grid items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 lg:min-h-[190px] lg:grid-cols-[minmax(0,1.12fr)_minmax(240px,0.48fr)] lg:px-6 lg:py-2.5 xl:px-7">
+          <TextReveal className="flex h-full max-w-[860px] flex-col justify-center">
+            <h2 className="max-w-[640px] text-[1.75rem] font-semibold leading-tight tracking-[-0.03em] text-[#111834] md:text-[2rem]">
               Ready to Build Your <span className="text-[#6a3df6]">Next Big Thing?</span>
             </h2>
-            <p className="mt-4 max-w-[620px] text-base leading-8 text-[#4f5878]">
+            <p className="mt-1.5 max-w-[860px] text-[0.86rem] leading-6 text-[#4f5878] lg:whitespace-nowrap">
               Whether you&apos;re a startup or an enterprise, we&apos;re here to turn your ideas
               into powerful digital solutions.
             </p>
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-2.5 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
               <Link
                 to="/book-appointment"
                 onClick={scrollTop}
-                className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-[linear-gradient(135deg,#7c3aed_0%,#5b21b6_100%)] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_12px_26px_rgba(109,61,244,0.24)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_16px_32px_rgba(109,61,244,0.3)]"
+                className="inline-flex min-h-[38px] items-center justify-center gap-2 bg-[linear-gradient(135deg,#7c3aed_0%,#5b21b6_100%)] px-4 py-2 text-sm font-semibold text-white shadow-[0_10px_22px_rgba(109,61,244,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(109,61,244,0.28)]"
               >
                 Start Your Project
-                <ArrowRight size={17} />
+                <ArrowRight size={16} />
               </Link>
             </div>
           </TextReveal>
 
-          <TextReveal delay={0.12} className="lg:justify-self-end">
-            <div className="mx-auto max-w-[420px] lg:mx-0 lg:w-full">
+          <TextReveal delay={0.12} className="lg:h-full lg:justify-self-end">
+            <div className="mx-auto max-w-[300px] lg:flex lg:h-full lg:items-center lg:justify-end">
               <img
                 src="/services/Web_application/CTA.png"
                 alt="Launch your next big digital product"
-                className="w-full object-contain"
+                className="w-full object-contain lg:max-h-[170px]"
               />
             </div>
           </TextReveal>

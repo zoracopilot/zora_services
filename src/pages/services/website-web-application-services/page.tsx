@@ -16,7 +16,7 @@ const WebsiteWebApplicationServicesPage: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-white pb-24 pt-20 text-slate-900">
+    <section className="bg-white pb-10 pt-20 text-slate-900">
       <PageSEO
         title="Website & Web Application Services | Zora Global AI"
         description="Scalable, secure and future-ready website and web application services for startups, businesses and growing digital products."
