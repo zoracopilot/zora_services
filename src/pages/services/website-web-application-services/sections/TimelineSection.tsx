@@ -22,9 +22,19 @@ const highlights = [
 
 const TimelineSection: React.FC = () => {
   return (
-    <section className="overflow-hidden border border-[#efebfb] bg-white px-5 py-10 shadow-[0_14px_40px_rgba(89,76,160,0.05)] sm:px-6 lg:px-8 lg:py-12">
-      <div className="mx-auto grid max-w-[1380px] gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(560px,1fr)] lg:items-center lg:gap-8">
-        <div>
+    <section
+      className="relative min-h-[440px] overflow-hidden border border-[#efebfb] bg-white px-5 pt-8 pb-6 shadow-[0_14px_40px_rgba(89,76,160,0.05)] sm:px-6 lg:min-h-[520px] lg:px-8 lg:pt-9 lg:pb-7"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-right bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: "url('/services/Web_application/timeline_BG.png')",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-[1380px]">
+        <div className="flex min-h-[360px] max-w-[760px] flex-col items-start justify-center lg:min-h-[440px]">
           <TextReveal delay={0.08}>
             <h2 className="max-w-[520px] text-3xl font-semibold leading-tight tracking-[-0.03em] text-[#0b123f] md:text-[2.55rem]">
               48 Services.
@@ -33,14 +43,14 @@ const TimelineSection: React.FC = () => {
           </TextReveal>
 
           <TextReveal delay={0.16}>
-            <p className="mt-6 max-w-[760px] text-base leading-8 text-[#5e6684]">
+            <p className="mt-4 max-w-[700px] text-base leading-7 text-[#5e6684]">
               We help businesses launch, grow, and scale with 48 essential digital
               solutions, all designed, developed, and delivered within 48 hours with
               finalized requirements.
             </p>
           </TextReveal>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3 md:gap-0">
+          <div className="mt-6 grid w-full max-w-[740px] gap-4 md:grid-cols-3 md:gap-4">
             {highlights.map((item, index) => {
               const Icon = item.icon;
 
@@ -48,16 +58,16 @@ const TimelineSection: React.FC = () => {
                 <TextReveal
                   key={item.title}
                   delay={0.24 + index * 0.08}
-                  className={`flex min-h-[198px] items-start gap-5 ${index < highlights.length - 1 ? "md:pr-6" : ""} ${index > 0 ? "md:pl-6" : ""}`}
+                  className="flex items-center gap-4"
                 >
-                  <span className="inline-flex h-16 w-16 flex-none items-center justify-center rounded-full bg-[#f7f2ff] text-[#6f3df4] shadow-[0_10px_24px_rgba(111,61,244,0.08)]">
-                    <Icon size={26} strokeWidth={2} />
+                  <span className="inline-flex h-12 w-12 flex-none items-center justify-center rounded-full bg-[#f7f2ff] text-[#6f3df4] shadow-[0_10px_24px_rgba(111,61,244,0.08)]">
+                    <Icon size={21} strokeWidth={2} />
                   </span>
-                  <div className="flex min-w-0 flex-1 flex-col pt-1">
-                    <h3 className="min-h-[84px] text-[1.7rem] font-semibold leading-[1.05] tracking-[-0.03em] text-[#121936]">
+                  <div className="min-w-0">
+                    <h3 className="text-[1.05rem] font-semibold leading-tight tracking-[-0.02em] text-[#121936] md:whitespace-nowrap">
                       {item.title}
                     </h3>
-                    <p className="mt-3 max-w-[12ch] text-lg leading-8 text-[#6a7088]">
+                    <p className="mt-0.5 text-[0.95rem] leading-6 text-[#6a7088] md:whitespace-nowrap">
                       {item.description}
                     </p>
                   </div>
@@ -66,16 +76,6 @@ const TimelineSection: React.FC = () => {
             })}
           </div>
         </div>
-
-        <TextReveal delay={0.12}>
-          <div className="flex justify-end">
-            <img
-              src="/services/Web_application/ProjectDuration.png"
-              alt="48 services delivered in 48 hours"
-              className="w-full max-w-[760px] object-contain"
-            />
-          </div>
-        </TextReveal>
       </div>
     </section>
   );
