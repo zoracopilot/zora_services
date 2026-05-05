@@ -6,19 +6,19 @@ export const websiteWebAppHeroHighlights = [
 
 export const websiteWebAppOverviewCards = [
   {
-    title: "Enterprise Software Development",
+    title: "Custom Enterprise Software Development",
     description:
-      "Scalable, secure software solutions built to manage complex business operations efficiently.",
+      "Build scalable, secure enterprise software tailored to streamline operations and support business growth.",
   },
   {
-    title: "Business Process Automation",
+    title: "CRM Services",
     description:
-      "Automate workflows and streamline operations to boost productivity and reduce manual effort.",
+      "Implement CRM solutions to manage customer relationships, improve engagement, and boost sales efficiency.",
   },
   {
-    title: "System Integration Solutions",
+    title: "IT Staff Augmentation",
     description:
-      "Seamlessly connect systems and data to improve performance and operational efficiency.",
+      "Extend your team with skilled IT professionals to accelerate development and meet project demands.",
   },
   {
     title: "ERP & Enterprise Platforms",

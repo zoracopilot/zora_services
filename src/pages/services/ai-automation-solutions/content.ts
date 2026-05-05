@@ -6,24 +6,24 @@ export const websiteWebAppHeroHighlights = [
 
 export const websiteWebAppOverviewCards = [
   {
-    title: "AI-Powered Process Automation",
+    title: "Chatbot Development",
     description:
-      "Automate repetitive tasks using AI and intelligent workflows to improve efficiency and reduce manual effort.",
+      "Build AI-powered chatbots to automate customer support and deliver real-time, intelligent interactions.",
+  },
+  {
+    title: "Workflow Automation & RPA",
+    description:
+      "Automate repetitive tasks using RPA and AI to improve efficiency and reduce operational costs.",
+  },
+  {
+    title: "Recommendation Engine Development",
+    description:
+      "Develop AI-driven recommendation systems to personalize user experience and boost engagement.",
   },
   {
     title: "Machine Learning Solutions",
     description:
-      "Build machine learning models that analyze data, predict outcomes, and enhance smarter business decisions.",
-  },
-  {
-    title: "AI Application Development",
-    description:
-      "Develop custom AI-powered applications with scalable architecture and seamless user experience.",
-  },
-  {
-    title: "Intelligent Data & Analytics",
-    description:
-      "Leverage AI-driven analytics to gain insights, optimize performance, and drive data-backed growth.",
+      "Leverage machine learning to analyze data, predict outcomes, and enable smarter decision-making.",
   },
 ] as const;
 

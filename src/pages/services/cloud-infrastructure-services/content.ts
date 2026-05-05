@@ -6,9 +6,9 @@ export const websiteWebAppHeroHighlights = [
 
 export const websiteWebAppOverviewCards = [
   {
-    title: "Cloud Infrastructure Management",
+    title: "Application Integrations",
     description:
-      "Scalable and secure cloud infrastructure designed for high performance and reliable business operations.",
+      "Integrate systems and applications to ensure smooth data flow and improved operational efficiency.",
   },
   {
     title: "Cloud Migration Services",

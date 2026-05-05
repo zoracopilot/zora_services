@@ -6,19 +6,19 @@ export const websiteWebAppHeroHighlights = [
 
 export const websiteWebAppOverviewCards = [
   {
-    title: "Mobile App Design & Development",
+    title: "Android App Development",
     description:
-      "Modern, user-friendly mobile apps with intuitive UI/UX and seamless performance.",
+      "Build scalable Android apps with high performance, smooth UI, and seamless user experience.",
   },
   {
-    title: "iOS & Android App Development",
+    title: "iOS App Development",
     description:
-      "High-performance iOS and Android apps built for speed, scalability, and reliability.",
+      "Develop secure and high-performance iOS apps with intuitive design and optimized functionality.",
   },
   {
-    title: "Custom Mobile App Development",
+    title: "Cross-Platform App Development",
     description:
-      "Tailored mobile app solutions designed to match your business goals and user needs.",
+      "Create cost-effective cross-platform apps that deliver consistent performance across iOS and Android.",
   },
   {
     title: "Enterprise Mobile Solutions",
