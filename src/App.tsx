@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import CookieNotice from "./components/CookieNotice";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
+import AiAutomationSolutionsPage from "./pages/services/ai-automation-solutions";
 import MobileApplicationDevelopmentPage from "./pages/services/mobile-application-development";
 import WebsiteWebApplicationServicesPage from "./pages/services/website-web-application-services";
 
@@ -57,12 +58,20 @@ const AppShell: React.FC = () => {
               element={<MobileApplicationDevelopmentPage />}
             />
             <Route
+              path="/services/ai-automation-solutions"
+              element={<AiAutomationSolutionsPage />}
+            />
+            <Route
               path="/services/it/website-web-application-services"
               element={<WebsiteWebApplicationServicesPage />}
             />
             <Route
               path="/services/it/mobile-application-development"
               element={<MobileApplicationDevelopmentPage />}
+            />
+            <Route
+              path="/services/it/ai-automation-solutions"
+              element={<AiAutomationSolutionsPage />}
             />
             <Route path="/products" element={<Navigate to="/" replace />} />
             <Route path="/products/:productSlug" element={<ProductDetail />} />
@@ -89,12 +98,20 @@ const AppShell: React.FC = () => {
               element={<Navigate to="/services/mobile-application-development" replace />}
             />
             <Route
+              path="/services/ai-automation-solutions/:itemSlug"
+              element={<Navigate to="/services/ai-automation-solutions" replace />}
+            />
+            <Route
               path="/services/it/website-web-application-services/:itemSlug"
               element={<Navigate to="/services/website-web-application-services" replace />}
             />
             <Route
               path="/services/it/mobile-application-development/:itemSlug"
               element={<Navigate to="/services/mobile-application-development" replace />}
+            />
+            <Route
+              path="/services/it/ai-automation-solutions/:itemSlug"
+              element={<Navigate to="/services/ai-automation-solutions" replace />}
             />
             <Route
               path="/services/:categorySlug"
