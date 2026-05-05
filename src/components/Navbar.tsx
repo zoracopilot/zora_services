@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import zoraLogo from "../assets/zora-logo-redesign.webp";
 import { products } from "./products/data";
 import { IT_SERVICE_CATEGORIES } from "../data/itServicesData";
@@ -11,9 +11,15 @@ type NavServiceItem = {
   to: string;
 };
 
+const CANONICAL_SERVICE_PATHS: Record<string, string> = {
+  "website-web-application-services": "/services/website-web-application-services",
+  "mobile-application-development": "/services/mobile-application-development",
+  "ai-automation-solutions": "/services/ai-automation-solutions",
+};
+
 const itServices: NavServiceItem[] = IT_SERVICE_CATEGORIES.map((category) => ({
   label: category.title,
-  to: `/services/it/${category.slug}`,
+  to: CANONICAL_SERVICE_PATHS[category.slug] ?? `/services/it/${category.slug}`,
 }));
 
 const nonItServices: NavServiceItem[] = NON_IT_SERVICE_CATEGORIES.map((category) => ({
@@ -32,6 +38,7 @@ const serviceGroups = [
 
 const Navbar: React.FC = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -41,6 +48,35 @@ const Navbar: React.FC = () => {
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  const handleServiceNavigation = (
+    event: React.MouseEvent<HTMLAnchorElement>,
+    to: string,
+  ) => {
+    const matchedCanonical = Object.values(CANONICAL_SERVICE_PATHS).find((path) => path === to);
+    const currentPath = location.pathname;
+    const canonicalAlias = matchedCanonical
+      ? currentPath === matchedCanonical ||
+        currentPath === `/services/it/${matchedCanonical.split("/").pop()}`
+      : false;
+
+    if (!matchedCanonical) {
+      scrollTop();
+      return;
+    }
+
+    event.preventDefault();
+    setMenuOpen(false);
+    setServicesOpen(false);
+
+    if (canonicalAlias) {
+      window.location.assign(to);
+      return;
+    }
+
+    navigate(to);
+    scrollTop();
   };
 
   const openServicesMenu = () => {
@@ -231,7 +267,7 @@ const Navbar: React.FC = () => {
                             <Link
                               to={item.to}
                               className="flex items-center justify-center py-3 text-[15px] font-semibold leading-7 text-slate-800 transition-colors duration-200 hover:text-violet-700"
-                              onClick={scrollTop}
+                              onClick={(event) => handleServiceNavigation(event, item.to)}
                             >
                               <span>{item.label}</span>
                             </Link>
@@ -338,7 +374,7 @@ const Navbar: React.FC = () => {
                     <Link
                       to={item.to}
                       className="block py-2 text-sm font-semibold text-slate-700 transition-colors hover:text-violet-700"
-                      onClick={scrollTop}
+                      onClick={(event) => handleServiceNavigation(event, item.to)}
                     >
                       {item.label}
                     </Link>
