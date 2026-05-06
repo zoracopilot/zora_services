@@ -106,7 +106,7 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Business & Strategy Consulting",
     description:
       "Align hiring, staffing plans and workforce expansion with your broader business and operational growth strategy.",
-    image: "/services/Business_strategy_consulting/overview.png",
+    image: "/services/Business_strategy_consulting/overview.webp",
     href: "/services/business-strategy-consulting",
   },
 ];

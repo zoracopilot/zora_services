@@ -99,14 +99,14 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Branding & Creative Services",
     description:
       "Strengthen campaigns with brand identity, creative design and marketing assets that improve engagement and recall.",
-    image: "/services/Branding_creative_services/overview.png",
+    image: "/services/Branding_creative/overview.webp",
     href: "/services/branding-creative-services",
   },
   {
     title: "Business & Strategy Consulting",
     description:
       "Align your marketing plan with business goals, customer strategy and long-term growth priorities.",
-    image: "/services/Business_strategy_consulting/overview.png",
+    image: "/services/Business_strategy_consulting/overview.webp",
     href: "/services/business-strategy-consulting",
   },
 ];

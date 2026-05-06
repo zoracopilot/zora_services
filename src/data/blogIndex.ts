@@ -33,7 +33,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     description:
       "A practical blueprint to design, build and optimize websites that improve SEO visibility and conversion rates.",
     department: "Website & Web Application Services",
-    image: "/it-hero/website.webp",
+    image: "/insights/web-application-services.webp",
     date: "2026-03-29",
     readTime: "6 min read",
     sections: [
@@ -59,7 +59,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     description:
       "How to build mobile applications that improve retention, engagement and recurring customer interactions.",
     department: "Mobile Application Development",
-    image: "/it-hero/cross-platform.webp",
+    image: "/insights/mobile-application-development.webp",
     date: "2026-03-27",
     readTime: "5 min read",
     sections: [
@@ -85,7 +85,7 @@ export const mockBlogPosts: MockBlogPost[] = [
     description:
       "Learn how small and mid-sized teams can use AI automation across support, sales and operations without creating process chaos.",
     department: "AI & Automation Solutions",
-    image: "/it-hero/recommendation.webp",
+    image: "/insights/automation-solutions.webp",
     date: "2026-03-24",
     readTime: "5 min read",
     sections: [

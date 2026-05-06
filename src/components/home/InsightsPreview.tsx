@@ -2,6 +2,17 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { mockBlogPosts } from "../../data/blogIndex";
 
+const INSIGHTS_BASE = `${import.meta.env.BASE_URL}Insights/`;
+
+const insightImageBySlug: Record<string, string> = {
+  "modern-website-engineering-playbook-2026":
+    `${INSIGHTS_BASE}web-application-services.webp`,
+  "mobile-app-growth-strategies-for-service-brands":
+    `${INSIGHTS_BASE}mobile-application-development.webp`,
+  "ai-automation-workflows-for-growing-teams":
+    `${INSIGHTS_BASE}automation-solutions.webp`,
+};
+
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-US", {
     month: "short",
@@ -44,9 +55,17 @@ const InsightsPreview: React.FC = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="group flex h-full flex-col rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(91,33,182,0.14)]"
+                className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(91,33,182,0.14)]"
               >
-                <div className="flex flex-1 flex-col px-1 pb-1 pt-1">
+                <div className="h-48 overflow-hidden bg-slate-100">
+                  <img
+                    src={insightImageBySlug[post.slug] || post.image}
+                    alt={post.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
                   <p className="text-[11px] font-medium text-violet-500">
                     {post.department}
                   </p>

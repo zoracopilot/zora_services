@@ -72,7 +72,7 @@ const TimelineSection: React.FC = () => {
         <TextReveal delay={0.12} className="hidden lg:block">
           <div className="flex justify-end">
             <img
-              src="/services/Web_application/timeline.png"
+              src="/services/Web_application/timeline.webp"
               alt="48 services delivery timeline"
               className="w-full max-w-[640px] object-contain"
             />

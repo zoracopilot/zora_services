@@ -36,7 +36,7 @@ const CtaSection: React.FC = () => {
           <TextReveal delay={0.12} className="lg:h-full lg:justify-self-end">
             <div className="mx-auto max-w-[300px] lg:flex lg:h-full lg:items-center lg:justify-end">
               <img
-                src="/services/Web_application/CTA.png"
+                src="/services/Web_application/CTA.webp"
                 alt="Business growth and strategy illustration"
                 className="w-full object-contain lg:max-h-[170px]"
               />

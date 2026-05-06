@@ -129,7 +129,7 @@ export const websiteWebAppExploreServices = [
     title: "Business Strategy Consulting",
     description:
       "Plan cloud adoption, modernization and operational transformation with a strategy tied to business goals.",
-    image: "/services/Business_strategy_consulting/overview.png",
+    image: "/services/Business_strategy_consulting/overview.webp",
     href: "/services/business-strategy-consulting",
   },
 ] as const;

@@ -10,7 +10,7 @@ import { businessStrategyOverviewCards } from "../content";
 
 const icons = [BriefcaseBusiness, ReceiptText, Palette, Megaphone] as const;
 const overviewCards = businessStrategyOverviewCards;
-const overviewImage = "/services/Staff_augmentation/overview.png?v=20260505";
+const overviewImage = "/services/Staff_augmentation/overview.webp?v=20260505";
 
 const OverviewSection: React.FC = () => {
   return (

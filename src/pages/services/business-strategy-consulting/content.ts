@@ -106,7 +106,7 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Digital Marketing Services",
     description:
       "Increase visibility, generate qualified leads and grow your brand with performance-driven marketing strategies.",
-    image: "/services/Digital_marketing/overview.jpg",
+    image: "/services/Digital_marketing/overview.webp",
     href: "/services/digital-marketing-services",
   },
 ];

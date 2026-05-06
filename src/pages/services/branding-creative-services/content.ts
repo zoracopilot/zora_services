@@ -99,14 +99,14 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Digital Marketing Services",
     description:
       "Support your branding efforts with SEO, campaigns, content, and performance marketing that grows visibility.",
-    image: "/services/Digital_marketing/overview.jpg",
+    image: "/services/Digital_marketing/overview.webp",
     href: "/services/digital-marketing-services",
   },
   {
     title: "Business & Strategy Consulting",
     description:
       "Align brand positioning, messaging, and creative execution with your broader business and growth strategy.",
-    image: "/services/Business_strategy_consulting/overview.png",
+    image: "/services/Business_strategy_consulting/overview.webp",
     href: "/services/business-strategy-consulting",
   },
 ];

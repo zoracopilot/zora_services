@@ -65,7 +65,7 @@ const OverviewSection: React.FC = () => {
         <TextReveal delay={0.12} className="lg:sticky lg:top-36">
           <div className="overflow-hidden border border-slate-200 bg-slate-50 shadow-[0_16px_48px_rgba(15,23,42,0.08)]">
             <img
-              src="/services/Custom_enterprise_software/overview.png"
+              src="/services/Custom_enterprise_software/overview.webp"
               alt="Custom enterprise software solutions"
               className="h-full w-full object-cover"
             />

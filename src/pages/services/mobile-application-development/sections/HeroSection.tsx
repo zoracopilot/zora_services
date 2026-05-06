@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
     <section className="relative overflow-hidden border border-slate-200 shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
       <div
         className="absolute inset-0 bg-cover bg-[center_72%] bg-no-repeat"
-        style={{ backgroundImage: "url('/services/Mobile_application/Hero_mobile.png')" }}
+        style={{ backgroundImage: "url('/services/Mobile_application/Hero_mobile.webp')" }}
       />
       <div className="absolute inset-0 bg-slate-950/52" />
 

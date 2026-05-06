@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import TextReveal from "../../../../components/about/TextReveal";
 
 const HeroSection: React.FC = () => {
-  const heroImage = "/services/Staff_augmentation/hero.png?v=20260505";
+  const heroImage = "/services/Staff_augmentation/hero.webp?v=20260505";
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

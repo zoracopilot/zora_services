@@ -106,7 +106,7 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Business & Strategy Consulting",
     description:
       "Strengthen financial planning and business decision-making with strategic consulting aligned to your growth goals.",
-    image: "/services/Business_strategy_consulting/overview.png",
+    image: "/services/Business_strategy_consulting/overview.webp",
     href: "/services/business-strategy-consulting",
   },
 ];
