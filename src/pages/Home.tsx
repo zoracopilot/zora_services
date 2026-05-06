@@ -14,7 +14,7 @@ import {
 
 const Home: React.FC = () => {
   return (
-    <main className="relative overflow-hidden bg-white text-slate-900">
+    <main className="relative overflow-x-hidden bg-white text-slate-900">
       <PageSEO
         title="AI Automation & Software Development Company | Zora Global AI"
         description="Zora Global AI delivers AI automation, custom software, web and mobile development, cloud infrastructure and cybersecurity solutions for modern businesses."
@@ -27,9 +27,7 @@ const Home: React.FC = () => {
       {/* ================= PAGE CONTENT ================= */}
       <div className="relative z-10 flex flex-col">
         <Hero />
-        <SectionReveal>
-          <Industries />
-        </SectionReveal>
+        <Industries />
         <SectionReveal>
           <ProductsShowcase />
         </SectionReveal>

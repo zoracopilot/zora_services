@@ -98,7 +98,7 @@ const EnterpriseDifferentiators: React.FC = () => {
           variants={cardsContainerVariants}
         >
           <div className="space-y-4 pt-2">
-            {differentiators.map(({ number, title, desc }, index) => (
+            {differentiators.map(({ number, title, desc }) => (
               <motion.article
                 key={title}
                 variants={cardVariants}
