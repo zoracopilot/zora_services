@@ -48,11 +48,11 @@ const GlobalImpact: React.FC = () => {
 
           <div className="relative mx-auto w-full max-w-[620px] lg:mx-0 lg:ml-auto">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(216,180,254,0.20),transparent_60%)] blur-3xl" />
-            <div className="relative overflow-hidden rounded-[28px] border border-violet-100 bg-white/88 p-3 shadow-[0_18px_50px_rgba(31,41,55,0.08)] backdrop-blur-sm sm:p-4">
+            <div className="relative">
               <img
                 src="/global-impact/transformation.webp"
                 alt="Digital transformation dashboard preview"
-                className="w-full rounded-[22px] object-cover"
+                className="w-full object-cover"
                 loading="lazy"
                 draggable={false}
               />
