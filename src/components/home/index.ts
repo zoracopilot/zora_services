@@ -1,7 +1,6 @@
 export { default as Hero } from "./Hero";
 export { default as HeroHighlights } from "./HeroHighlights";
 export { default as EnterpriseDifferentiators } from "./EnterpriseDifferentiators";
-export { default as ClientLogos } from "./ClientLogos";
 export { default as TrustedBy } from "./TrustedBy";
 export { default as Industries } from "./Industries";
 export { default as Technologies } from "./Technologies";

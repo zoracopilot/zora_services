@@ -191,19 +191,19 @@ const Footer: React.FC = () => {
               <ul className="space-y-2 text-sm">
                 {/* Keep your existing internal product routes as-is */}
                 <li>
-                  <Link to="/products#zora-hrms" className="transition hover:text-violet-600">HRMS</Link>
+                  <Link to="/products#zora-hrms" className="transition hover:text-violet-600">ZORA HRMS</Link>
                 </li>
                 <li>
-                  <Link to="/products#zora-crm" className="transition hover:text-violet-600">CRMS</Link>
+                  <Link to="/products#zora-crm" className="transition hover:text-violet-600">ZORA CRM</Link>
                 </li>
                 <li>
-                  <Link to="/products" className="transition hover:text-violet-600">Chat Bot</Link>
+                  <Link to="/products" className="transition hover:text-violet-600">CareLoop</Link>
                 </li>
                 <li>
-                  <Link to="/products" className="transition hover:text-violet-600">Email Automation</Link>
+                  <Link to="/products" className="transition hover:text-violet-600">Groomvy</Link>
                 </li>
                 <li>
-                  <Link to="/products" className="transition hover:text-violet-600">Security shield</Link>
+                  <Link to="/products" className="transition hover:text-violet-600">ERP</Link>
                 </li>
               </ul>
             </div>
