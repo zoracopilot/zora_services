@@ -129,7 +129,7 @@ export const aiAutomationExploreServices = [
     title: "Business Strategy Consulting",
     description:
       "Align automation initiatives with business goals, process optimization and operational growth.",
-    image: "/non-it-hero/performance-marketing.webp",
+    image: "/services/Business_strategy_consulting/overview.png",
     href: "/services/business-strategy-consulting",
   },
 ] as const;

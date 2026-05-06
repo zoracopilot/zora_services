@@ -129,7 +129,7 @@ export const customEnterpriseExploreServices = [
     title: "Business Strategy Consulting",
     description:
       "Align enterprise systems with business processes, operations and long-term transformation goals.",
-    image: "/non-it-hero/performance-marketing.webp",
+    image: "/services/Business_strategy_consulting/overview.png",
     href: "/services/business-strategy-consulting",
   },
 ] as const;

@@ -44,19 +44,9 @@ const InsightsPreview: React.FC = () => {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="group flex h-full flex-col rounded-[24px] border border-slate-200 bg-white p-3 shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(91,33,182,0.14)]"
+                className="group flex h-full flex-col rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(91,33,182,0.14)]"
               >
-                <div className="overflow-hidden rounded-[18px] border border-violet-100 bg-[#f4efff]">
-                  <img
-                    src={post.image}
-                    alt={post.title}
-                    className="aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                    loading="lazy"
-                    draggable={false}
-                  />
-                </div>
-
-                <div className="flex flex-1 flex-col px-1 pb-1 pt-4">
+                <div className="flex flex-1 flex-col px-1 pb-1 pt-1">
                   <p className="text-[11px] font-medium text-violet-500">
                     {post.department}
                   </p>

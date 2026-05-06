@@ -99,7 +99,7 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Digital Marketing Services",
     description:
       "Support your branding efforts with SEO, campaigns, content, and performance marketing that grows visibility.",
-    image: "/non-it-hero/performance-marketing.webp",
+    image: "/services/Digital_marketing/overview.jpg",
     href: "/services/digital-marketing-services",
   },
   {

@@ -115,7 +115,7 @@ export const websiteWebAppExploreServices = [
     title: "Digital Marketing Services",
     description:
       "SEO, social media, ads and content strategies to increase visibility and leads.",
-    image: "/non-it-hero/performance-marketing.webp",
+    image: "/services/Digital_marketing/overview.jpg",
     href: "/services/digital-marketing-services",
   },
   {
