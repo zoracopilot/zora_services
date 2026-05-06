@@ -49,6 +49,7 @@ const Navbar: React.FC = () => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [desktopProductsOpen, setDesktopProductsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const navRef = useRef<HTMLElement | null>(null);
@@ -56,6 +57,18 @@ const Navbar: React.FC = () => {
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  const closeAllMenus = () => {
+    setMenuOpen(false);
+    setMobileProductsOpen(false);
+    setDesktopProductsOpen(false);
+    setServicesOpen(false);
+  };
+
+  const handleNavSelection = () => {
+    closeAllMenus();
+    scrollTop();
   };
 
   const handleServiceNavigation = (
@@ -67,8 +80,7 @@ const Navbar: React.FC = () => {
     const normalizedTargetPath = normalizeServicePath(to);
 
     event.preventDefault();
-    setMenuOpen(false);
-    setServicesOpen(false);
+    closeAllMenus();
 
     if (normalizedCurrentPath === normalizedTargetPath) {
       window.location.assign(to);
@@ -100,9 +112,7 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
-    setMenuOpen(false);
-    setMobileProductsOpen(false);
-    setServicesOpen(false);
+    closeAllMenus();
   }, [location.pathname]);
 
   useEffect(() => {
@@ -121,17 +131,17 @@ const Navbar: React.FC = () => {
       if (!target) return;
 
       if (navRef.current?.contains(target)) return;
-      setMenuOpen(false);
+      closeAllMenus();
     };
 
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setMenuOpen(false);
+        closeAllMenus();
       }
     };
 
     const handleScroll = () => {
-      setMenuOpen(false);
+      closeAllMenus();
     };
 
     document.addEventListener("mousedown", handlePointerDown);
@@ -188,9 +198,7 @@ const Navbar: React.FC = () => {
         <Link
           to="/"
           className="flex items-center"
-          onClick={() => {
-            scrollTop();
-          }}
+          onClick={handleNavSelection}
         >
           <img
             src={zoraLogo}
@@ -205,9 +213,7 @@ const Navbar: React.FC = () => {
           <Link
             to="/"
             className={`${desktopBtn} ${location.pathname === "/" ? desktopBtnActive : desktopBtnInactive}`}
-            onClick={() => {
-              scrollTop();
-            }}
+            onClick={handleNavSelection}
           >
             Home
           </Link>
@@ -215,9 +221,7 @@ const Navbar: React.FC = () => {
           <Link
             to="/about"
             className={`${desktopBtn} ${location.pathname === "/about" ? desktopBtnActive : desktopBtnInactive}`}
-            onClick={() => {
-              scrollTop();
-            }}
+            onClick={handleNavSelection}
           >
             About
           </Link>
@@ -226,9 +230,7 @@ const Navbar: React.FC = () => {
           <Link
             to="/blog"
             className={`${desktopBtn} ${location.pathname.startsWith("/blog") ? desktopBtnActive : desktopBtnInactive}`}
-            onClick={() => {
-              scrollTop();
-            }}
+            onClick={handleNavSelection}
           >
             Blog
           </Link>
@@ -280,16 +282,26 @@ const Navbar: React.FC = () => {
             </div>
           </div>
 
-          <div className="group relative">
+          <div
+            className="relative"
+            onMouseEnter={() => setDesktopProductsOpen(true)}
+            onMouseLeave={() => setDesktopProductsOpen(false)}
+          >
             <button
               type="button"
               className={`${desktopBtn} ${location.pathname.startsWith("/products") ? desktopBtnActive : desktopBtnInactive} inline-flex items-center gap-1.5`}
+              onClick={() => setDesktopProductsOpen((value) => !value)}
             >
               Products
-              <ChevronDown size={16} className="transition-transform duration-200 group-hover:rotate-180" />
+              <ChevronDown
+                size={16}
+                className={`transition-transform duration-200 ${desktopProductsOpen ? "rotate-180" : ""}`}
+              />
             </button>
 
-            <div className="pointer-events-none absolute left-1/2 top-full z-50 w-80 -translate-x-1/2 pt-3 opacity-0 transition-all duration-200 group-hover:pointer-events-auto group-hover:opacity-100">
+            <div
+              className={`absolute left-1/2 top-full z-50 w-80 -translate-x-1/2 pt-3 transition-all duration-200 ${desktopProductsOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+            >
               <div className="border border-violet-100 bg-white/95 p-3 shadow-[0_20px_50px_rgba(124,58,237,0.14)] backdrop-blur-xl">
                 <div className="space-y-1">
                   {products.map((product) => (
@@ -297,9 +309,7 @@ const Navbar: React.FC = () => {
                       key={product.id}
                       to={`/products/${product.id}`}
                       className="block px-3 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
-                      onClick={() => {
-                        scrollTop();
-                      }}
+                      onClick={handleNavSelection}
                     >
                       {product.title}
                     </Link>
@@ -338,28 +348,28 @@ const Navbar: React.FC = () => {
           <Link
             to="/"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={scrollTop}
+            onClick={handleNavSelection}
           >
             Home
           </Link>
           <Link
             to="/about"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={scrollTop}
+            onClick={handleNavSelection}
           >
             About
           </Link>
           <Link
             to="/blog"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={scrollTop}
+            onClick={handleNavSelection}
           >
             Blog
           </Link>
           <Link
             to="/services"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={scrollTop}
+            onClick={handleNavSelection}
           >
             Services
           </Link>
@@ -401,7 +411,7 @@ const Navbar: React.FC = () => {
                   key={product.id}
                   to={`/products/${product.id}`}
                   className="block border border-violet-100 bg-white px-5 py-3 text-center text-base font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
-                  onClick={scrollTop}
+                  onClick={handleNavSelection}
                 >
                   {product.title}
                 </Link>
@@ -411,14 +421,14 @@ const Navbar: React.FC = () => {
           <Link
             to="/contact"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={scrollTop}
+            onClick={handleNavSelection}
           >
             Contact Us
           </Link>
           <Link
             to="/book-appointment"
             className="block bg-violet-600 text-white px-5 py-3.5 rounded-lg text-center text-lg font-extrabold tracking-[0.01em] whitespace-nowrap md:w-fit md:min-w-[220px]"
-            onClick={scrollTop}
+            onClick={handleNavSelection}
           >
             <span className="font-bold">Book Appointment</span>
           </Link>

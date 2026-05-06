@@ -50,7 +50,7 @@ const LeadershipTeam: React.FC = () => {
                 Dr. Adv. S. Ansar Ali
               </h3>
               <p className="text-violet-600 mb-3 text-sm">
-                Corporate & Legal Advisor
+                Managing Director
               </p>
             </TextReveal>
 

@@ -40,7 +40,7 @@ const products = [
     title: "GROOMVY",
     description:
       "Manage appointments, walk-ins, staff schedules and customer histories for modern salon and spa teams.",
-    image: "/hero/salondesk.webp",
+    image: "/hero/groomvy.webp",
     accent: "Service Management",
   },
 ];
