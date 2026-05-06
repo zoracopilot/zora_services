@@ -1,7 +1,3 @@
-export type HeroHighlight = {
-  title: string;
-};
-
 export type OverviewCard = {
   title: string;
   description: string;
