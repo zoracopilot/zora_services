@@ -34,6 +34,7 @@ export type GroomvyAudience = {
   description: string;
   icon: LucideIcon;
   image: string;
+  imageClassName?: string;
 };
 
 export type GroomvyOutcome = {
@@ -158,6 +159,7 @@ export const groomvyAudiences: GroomvyAudience[] = [
     description: "Digitize operations, improve efficiency and grow revenue.",
     icon: Store,
     image: "/products/groomvy/saloon.webp",
+    imageClassName: "object-[center_18%]",
   },
   {
     title: "Spa Managers",
