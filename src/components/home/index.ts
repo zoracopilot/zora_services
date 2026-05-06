@@ -1,4 +1,5 @@
 export { default as Hero } from "./Hero";
+export { default as CoreCapabilities } from "./CoreCapabilities";
 export { default as HeroHighlights } from "./HeroHighlights";
 export { default as EnterpriseDifferentiators } from "./EnterpriseDifferentiators";
 export { default as TrustedBy } from "./TrustedBy";

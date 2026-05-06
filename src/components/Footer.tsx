@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="relative isolate mt-auto border-t border-violet-100 bg-[linear-gradient(180deg,#fcfbff_0%,#f7f4ff_100%)] text-slate-600">
+    <footer className="relative isolate border-t border-violet-100 bg-[linear-gradient(180deg,#fcfbff_0%,#f7f4ff_100%)] pt-10 text-slate-600">
       {/* Top glow divider */}
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-200 to-transparent" />
 

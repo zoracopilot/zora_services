@@ -5,10 +5,8 @@ import {
   EnterpriseDifferentiators,
   Industries,
   Technologies,
-  GlobalImpact,
   ProductsShowcase,
   DeliveryProcess,
-  InsightsPreview,
   Testimonials,
   Cta,
   SectionReveal,
@@ -30,9 +28,6 @@ const Home: React.FC = () => {
       <div className="relative z-10 flex flex-col">
         <Hero />
         <SectionReveal>
-          <GlobalImpact />
-        </SectionReveal>
-        <SectionReveal>
           <Industries />
         </SectionReveal>
         <SectionReveal>
@@ -45,9 +40,6 @@ const Home: React.FC = () => {
           <DeliveryProcess />
         </SectionReveal>
         <EnterpriseDifferentiators />
-        <SectionReveal>
-          <InsightsPreview />
-        </SectionReveal>
         <SectionReveal>
           <Testimonials />
         </SectionReveal>
