@@ -152,28 +152,27 @@ export const careloopAudiences: CareloopAudience[] = [
     description:
       "Use the platform to manage operations, patients and communication efficiently.",
     icon: Building2,
-    image: "/hero/careloop.webp",
+    image: "/products/careloop/clinic.webp",
   },
   {
     title: "Doctors",
     description:
       "Access patient records, manage appointments and provide prescriptions digitally.",
     icon: Stethoscope,
-    image: "/about/our_story.webp",
+    image: "/products/careloop/doctor.webp",
   },
   {
     title: "Patients",
     description:
       "Receive prescriptions, appointment updates and communicate with clinics easily.",
     icon: HeartHandshake,
-    image: "/about/company.webp",
+    image: "/products/careloop/patient.webp",
   },
   {
     title: "Admin",
     description:
       "Monitor all clinics, manage subscriptions and control overall system activities.",
     icon: LayoutDashboard,
-    image: "/hero/careloop.webp",
+    image: "/products/careloop/admin.webp",
   },
 ];
-

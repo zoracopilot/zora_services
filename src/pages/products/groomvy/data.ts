@@ -157,25 +157,25 @@ export const groomvyAudiences: GroomvyAudience[] = [
     title: "Salon Owners",
     description: "Digitize operations, improve efficiency and grow revenue.",
     icon: Store,
-    image: "/about/company.webp",
+    image: "/products/groomvy/saloon.webp",
   },
   {
     title: "Spa Managers",
     description: "Coordinate appointments, staff and services seamlessly.",
     icon: ShieldCheck,
-    image: "/about/our_story.webp",
+    image: "/products/groomvy/salon-manager.webp",
   },
   {
     title: "Multi-Branch Salons",
     description: "Centralize performance tracking and operations across locations.",
     icon: LayoutDashboard,
-    image: "/hero/salondesk.webp",
+    image: "/products/groomvy/multi-branch-saloons.webp",
   },
   {
     title: "Grooming Businesses",
     description: "Support barbershops, grooming studios and beauty centers.",
     icon: Scissors,
-    image: "/it-hero/inventory.webp",
+    image: "/products/groomvy/grooming-services.webp",
   },
 ];
 

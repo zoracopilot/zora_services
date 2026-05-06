@@ -131,25 +131,25 @@ export const crmAudiences: CrmAudience[] = [
     title: "Sales Teams",
     description: "Manage leads, follow-ups, proposals and conversion pipelines in one system.",
     icon: TrendingUp,
-    image: "/about/company.webp",
+    image: "/products/crm/sales-teams.webp",
   },
   {
     title: "Marketing Teams",
     description: "Track lead sources, campaign quality and handoff performance with better visibility.",
     icon: Target,
-    image: "/about/our_story.webp",
+    image: "/products/crm/marketing.webp",
   },
   {
     title: "Customer Support",
     description: "Access complete customer context to resolve issues faster and improve satisfaction.",
     icon: MessageCircleMore,
-    image: "/hero/crm.webp",
+    image: "/products/crm/customer-support.webp",
   },
   {
     title: "Business Owners",
     description: "Monitor team performance, sales health and customer activity through real-time dashboards.",
     icon: ShieldCheck,
-    image: "/home-enterprise/insights.webp",
+    image: "/products/crm/business-owner.webp",
   },
 ];
 

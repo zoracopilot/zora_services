@@ -124,25 +124,25 @@ export const erpAudiences: ErpAudience[] = [
   {
     title: "Retail Businesses",
     description: "Manage sales, invoices and customer billing with better speed and visibility.",
-    image: "/about/our_story.webp",
+    image: "/products/erp/retail.webp",
     icon: ShoppingCart,
   },
   {
     title: "Service Providers",
     description: "Bill clients accurately, track outstanding payments and simplify recurring invoicing.",
-    image: "/about/company.webp",
+    image: "/products/erp/service.webp",
     icon: UserCog,
   },
   {
     title: "E-commerce Stores",
     description: "Coordinate invoices orders, refunds and inventory-linked business workflows in one place.",
-    image: "/it-hero/erp.webp",
+    image: "/products/erp/bill.webp",
     icon: Boxes,
   },
   {
     title: "Freelancers & Consultants",
     description: "Create polished invoices, manage expenses and monitor cash flow without heavy systems.",
-    image: "/home-enterprise/strategy.webp",
+    image: "/products/erp/freelancers.webp",
     icon: ReceiptIndianRupee,
   },
 ];

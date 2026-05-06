@@ -150,42 +150,42 @@ export const hrmsUseCases: HrmsAudience[] = [
     description:
       "Streamline HR tasks and manage the entire employee lifecycle.",
     icon: Users,
-    image: "/hero/hrms.webp",
+    image: "/products/hrms/hr.webp",
   },
   {
     title: "Managers",
     description:
       "Monitor team attendance, performance and productivity.",
     icon: UserCog,
-    image: "/about/our_story.webp",
+    image: "/products/hrms/managers.webp",
   },
   {
     title: "Administrators",
     description:
       "Manage system settings, users, roles and organizational policies.",
     icon: ShieldCheck,
-    image: "/about/company.webp",
+    image: "/products/hrms/administrators.webp",
   },
   {
     title: "Small & Medium Businesses",
     description:
       "Affordable and scalable solution to manage growing teams.",
     icon: Building2,
-    image: "/hero/hrms.webp",
+    image: "/products/hrms/small-medium-business.webp",
   },
   {
     title: "Large Enterprises",
     description:
       "Handle complex HR operations across multiple departments and locations.",
     icon: Globe,
-    image: "/about/company.webp",
+    image: "/products/hrms/large-enterprise.webp",
   },
   {
     title: "Remote & Hybrid Teams",
     description:
       "Access HRMS anytime, anywhere and stay connected.",
     icon: BriefcaseBusiness,
-    image: "/about/our_story.webp",
+    image: "/products/hrms/remote-hybrid.webp",
   },
 ];
 
