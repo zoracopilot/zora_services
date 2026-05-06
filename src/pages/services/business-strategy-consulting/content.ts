@@ -1,17 +1,9 @@
 import type {
   Differentiator,
   ExploreService,
-  HeroHighlight,
   OverviewCard,
   ProcessStep,
 } from "./types";
-
-export const businessStrategyHeroHighlights: HeroHighlight[] = [
-  { title: "Trusted by 500+ Clients" },
-  { title: "Proven Track Record" },
-  { title: "Experienced Expert Team" },
-  { title: "Confidential & Secure" },
-];
 
 export const businessStrategyOverviewCards: OverviewCard[] = [
   {

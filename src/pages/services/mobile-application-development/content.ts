@@ -1,9 +1,3 @@
-export const websiteWebAppHeroHighlights = [
-  "User-Centric Design",
-  "Scalable Architecture",
-  "Performance Driven",
-] as const;
-
 export const websiteWebAppOverviewCards = [
   {
     title: "Android App Development",
