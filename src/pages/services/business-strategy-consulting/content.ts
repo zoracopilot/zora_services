@@ -92,21 +92,21 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Website & Web Application Services",
     description:
       "Scalable websites and web applications built to support growth, performance and digital operations.",
-    image: "/home-services/webandwebapplications.webp",
+    image: "/All_services/webandwebapplications.webp",
     href: "/services/website-web-application-services",
   },
   {
     title: "AI & Automation Solutions",
     description:
       "Automate workflows, improve productivity and enable smarter decisions with AI-powered systems.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Digital Marketing Services",
     description:
       "Increase visibility, generate qualified leads and grow your brand with performance-driven marketing strategies.",
-    image: "/services/Digital_marketing/overview.webp",
+    image: "/All_services/digitalmarketingandservices.webp",
     href: "/services/digital-marketing-services",
   },
 ];

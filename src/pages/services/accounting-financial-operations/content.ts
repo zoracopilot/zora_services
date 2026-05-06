@@ -92,21 +92,21 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "AI & Automation Solutions",
     description:
       "Automate accounting workflows, reduce manual effort and improve accuracy with AI-powered finance operations.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Custom Enterprise Software",
     description:
       "Build tailored finance and back-office systems for reporting, approvals, reconciliation and operational control.",
-    image: "/home-services/custom-enterprice-software.webp",
+    image: "/All_services/enterprisesoftware.webp",
     href: "/services/custom-enterprise-software",
   },
   {
     title: "Business & Strategy Consulting",
     description:
       "Strengthen financial planning and business decision-making with strategic consulting aligned to your growth goals.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ];

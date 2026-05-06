@@ -115,21 +115,21 @@ export const websiteWebAppExploreServices = [
     title: "AI & Automation Solutions",
     description:
       "Enhance cloud operations with intelligent automation, smart workflows and AI-powered efficiency improvements.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Custom Enterprise Software",
     description:
       "Pair modern infrastructure with internal platforms, integrations and software tailored to business operations.",
-    image: "/home-services/enterprisesoftware.webp",
+    image: "/All_services/enterprisesoftware.webp",
     href: "/services/custom-enterprise-software",
   },
   {
     title: "Business Strategy Consulting",
     description:
       "Plan cloud adoption, modernization and operational transformation with a strategy tied to business goals.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ] as const;

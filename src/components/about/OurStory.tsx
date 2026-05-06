@@ -7,15 +7,11 @@ const OurStory: React.FC = () => {
       <div className="grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
         <div className="relative">
           <div className="absolute -bottom-4 -left-4 h-28 w-28 bg-[radial-gradient(circle,rgba(167,139,250,0.22)_1px,transparent_1px)] bg-[size:10px_10px]" />
-          <div className="relative overflow-hidden rounded-[28px] border border-violet-100 bg-[linear-gradient(135deg,#ffffff,#f7f5ff)] p-5 shadow-[0_24px_70px_rgba(148,163,184,0.12)]">
-            <div className="min-h-[290px] overflow-hidden rounded-[22px] bg-white">
-              <img
-                src="/about/our_story.webp"
-                alt="Zora Global AI team story"
-                className="h-full min-h-[290px] w-full object-cover object-center"
-              />
-            </div>
-          </div>
+          <img
+            src="/about/our_story.webp"
+            alt="Zora Global AI team story"
+            className="relative min-h-[260px] w-[92%] overflow-hidden rounded-[28px] object-cover object-center lg:w-[88%]"
+          />
         </div>
 
         <div>

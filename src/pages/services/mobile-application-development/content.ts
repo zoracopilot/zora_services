@@ -115,21 +115,21 @@ export const mobileApplicationExploreServices = [
     title: "Website & Web Application Services",
     description:
       "Build fast, scalable digital platforms that integrate smoothly with your mobile app ecosystem.",
-    image: "/home-services/webandwebapplications.webp",
+    image: "/All_services/webandwebapplications.webp",
     href: "/services/website-web-application-services",
   },
   {
     title: "AI & Automation Solutions",
     description:
       "Add intelligent workflows, recommendations and automation features to your mobile products.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Cloud & Infrastructure Services",
     description:
       "Support your apps with secure cloud backends, APIs, storage and scalable deployment infrastructure.",
-    image: "/home-services/cloudandinfrastructure.webp",
+    image: "/All_services/cloudandinfrastructure.webp",
     href: "/services/cloud-infrastructure-services",
   },
 ] as const;

@@ -92,21 +92,21 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Custom Enterprise Software",
     description:
       "Extend delivery capacity with dedicated teams that support custom software projects, platforms and internal systems.",
-    image: "/home-services/enterprisesoftware.webp",
+    image: "/All_services/enterprisesoftware.webp",
     href: "/services/custom-enterprise-software",
   },
   {
     title: "AI & Automation Solutions",
     description:
       "Add skilled talent to build automation, AI workflows and intelligent systems faster without slowing your roadmap.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Business & Strategy Consulting",
     description:
       "Align hiring, staffing plans and workforce expansion with your broader business and operational growth strategy.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ];
