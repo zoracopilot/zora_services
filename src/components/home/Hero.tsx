@@ -97,7 +97,7 @@ const Hero: React.FC = () => {
     <section className="relative overflow-hidden bg-white pt-[var(--nav-h,0px)]">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <video
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-center brightness-[0.9] contrast-[1.08] saturate-[1.08]"
           autoPlay
           muted
           loop
@@ -108,8 +108,8 @@ const Hero: React.FC = () => {
           <source src={heroVideo} type="video/mp4" />
         </video>
       </div>
-      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.92)_34%,rgba(255,255,255,0.58)_62%,rgba(255,255,255,0.16)_100%)]" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(167,139,250,0.12),transparent_28%),radial-gradient(circle_at_80%_24%,rgba(191,219,254,0.14),transparent_24%),radial-gradient(circle_at_82%_72%,rgba(216,180,254,0.14),transparent_26%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.78)_30%,rgba(255,255,255,0.34)_58%,rgba(255,255,255,0.06)_100%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(167,139,250,0.08),transparent_28%),radial-gradient(circle_at_80%_24%,rgba(191,219,254,0.10),transparent_24%),radial-gradient(circle_at_82%_72%,rgba(216,180,254,0.10),transparent_26%)]" />
 
       <div className="relative mx-auto flex min-h-[520px] max-w-7xl items-center px-4 pb-12 pt-10 sm:min-h-[560px] sm:px-6 sm:pb-16 sm:pt-12 lg:min-h-[620px] lg:px-8 lg:pb-20">
         <div className="w-full max-w-[720px]">

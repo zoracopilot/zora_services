@@ -109,21 +109,21 @@ export const customEnterpriseExploreServices = [
     title: "Cloud & Infrastructure Services",
     description:
       "Support enterprise software with secure hosting, backend scalability, integrations and cloud modernization.",
-    image: "/home-services/cloudandinfrastructure.webp",
+    image: "/All_services/cloudandinfrastructure.webp",
     href: "/services/cloud-infrastructure-services",
   },
   {
     title: "AI & Automation Solutions",
     description:
       "Add workflow automation, intelligent assistants and operational AI to your enterprise platforms.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
   {
     title: "Business Strategy Consulting",
     description:
       "Align enterprise systems with business processes, operations and long-term transformation goals.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ] as const;

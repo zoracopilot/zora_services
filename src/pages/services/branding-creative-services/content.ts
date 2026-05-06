@@ -84,21 +84,21 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Website & Web Application Services",
     description:
       "Bring your brand to life with websites and web experiences that match your identity and improve engagement.",
-    image: "/home-services/webandwebapplications.webp",
+    image: "/All_services/webandwebapplications.webp",
     href: "/services/website-web-application-services",
   },
   {
     title: "Digital Marketing Services",
     description:
       "Support your branding efforts with SEO, campaigns, content, and performance marketing that grows visibility.",
-    image: "/services/Digital_marketing/overview.webp",
+    image: "/All_services/digitalmarketingandservices.webp",
     href: "/services/digital-marketing-services",
   },
   {
     title: "Business & Strategy Consulting",
     description:
       "Align brand positioning, messaging, and creative execution with your broader business and growth strategy.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ];

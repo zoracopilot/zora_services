@@ -84,21 +84,21 @@ export const businessStrategyExploreServices: ExploreService[] = [
     title: "Website & Web Application Services",
     description:
       "Launch conversion-focused websites and landing pages that support SEO, campaigns and measurable marketing performance.",
-    image: "/home-services/webandwebapplications.webp",
+    image: "/All_services/webandwebapplications.webp",
     href: "/services/website-web-application-services",
   },
   {
     title: "Branding & Creative Services",
     description:
       "Strengthen campaigns with brand identity, creative design and marketing assets that improve engagement and recall.",
-    image: "/services/Branding_creative/overview.webp",
+    image: "/All_services/brandingcreativeservices.webp",
     href: "/services/branding-creative-services",
   },
   {
     title: "Business & Strategy Consulting",
     description:
       "Align your marketing plan with business goals, customer strategy and long-term growth priorities.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ];

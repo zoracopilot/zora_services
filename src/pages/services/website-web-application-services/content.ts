@@ -109,21 +109,21 @@ export const websiteWebAppExploreServices = [
     title: "Digital Marketing Services",
     description:
       "SEO, social media, ads and content strategies to increase visibility and leads.",
-    image: "/services/Digital_marketing/overview.webp",
+    image: "/All_services/digitalmarketingandservices.webp",
     href: "/services/digital-marketing-services",
   },
   {
     title: "Mobile Application Development",
     description:
       "Build user-friendly Android and iOS apps for your customers and business operations.",
-    image: "/home-services/mobileapplication.webp",
+    image: "/All_services/mobileapplicationdevelopment..webp",
     href: "/services/mobile-application-development",
   },
   {
     title: "AI & Automation Solutions",
     description:
       "Automate workflows, improve productivity and make smarter decisions with AI.",
-    image: "/home-services/aiandautomation.webp",
+    image: "/All_services/aiandautomation.webp",
     href: "/services/ai-automation-solutions",
   },
 ] as const;

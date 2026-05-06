@@ -109,21 +109,21 @@ export const aiAutomationExploreServices = [
     title: "Mobile Application Development",
     description:
       "Integrate intelligent chat, recommendations and automation features into your mobile products.",
-    image: "/home-services/mobileapplication.webp",
+    image: "/All_services/mobileapplicationdevelopment..webp",
     href: "/services/mobile-application-development",
   },
   {
     title: "Cloud & Infrastructure Services",
     description:
       "Build secure, scalable backend systems to support AI workflows, APIs and real-time processing.",
-    image: "/home-services/cloudandinfrastructure.webp",
+    image: "/All_services/cloudandinfrastructure.webp",
     href: "/services/cloud-infrastructure-services",
   },
   {
     title: "Business Strategy Consulting",
     description:
       "Align automation initiatives with business goals, process optimization and operational growth.",
-    image: "/services/Business_strategy_consulting/overview.webp",
+    image: "/All_services/businessandstrategyconstracting.webp",
     href: "/services/business-strategy-consulting",
   },
 ] as const;
