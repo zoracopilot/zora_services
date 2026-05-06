@@ -48,7 +48,7 @@ export const groomvyHero = {
   subtitle: "Salon & Spa Management System",
   description:
     "Groomvy is a complete salon management system that streamlines daily operations, enhances customer experience and drives measurable business growth.",
-  heroImage: "/hero/salondesk.webp",
+  heroImage: "/hero/groomvy.webp",
   highlights: [
     {
       title: "Easy to Use",
