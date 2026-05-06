@@ -16,8 +16,7 @@ const VisionMission: React.FC = () => {
                 Our Mission
               </h2>
               <p className="mt-4 max-w-[26rem] text-[15px] leading-7 text-slate-800">
-                Think beyond ideas and build solutions that create real impact
-                and lasting growth.
+                To transform simple ideas into innovative and impactful digital solutions that help businesses grow, compete, and succeed in the modern world.
               </p>
             </TextReveal>
           </div>
@@ -28,8 +27,7 @@ const VisionMission: React.FC = () => {
                 Our Vision
               </h2>
               <p className="mt-4 max-w-[26rem] text-[15px] leading-7 text-slate-800">
-                Create a future where technology empowers every business to grow
-                without limits.
+                Empowering businesses to transform from local brands into global leaders through continuous innovation and advanced digital solutions.
               </p>
             </TextReveal>
           </div>
