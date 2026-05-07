@@ -48,11 +48,13 @@ const Navbar: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [desktopProductsOpen, setDesktopProductsOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const navRef = useRef<HTMLElement | null>(null);
+  const navBarRef = useRef<HTMLDivElement | null>(null);
   const servicesCloseTimeoutRef = useRef<number | null>(null);
 
   const scrollTop = () => {
@@ -61,6 +63,7 @@ const Navbar: React.FC = () => {
 
   const closeAllMenus = () => {
     setMenuOpen(false);
+    setMobileServicesOpen(false);
     setMobileProductsOpen(false);
     setDesktopProductsOpen(false);
     setServicesOpen(false);
@@ -140,25 +143,19 @@ const Navbar: React.FC = () => {
       }
     };
 
-    const handleScroll = () => {
-      closeAllMenus();
-    };
-
     document.addEventListener("mousedown", handlePointerDown);
     document.addEventListener("touchstart", handlePointerDown);
     document.addEventListener("keydown", handleEscape);
-    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       document.removeEventListener("mousedown", handlePointerDown);
       document.removeEventListener("touchstart", handlePointerDown);
       document.removeEventListener("keydown", handleEscape);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, [menuOpen]);
 
   useLayoutEffect(() => {
-    const el = navRef.current;
+    const el = navBarRef.current;
     if (!el) return;
 
     const setVar = () => {
@@ -194,7 +191,10 @@ const Navbar: React.FC = () => {
       ref={navRef}
       className="fixed top-0 w-full z-50 text-slate-900 transition-all duration-300 border-b border-violet-100/80 bg-white shadow-[0_10px_30px_rgba(148,163,184,0.08)]"
     >
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-3 flex justify-between items-center">
+      <div
+        ref={navBarRef}
+        className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-3 flex justify-between items-center"
+      >
         <Link
           to="/"
           className="flex items-center"
@@ -366,36 +366,42 @@ const Navbar: React.FC = () => {
           >
             Blog
           </Link>
-          <Link
-            to="/services"
-            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
-            onClick={handleNavSelection}
-          >
-            Services
-          </Link>
-          {serviceGroups.map((group) => (
-            <div
-              key={group.items[0]?.to ?? "services-group"}
-              className="p-1"
-            >
-              <div className="space-y-1">
-                {group.items.map((item) => (
-                  <div key={item.to}>
-                    <Link
-                      to={item.to}
-                      className="block py-2 text-sm font-semibold text-slate-700 transition-colors hover:text-violet-700"
-                      onClick={(event) => handleServiceNavigation(event, item.to)}
-                    >
-                      {item.label}
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
           <button
             type="button"
-            className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}
+            className={`${mobileBtn} ${mobileBtnInactive} w-full md:w-fit md:min-w-[220px] md:justify-center`}
+            onClick={() => setMobileServicesOpen((value) => !value)}
+          >
+            Services
+            <ChevronDown
+              size={18}
+              className={`transition-transform duration-200 ${mobileServicesOpen ? "rotate-180" : ""}`}
+            />
+          </button>
+          {mobileServicesOpen ? (
+            <div className="space-y-2 p-1">
+              {serviceGroups.map((group) => (
+                <div
+                  key={group.items[0]?.to ?? "services-group"}
+                  className="space-y-1"
+                >
+                  {group.items.map((item) => (
+                    <div key={item.to}>
+                      <Link
+                        to={item.to}
+                        className="block py-2 text-sm font-semibold text-slate-700 transition-colors hover:text-violet-700"
+                        onClick={(event) => handleServiceNavigation(event, item.to)}
+                      >
+                        {item.label}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
+          ) : null}
+          <button
+            type="button"
+            className={`${mobileBtn} ${mobileBtnInactive} w-full md:w-fit md:min-w-[220px] md:justify-center`}
             onClick={() => setMobileProductsOpen((value) => !value)}
           >
             Products
@@ -405,17 +411,21 @@ const Navbar: React.FC = () => {
             />
           </button>
           {mobileProductsOpen ? (
-            <div className="space-y-2 md:w-fit md:min-w-[220px]">
-              {products.map((product) => (
-                <Link
-                  key={product.id}
-                  to={`/products/${product.id}`}
-                  className="block border border-violet-100 bg-white px-5 py-3 text-center text-base font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
-                  onClick={handleNavSelection}
-                >
-                  {product.title}
-                </Link>
-              ))}
+            <div className="md:w-fit md:min-w-[220px]">
+              <div className="border border-violet-100 bg-white/95 p-3 shadow-[0_20px_50px_rgba(124,58,237,0.14)] backdrop-blur-xl">
+                <div className="space-y-1">
+                  {products.map((product) => (
+                    <Link
+                      key={product.id}
+                      to={`/products/${product.id}`}
+                      className="block px-3 py-3 text-sm font-semibold text-slate-700 transition-all duration-200 hover:bg-violet-50 hover:text-violet-700"
+                      onClick={handleNavSelection}
+                    >
+                      {product.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           ) : null}
           <Link
