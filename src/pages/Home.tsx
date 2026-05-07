@@ -7,7 +7,6 @@ import {
   Technologies,
   ProductsShowcase,
   DeliveryProcess,
-  Testimonials,
   Cta,
   SectionReveal,
 } from "../components/home";
