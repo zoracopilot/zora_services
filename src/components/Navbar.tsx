@@ -192,7 +192,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       ref={navRef}
-      className="fixed top-0 w-full z-50 text-slate-900 transition-all duration-300 border-b border-violet-100/80 bg-[rgba(252,251,255,0.9)] backdrop-blur-xl shadow-[0_10px_30px_rgba(148,163,184,0.08)]"
+      className="fixed top-0 w-full z-50 text-slate-900 transition-all duration-300 border-b border-violet-100/80 bg-white shadow-[0_10px_30px_rgba(148,163,184,0.08)]"
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-3 flex justify-between items-center">
         <Link
@@ -203,7 +203,7 @@ const Navbar: React.FC = () => {
           <img
             src={zoraLogo}
             alt="ZoraGlobalAI"
-            className="h-12 md:h-14 w-auto object-contain"
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </Link>
 
@@ -344,7 +344,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden bg-[rgba(252,251,255,0.96)] backdrop-blur-xl px-6 py-6 space-y-3 border-t border-violet-100 md:px-8 md:py-7">
+        <div className="lg:hidden bg-white px-6 py-6 space-y-3 border-t border-violet-100 md:px-8 md:py-7">
           <Link
             to="/"
             className={`${mobileBtn} ${mobileBtnInactive} md:w-fit md:min-w-[220px] md:justify-center`}

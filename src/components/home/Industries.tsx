@@ -45,37 +45,37 @@ const industries: Industry[] = [
     title: "Banking & Financial Services",
     desc: "Secure digital products and workflow automation that improve service delivery, compliance and customer trust.",
     Icon: Landmark,
-    image: "/industries/banking.jpg",
+    image: "/industries/banking.webp",
   },
   {
     title: "Healthcare & Life Sciences",
     desc: "Connected healthcare platforms that improve outcomes, streamline care and support clinical innovation.",
     Icon: HeartPulse,
-    image: "/industries/healthcare.jpg",
+    image: "/industries/healthcare.webp",
   },
   {
     title: "Manufacturing & Supply Chain",
     desc: "Operational visibility and automation that improve efficiency, reduce bottlenecks and strengthen performance.",
     Icon: Factory,
-    image: "/industries/manufacture.jpg",
+    image: "/industries/manufacture.webp",
   },
   {
     title: "Retail & E-Commerce",
     desc: "Commerce solutions and scalable storefronts that improve engagement, retention and digital growth.",
     Icon: ShoppingCart,
-    image: "/industries/retail.jpg",
+    image: "/industries/retail.webp",
   },
   {
     title: "Telecommunications",
     desc: "Scalable systems that improve service delivery, simplify operations and support reliable customer experiences.",
     Icon: TowerControl,
-    image: "/industries/Telecommunications.jpg",
+    image: "/industries/Telecommunications.webp",
   },
   {
     title: "Enterprise SaaS",
     desc: "Reliable SaaS products and scalable architectures that support growth and faster delivery.",
     Icon: Building2,
-    image: "/industries/saas.jpg",
+    image: "/industries/saas.webp",
   },
 ];
 
@@ -91,13 +91,13 @@ const IndustryCard: React.FC<{ industry: Industry }> = ({ industry }) => {
       <img
         src={industry.image}
         alt={industry.title}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-focus:scale-105"
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 sm:group-hover:scale-105 sm:group-focus:scale-105"
       />
 
-      <div className="absolute inset-0 bg-black/10 transition-colors duration-300 group-hover:bg-black/55 group-focus:bg-black/55" />
+      <div className="absolute inset-0 bg-black/55 transition-colors duration-300 sm:bg-black/10 sm:group-hover:bg-black/55 sm:group-focus:bg-black/55" />
 
       <div className="absolute inset-0 flex items-end p-5 sm:p-6">
-        <div className="translate-y-24 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 group-focus:translate-y-0 group-focus:opacity-100">
+        <div className="translate-y-0 opacity-100 transition-all duration-300 sm:translate-y-24 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100 sm:group-focus:translate-y-0 sm:group-focus:opacity-100">
           <div className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-100 sm:h-16 sm:w-16">
             <Icon className="h-6 w-6 text-violet-700 sm:h-7 sm:w-7" strokeWidth={1.9} />
           </div>
