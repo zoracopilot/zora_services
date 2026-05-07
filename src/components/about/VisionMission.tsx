@@ -15,8 +15,22 @@ const VisionMission: React.FC = () => {
               <h2 className="whitespace-nowrap font-serif text-2xl font-black tracking-tight text-violet-700 xl:text-[2rem]">
                 Our Mission
               </h2>
-              <p className="mt-4 max-w-[26rem] text-[15px] leading-7 text-slate-800">
-                To transform simple ideas into innovative and impactful digital solutions that help businesses grow, compete, and succeed in the modern world.
+              <p className="mt-4 max-w-[26rem] font-serif text-[15px] italic leading-7 text-slate-800">
+                <span
+                  aria-hidden="true"
+                  className="mr-1 inline-block align-top text-[1.7em] leading-none text-slate-700"
+                >
+                  &ldquo;
+                </span>
+                To transform simple ideas into innovative and impactful digital
+                solutions that help businesses grow, compete, and succeed in the
+                modern world.
+                <span
+                  aria-hidden="true"
+                  className="ml-1 inline-block align-bottom text-[1.7em] leading-none text-slate-700"
+                >
+                  &rdquo;
+                </span>
               </p>
             </TextReveal>
           </div>
@@ -26,8 +40,22 @@ const VisionMission: React.FC = () => {
               <h2 className="whitespace-nowrap font-serif text-2xl font-black tracking-tight text-violet-700 xl:text-[2rem]">
                 Our Vision
               </h2>
-              <p className="mt-4 max-w-[26rem] text-[15px] leading-7 text-slate-800">
-                Empowering businesses to transform from local brands into global leaders through continuous innovation and advanced digital solutions.
+              <p className="mt-4 max-w-[26rem] font-serif text-[15px] italic leading-7 text-slate-800">
+                <span
+                  aria-hidden="true"
+                  className="mr-1 inline-block align-top text-[1.7em] leading-none text-slate-700"
+                >
+                  &ldquo;
+                </span>
+                Empowering businesses to transform from local brands into global
+                leaders through continuous innovation and advanced digital
+                solutions.
+                <span
+                  aria-hidden="true"
+                  className="ml-1 inline-block align-bottom text-[1.7em] leading-none text-slate-700"
+                >
+                  &rdquo;
+                </span>
               </p>
             </TextReveal>
           </div>

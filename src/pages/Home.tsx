@@ -38,9 +38,9 @@ const Home: React.FC = () => {
           <DeliveryProcess />
         </SectionReveal>
         <EnterpriseDifferentiators />
-        <SectionReveal>
+        {/* <SectionReveal>
           <Testimonials />
-        </SectionReveal>
+        </SectionReveal> */}
         <SectionReveal>
           <Cta />
         </SectionReveal>

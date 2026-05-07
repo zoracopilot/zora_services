@@ -30,8 +30,10 @@ const ContactPage: React.FC = () => {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [nameError, setNameError] = useState("");
   const [phoneError, setPhoneError] = useState("");
+  const [emailError, setEmailError] = useState("");
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
@@ -57,6 +59,35 @@ const ContactPage: React.FC = () => {
     setPhoneError("");
   };
 
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const sanitizedValue = e.target.value.replace(/\s/g, "");
+
+    if (!/^[a-zA-Z0-9@.]*$/.test(sanitizedValue)) {
+      setEmailError("Only letters, numbers, @ and . are allowed");
+      return;
+    }
+
+    const atCount = (sanitizedValue.match(/@/g) || []).length;
+    if (atCount > 1) {
+      setEmailError("Only one @ symbol is allowed");
+      return;
+    }
+
+    setEmail(sanitizedValue);
+
+    if (!sanitizedValue) {
+      setEmailError("");
+      return;
+    }
+
+    if (!/^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\.[a-zA-Z0-9]+)+$/.test(sanitizedValue)) {
+      setEmailError("Enter a valid email address");
+      return;
+    }
+
+    setEmailError("");
+  };
+
   const openMail = () => {
     window.open(GMAIL_COMPOSE_URL, "_blank", "noopener,noreferrer");
   };
@@ -71,7 +102,7 @@ const ContactPage: React.FC = () => {
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (nameError || phoneError || !name || !phone) return;
+    if (nameError || phoneError || emailError || !name || !phone || !email) return;
     setIsSubmitting(true);
 
     try {
@@ -86,8 +117,10 @@ const ContactPage: React.FC = () => {
         setSubmitSuccess(true);
         setName("");
         setPhone("");
+        setEmail("");
         setNameError("");
         setPhoneError("");
+        setEmailError("");
         e.currentTarget.reset();
       }
     } catch (error) {
@@ -111,7 +144,7 @@ const ContactPage: React.FC = () => {
       icon: Phone,
       title: "Phone",
       details: "+91 9087000345",
-      description: "Mon-Fri from 8am to 5pm.",
+      description: "Mon-Sat from 9am to 7pm.",
       color: "from-violet-600 to-purple-600",
       action: openPhoneDialpad,
     },
@@ -284,20 +317,22 @@ const ContactPage: React.FC = () => {
                     </label>
                     <div className="relative">
                       <Mail className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-[#77749a]" />
-                      <input
-                        type="email"
-                        name="email"
-                        required
-                        onKeyDown={(e) => {
-                          if (e.key === " ") e.preventDefault();
-                        }}
-                        onChange={(e) => {
-                          e.currentTarget.value = e.currentTarget.value.replace(/\s/g, "");
-                        }}
-                        className="h-11 w-full rounded-lg border border-[#dddff0] bg-white pl-11 pr-4 text-[#17124a] placeholder:text-[#8b88aa] outline-none transition focus:border-violet-500 focus:ring-4 focus:ring-violet-100"
-                        placeholder="Enter your email"
-                      />
-                    </div>
+                        <input
+                          type="email"
+                          name="email"
+                          value={email}
+                          required
+                          onKeyDown={(e) => {
+                            if (e.key === " ") e.preventDefault();
+                          }}
+                          onChange={handleEmailChange}
+                          className="h-11 w-full rounded-lg border border-[#dddff0] bg-white pl-11 pr-4 text-[#17124a] placeholder:text-[#8b88aa] outline-none transition focus:border-violet-500 focus:ring-4 focus:ring-violet-100"
+                          placeholder="Enter your email"
+                        />
+                      </div>
+                      {emailError && (
+                        <p className="mt-1 text-xs text-red-500">{emailError}</p>
+                      )}
                   </div>
 
                   <div>

@@ -193,7 +193,7 @@ const Navbar: React.FC = () => {
     >
       <div
         ref={navBarRef}
-        className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-3 flex justify-between items-center"
+        className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 py-1.5 flex justify-between items-center"
       >
         <Link
           to="/"
